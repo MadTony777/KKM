@@ -1,0 +1,18 @@
+211  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageEmail()
+328  [main] INFO  kkm.UnitTests - Swagger done
+1790 [main] INFO  kkm.UnitTests - End test
+
+1815 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGatewayWithStubs_DONE()
+2275 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM ProcessStatus Where fiscGateCheckStatusCode = 'DONE'
+2278 [main] INFO  kkm.UnitTests - srcID is: 847C907BA418513D37F6000CE30C407DBB7C70C2
+2281 [main] INFO  kkm.UnitTests - srcID is: 847C907BA418513D37F6000CE30C407DBB7C70C2
+2754 [main] INFO  kkm.UnitTests - update alertPeriod set finishTime = '00:00:00' where FilialCode = '--filialCode--'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '--filialCode--'
+update customer set Phone = '70000000000' where srcID = '847C907BA418513D37F6000CE30C407DBB7C70C2'
+update customer set email = '' where srcId = '847C907BA418513D37F6000CE30C407DBB7C70C2'
+update processStatus set fiscGateCheckStatusCode = null where srcID = '847C907BA418513D37F6000CE30C407DBB7C70C2'
+select * from processStatus where srcID = '847C907BA418513D37F6000CE30C407DBB7C70C2'
+2755 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, nothing, 847C907BA418513D37F6000CE30C407DBB7C70C2]
+2760 [main] INFO  kkm.UnitTests - Status is: [ADINSURE, Payment, null, nothing, 847C907BA418513D37F6000CE30C407DBB7C70C2]
+63071 [main] INFO  kkm.UnitTests - select * from ProcessStatus where srcID = '847C907BA418513D37F6000CE30C407DBB7C70C2'
+63072 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, nothing, 847C907BA418513D37F6000CE30C407DBB7C70C2]

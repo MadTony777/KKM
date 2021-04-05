@@ -1,0 +1,8 @@
+844  [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM KKMCash_Stage.dbo.ProcessStatus Where SystemCode = 'ADINSURE' and fiscGateCheckStatusCode = 'ERROR'
+851  [main] INFO  kkm.UnitTests - srcID is: 8764D41C33049226B2C52569E8962A27F45B5E62
+852  [main] INFO  kkm.UnitTests - srcID is: 8764D41C33049226B2C52569E8962A27F45B5E62
+1214 [main] INFO  kkm.UnitTests - Status code is: null
+1215 [main] INFO  kkm.UnitTests - null
+1215 [main] INFO  kkm.UnitTests - Status is: [null]
+61452 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, VALIDATION_ERROR, ERROR]
+121454 [main] INFO  kkm.UnitTests - [ADINSURE, Payment, VALIDATION_ERROR, ERROR]

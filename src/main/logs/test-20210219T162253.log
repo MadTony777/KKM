@@ -1,0 +1,13 @@
+159  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone10()
+284  [main] INFO  kkm.UnitTests - Swagger done
+716  [main] INFO  kkm.UnitTests - {"correlationId":"e9378bc9-c660-4d71-811d-1f343ca9ca8c","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+761  [main] INFO  kkm.UnitTests - []
+71645 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+71645 [main] INFO  kkm.UnitTests - Response Code : 405
+71648 [main] INFO  kkm.UnitTests - End test
+
+71661 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone11()
+71661 [main] INFO  kkm.UnitTests - Swagger done
+71731 [main] INFO  kkm.UnitTests - {"correlationId":"e2839c21-7b56-4504-9911-ea4126b3b3b6","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+71944 [main] INFO  kkm.UnitTests - []

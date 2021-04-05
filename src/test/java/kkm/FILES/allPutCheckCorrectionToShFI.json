@@ -1,0 +1,32 @@
+{
+  "common": {
+    "system": "SIP",
+    "messageId": "${MESSAGEID}",
+    "timestamp": "2020-12-22T10:10:41",
+    "product": "OSAGO",
+    "terminal": "1234567890",
+    "inn": "7710026574",
+    "taxSystem": "OSN"
+  },
+  "correction": {
+    "correctionType": "INDEPENDENTLY",
+    "type": "INCOME",
+    "description": "Описание коррекции",
+    "causeDocumentDate": "2020-12-21T04:10:41",
+    "causeDocumentNumber": "654321",
+    "totalSum": 1000.00,
+    "cashSum": 1000.00,
+    "eCashSum": 0.00,
+    "prepaymentSum": 1.00,
+    "postpaymentSum": 997.00,
+    "otherPaymentTypeSum": 2.00,
+    "tax1Sum": 200.00,
+    "tax2Sum": 100.00,
+    "tax3Sum": 0.00,
+    "tax4Sum": 0.00,
+    "tax5Sum": 0.00,
+    "tax6Sum": 0.00,
+    "settlementAddress": "Россия, г. Москва, ул. Островная, д. 4",
+    "settlementPlace": "Офис"
+  }
+}

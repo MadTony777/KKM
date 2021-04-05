@@ -1,0 +1,6 @@
+158  [main] INFO  kkm.UnitTests - Starting test: KKM_PutWebAutoCheckToShFI_RequiredAndOptionalFields()
+278  [main] INFO  kkm.UnitTests - Request url is: http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/
+1950 [main] INFO  kkm.UnitTests - Response is: {"correlationId":"b01ae833-ce6c-44b0-ad9c-13fd62a09c4b","checkId":"180284e9-bf6b-4ead-9701-971ea43c48d6"}
+101961 [main] INFO  kkm.UnitTests - Request url is: http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/180284e9-bf6b-4ead-9701-971ea43c48d6
+102234 [main] INFO  kkm.UnitTests - End test
+

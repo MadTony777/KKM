@@ -1,0 +1,1 @@
+select * from processStatus where srcID = '--srcID--'

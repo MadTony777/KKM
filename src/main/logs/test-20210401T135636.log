@@ -1,0 +1,18 @@
+202  [main] INFO  kkm.UnitTests - Starting test: KKM_PutCheckCorrection()
+303  [main] INFO  kkm.UnitTests - Request url is: http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/correction
+1444 [main] INFO  kkm.UnitTests - Response is: {"correlationId":"2768d536-f88f-4cee-8853-c2a99f3dedfe","checkId":"9b8353bc-8efb-474f-a050-d4f95182eacc"}
+101453 [main] INFO  kkm.UnitTests - Request url is: http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/9b8353bc-8efb-474f-a050-d4f95182eacc
+101640 [main] INFO  kkm.UnitTests - End test
+
+101660 [main] INFO  kkm.UnitTests - Starting test: KKM_allPutCheckCorrection()
+101666 [main] INFO  kkm.UnitTests - Request url is: http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/correction
+101937 [main] INFO  kkm.UnitTests - Response is: {"correlationId":"22ed74a3-96e3-44d3-bd16-cddf6da0c0fe","checkId":"c168dbd9-39fd-4222-9f65-265a7378fb9a"}
+201937 [main] INFO  kkm.UnitTests - Request url is: http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/c168dbd9-39fd-4222-9f65-265a7378fb9a
+202095 [main] INFO  kkm.UnitTests - End test
+
+202101 [main] INFO  kkm.UnitTests - Starting test: KKM_PutWebAutoCheckToShFI_RequiredAndOptionalFields()
+202106 [main] INFO  kkm.UnitTests - Request url is: http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/
+202333 [main] INFO  kkm.UnitTests - Response is: {"correlationId":"a2c75e94-ce91-45e2-98b1-737f769b07c3","checkId":"5d5fa1cd-e982-4ecd-a551-982a20869b18"}
+302333 [main] INFO  kkm.UnitTests - Request url is: http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/5d5fa1cd-e982-4ecd-a551-982a20869b18
+302454 [main] INFO  kkm.UnitTests - End test
+

@@ -1,0 +1,28 @@
+{
+  "common": {
+     "messageId":"dcabe428-dcf7-4b2e-b8b7-4a16ec808e1a",
+     "product":"fe91e33c-b367-477f-b89f-5156ca0465f8",
+     "system":"WebAuto"
+  },
+  "correction": {
+    "cashSum": 0,
+    "causeDocumentDate": "2019-12-20T04:10:41.446Z",
+    "causeDocumentNumber": "string",
+    "correctionType": "INDEPENDENTLY",
+    "description": "string",
+    "eCashSum": 0,
+    "otherPaymentTypeSum": 0,
+    "postpaymentSum": 0,
+    "prepaymentSum": 0,
+    "settlementAddress": "string",
+    "settlementPlace": "string",
+    "tax1Sum": 00000000000000000000000,
+    "tax2Sum": 0,
+    "tax3Sum": 0,
+    "tax4Sum": 0,
+    "tax5Sum": 0,
+    "tax6Sum": 0,
+    "totalSum": 0,
+    "type": "INCOME"
+  }
+}

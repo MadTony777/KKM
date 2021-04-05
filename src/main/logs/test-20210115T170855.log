@@ -1,0 +1,62 @@
+156  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageEmail()
+264  [main] INFO  kkm.UnitTests - Swagger done
+1638 [main] INFO  kkm.UnitTests - End test
+
+1662 [main] INFO  kkm.UnitTests - Starting test: KKM_PutShopCheckToShFI_RequiredFields()
+3374 [main] INFO  kkm.UnitTests - End test
+
+3384 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_makeCheckNoCashier()
+3385 [main] INFO  kkm.UnitTests - Swagger done
+4463 [main] INFO  kkm.UnitTests - End test
+
+4471 [main] INFO  kkm.UnitTests - Starting test: KKM_PutWebAutoCheckToShFI_RequiredAndOptionalFields()
+5568 [main] INFO  kkm.UnitTests - End test
+
+5576 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_makeCheckCashier()
+5577 [main] INFO  kkm.UnitTests - Swagger done
+6654 [main] INFO  kkm.UnitTests - End test
+
+6656 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SIPheckStatus()
+6656 [main] INFO  kkm.UnitTests - Swagger done
+7745 [main] INFO  kkm.UnitTests - End test
+
+7748 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_PostCorrectionReceipt()
+7749 [main] INFO  kkm.UnitTests - Swagger done
+8814 [main] INFO  kkm.UnitTests - End test
+
+8819 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_CanceleNotFound()
+9901 [main] INFO  kkm.UnitTests - End test
+
+9907 [main] INFO  kkm.UnitTests - Starting test: KKM_PutCheckCorrection()
+11000 [main] INFO  kkm.UnitTests - End test
+
+11006 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageNotFound()
+12083 [main] INFO  kkm.UnitTests - End test
+
+12088 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_PostCorrectionReceipt_negative()
+12089 [main] INFO  kkm.UnitTests - Swagger done
+13156 [main] INFO  kkm.UnitTests - End test
+
+13158 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getStatus()
+13159 [main] INFO  kkm.UnitTests - Swagger done
+14227 [main] INFO  kkm.UnitTests - End test
+
+14232 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_WAcheckStatus()
+14232 [main] INFO  kkm.UnitTests - Swagger done
+15300 [main] INFO  kkm.UnitTests - End test
+
+15305 [main] INFO  kkm.UnitTests - Starting test: KKM_PutSipCheckToShFI()
+16400 [main] INFO  kkm.UnitTests - End test
+
+16405 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_CanceledAlredy()
+16406 [main] INFO  kkm.UnitTests - Swagger done
+17474 [main] INFO  kkm.UnitTests - End test
+
+17481 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getDocCustomer()
+17482 [main] INFO  kkm.UnitTests - Swagger done
+18547 [main] INFO  kkm.UnitTests - End test
+
+18552 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageWasCanceled()
+18553 [main] INFO  kkm.UnitTests - Swagger done
+19616 [main] INFO  kkm.UnitTests - End test
+

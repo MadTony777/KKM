@@ -1,0 +1,33 @@
+162  [main] INFO  kkm.UnitTests - Starting test: KKM_allPutCheckCorrection()
+1358 [main] INFO  kkm.UnitTests - End test
+
+1369 [main] INFO  kkm.UnitTests - Starting test: KKM_PutCheckCorrection()
+1439 [main] INFO  kkm.UnitTests - End test
+
+1444 [main] INFO  kkm.UnitTests - Starting test: KKM_PutShopCheckToShFI_RequiredFields()
+101750 [main] INFO  kkm.UnitTests - End test
+
+101756 [main] INFO  kkm.UnitTests - Starting test: KKM_PutSipCheckToShFI()
+202006 [main] INFO  kkm.UnitTests - End test
+
+202020 [main] INFO  kkm.UnitTests - Starting test: KKM_PutWebAutoCheckToShFI_RequiredAndOptionalFields()
+302441 [main] INFO  kkm.UnitTests - End test
+
+302452 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getStatusCheck()
+402728 [main] INFO  kkm.UnitTests - End test
+
+402737 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getStatusCheckNegative()
+402821 [main] INFO  kkm.UnitTests - End test
+
+402823 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_putCheckCorrectionNegative()
+402893 [main] INFO  kkm.UnitTests - End test
+
+402898 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_EmailResend()
+503131 [main] INFO  kkm.UnitTests - End test
+
+503139 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_EmailResendStatusCheckDONE()
+603430 [main] INFO  kkm.UnitTests - End test
+
+603441 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_EmailResendCheckNotFound()
+703660 [main] INFO  kkm.UnitTests - End test
+

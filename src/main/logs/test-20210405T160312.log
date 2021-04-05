@@ -1,0 +1,7 @@
+212  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_CanceleNotFound()
+434  [main] INFO  kkm.UnitTests - 
+Sending 'PUT' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/00000000-0000-0000-0000-000000000000/cancel
+434  [main] INFO  kkm.UnitTests - Response Code : 400
+435  [main] INFO  kkm.UnitTests - {"checkId":"00000000-0000-0000-0000-000000000000","error":{"code":"RECEIPT_NOTE_FOUND","message":"Receipt with specified ID not found"}}
+441  [main] INFO  kkm.UnitTests - End test
+

@@ -1,0 +1,8 @@
+152  [main] INFO  kkm.UnitTests - srcID is: 4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67
+535  [main] INFO  kkm.UnitTests - Status code is: null
+535  [main] INFO  kkm.UnitTests - Status is: null
+60536 [main] INFO  kkm.UnitTests - select * from KKMCash_Stage.dbo.ProcessStatus where srcID = '4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67'
+60763 [main] INFO  kkm.UnitTests - String info is: ADINSURE Policy SENDED 
+60766 [main] INFO  kkm.UnitTests - ADINSURE Policy SENDED 
+120884 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-test-2020.06.26/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%20AND%204CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67%22%20&size=500
+121039 [main] INFO  kkm.UnitTests - Response message : {"took":2,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}

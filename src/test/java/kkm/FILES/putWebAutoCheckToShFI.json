@@ -1,0 +1,88 @@
+{
+  "common": {
+    "system": "WebAuto",
+    "messageId": "${MESSAGEID}",
+    "timestamp": "2020-10-31T16:45:45",
+    "product": "OSAGO",
+    "terminal": "TEST01",
+    "inn": "7710026574",
+    "taxSystem": "OSN",
+    "cashier": "Администратор",
+    "cashierInn": "500100732259",
+    "settlementAddress": "Россия, г. Москва, ул. Островная, д. 4",
+    "settlementPlace": "Офис"
+  },
+  "customer": {
+    "name": "Иванов Иван Иванович",
+    "inn": "7710026574",
+    "docSerial": "4110",
+    "docNumber": "123456",
+    "email": "test@gmail.com",
+    "phone": "79257777777",
+    "attributes": [
+      {
+        "name": "Some Additional Attribute",
+        "value": "Additional Attribute Value"
+      }
+    ]
+  },
+  "positions": [
+    {
+      "name": "Страховая премия № ХХХХХХХХХХХХХ",
+      "price": 1000.25,
+      "quantity": 2,
+      "tax": "VAT20",
+      "sum": 2000.50,
+      "taxSum": 400.10,
+      "total": 2000.50,
+      "paymentMethod": "PREPAYMENT",
+      "subjectType": "PRODUCT",
+      "attributes": {
+        "nomenclatureCode": "MTIzNDU=",
+        "unitOfMeasurement": "Штука",
+        "additionalAttribute": "MTIzNDU=",
+        "manufacturerCountryCode": "1",
+        "customsDeclarationNumber": "33440288DS",
+        "excise": 15.45
+      },
+      "agent": {
+        "name": "ООО Агент-1",
+        "type": "BANK-AGENT",
+        "operation": "OperationName",
+        "phoneNumbers": ["79257777770", "79257777771", "79257777772"],
+        "operator": {
+          "phoneNumbers": ["79257777770", "79257777771", "79257777772"],
+          "name": "ООО Банк-1",
+          "address": "Россия, г. Москва, ул. Островная, д. 10",
+          "inn": "7710026574"
+        }
+      },
+      "supplier": {
+        "inn": "7710026574",
+        "phoneNumbers": ["79257777770", "79257777771", "79257777772"],
+        "name": "ООО Поставщик-1"
+      }
+    }
+  ],
+  "payment": {
+    "amount": 2000.50,
+    "type": "INCOME",
+    "form": "CASH",
+    "agent": {
+      "name": "ООО Агент-1",
+      "type": "BANK-AGENT",
+      "operation": "OperationName",
+      "phoneNumbers": ["79257777770", "79257777771", "79257777772"]
+    },
+    "operator": {
+      "phoneNumbers": ["79257777770", "79257777771", "79257777772"],
+      "name": "ООО Банк-1",
+      "address": "Россия, г. Москва, ул. Островная, д. 10",
+      "inn": "7710026574",
+      "additionalAttribute": "string"
+    },
+    "supplier": {
+      "phoneNumbers": ["79257777770", "79257777771", "79257777772"]
+    }
+  }
+}

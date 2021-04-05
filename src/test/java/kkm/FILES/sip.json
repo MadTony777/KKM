@@ -1,0 +1,36 @@
+{
+"common":{
+"system":"SIP",
+"messageId":"371db7bb-0ac5-4c7f-9fd5-28bdfc98d746",
+"timestamp":"2019-12-20T10:11:36.125Z",
+"terminal":"TEST01",
+"inn":"7710026574",
+"taxSystem":"OSN",
+"cashier":"Черных Сергей Владимирович ИП"
+},
+"customer":{
+"name":"александр петрович попов",
+"docSerial":"4545",
+"docNumber":"454545",
+"email":"fake@example.com",
+"phone":"71234567899"
+},
+"positions":[
+{
+"name":"123456788",
+"price":50000.000000000000,
+"quantity":1,
+"tax":"VAT-NON",
+"sum":50000.000000000000,
+"taxSum":0.0,
+"total":50000.000000000000,
+"paymentMethod":"PAYMENT-FULL",
+"subjectType":"SERVICE"
+}
+],
+"payment":{
+"amount":50000.000000000000,
+"form":"TRANSFER",
+"type":"INCOME"
+}
+}

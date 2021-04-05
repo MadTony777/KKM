@@ -1,0 +1,8 @@
+1078 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM KKMCash_Stage.dbo.ProcessStatus Where fiscGateCheckStatusCode = 'ERROR'
+1086 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898541
+1088 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898541
+1595 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000898541]
+1598 [main] INFO  kkm.UnitTests - Status is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000898541]
+61873 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, ERROR, VALIDATION_ERROR, ЖПлато_000898541]
+122023 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-stage-2020.07.03/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20AND%20%22ЖПлато_000898541%22%20&size=500
+122186 [main] INFO  kkm.UnitTests - Response message : {"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [kkm-commutator-stage-2020.07.03]","resource.type":"index_or_alias","resource.id":"kkm-commutator-stage-2020.07.03","index_uuid":"_na_","index":"kkm-commutator-stage-2020.07.03"}],"type":"index_not_found_exception","reason":"no such index [kkm-commutator-stage-2020.07.03]","resource.type":"index_or_alias","resource.id":"kkm-commutator-stage-2020.07.03","index_uuid":"_na_","index":"kkm-commutator-stage-2020.07.03"},"status":404}

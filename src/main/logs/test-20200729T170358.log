@@ -1,0 +1,12 @@
+193  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageEmail()
+310  [main] INFO  kkm.UnitTests - Swagger done
+803  [main] INFO  kkm.UnitTests - {"correlationId":"6bb1e22c-e2a2-417f-900f-d8dcaf02a230","checkId":"0c22687f-a0ea-45d0-8744-f184fa5be810"}
+986  [main] INFO  kkm.UnitTests - [0c22687f-a0ea-45d0-8744-f184fa5be810]
+1111 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/0c22687f-a0ea-45d0-8744-f184fa5be810
+1111 [main] INFO  kkm.UnitTests - Response Code : 200
+1114 [main] INFO  kkm.UnitTests - [NEW]
+1744 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/0c22687f-a0ea-45d0-8744-f184fa5be810
+1745 [main] INFO  kkm.UnitTests - Response Code : 200
+1747 [main] INFO  kkm.UnitTests - [NEW]

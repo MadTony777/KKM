@@ -1,0 +1,904 @@
+204  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageEmail()
+313  [main] INFO  kkm.UnitTests - Swagger done
+795  [main] INFO  kkm.UnitTests - {"correlationId":"394e0748-7ae8-4cf4-834f-1ae4adfd45c0","checkId":"ddee59da-9866-4f7b-ab17-abe7b84ca5d0"}
+940  [main] INFO  kkm.UnitTests - [ddee59da-9866-4f7b-ab17-abe7b84ca5d0]
+1061 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+1061 [main] INFO  kkm.UnitTests - Response Code : 200
+1064 [main] INFO  kkm.UnitTests - [NEW]
+1402 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+1403 [main] INFO  kkm.UnitTests - Response Code : 200
+1404 [main] INFO  kkm.UnitTests - [NEW]
+1468 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+1469 [main] INFO  kkm.UnitTests - Response Code : 200
+1470 [main] INFO  kkm.UnitTests - [NEW]
+1534 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+1535 [main] INFO  kkm.UnitTests - Response Code : 200
+1537 [main] INFO  kkm.UnitTests - [NEW]
+1606 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+1607 [main] INFO  kkm.UnitTests - Response Code : 200
+1609 [main] INFO  kkm.UnitTests - [NEW]
+1673 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+1673 [main] INFO  kkm.UnitTests - Response Code : 200
+1673 [main] INFO  kkm.UnitTests - [NEW]
+1743 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+1743 [main] INFO  kkm.UnitTests - Response Code : 200
+1745 [main] INFO  kkm.UnitTests - [NEW]
+1808 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+1809 [main] INFO  kkm.UnitTests - Response Code : 200
+1810 [main] INFO  kkm.UnitTests - [NEW]
+1873 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+1874 [main] INFO  kkm.UnitTests - Response Code : 200
+1875 [main] INFO  kkm.UnitTests - [NEW]
+1936 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+1936 [main] INFO  kkm.UnitTests - Response Code : 200
+1938 [main] INFO  kkm.UnitTests - [NEW]
+1998 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+1999 [main] INFO  kkm.UnitTests - Response Code : 200
+2000 [main] INFO  kkm.UnitTests - [NEW]
+2061 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2062 [main] INFO  kkm.UnitTests - Response Code : 200
+2064 [main] INFO  kkm.UnitTests - [NEW]
+2128 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2128 [main] INFO  kkm.UnitTests - Response Code : 200
+2130 [main] INFO  kkm.UnitTests - [NEW]
+2190 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2191 [main] INFO  kkm.UnitTests - Response Code : 200
+2192 [main] INFO  kkm.UnitTests - [NEW]
+2254 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2254 [main] INFO  kkm.UnitTests - Response Code : 200
+2255 [main] INFO  kkm.UnitTests - [NEW]
+2315 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2315 [main] INFO  kkm.UnitTests - Response Code : 200
+2315 [main] INFO  kkm.UnitTests - [NEW]
+2376 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2376 [main] INFO  kkm.UnitTests - Response Code : 200
+2377 [main] INFO  kkm.UnitTests - [NEW]
+2437 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2437 [main] INFO  kkm.UnitTests - Response Code : 200
+2438 [main] INFO  kkm.UnitTests - [NEW]
+2499 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2499 [main] INFO  kkm.UnitTests - Response Code : 200
+2501 [main] INFO  kkm.UnitTests - [NEW]
+2566 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2566 [main] INFO  kkm.UnitTests - Response Code : 200
+2567 [main] INFO  kkm.UnitTests - [NEW]
+2631 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2631 [main] INFO  kkm.UnitTests - Response Code : 200
+2632 [main] INFO  kkm.UnitTests - [NEW]
+2695 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2696 [main] INFO  kkm.UnitTests - Response Code : 200
+2697 [main] INFO  kkm.UnitTests - [NEW]
+2761 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2761 [main] INFO  kkm.UnitTests - Response Code : 200
+2762 [main] INFO  kkm.UnitTests - [NEW]
+2824 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2825 [main] INFO  kkm.UnitTests - Response Code : 200
+2826 [main] INFO  kkm.UnitTests - [NEW]
+2887 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2887 [main] INFO  kkm.UnitTests - Response Code : 200
+2888 [main] INFO  kkm.UnitTests - [NEW]
+2950 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+2950 [main] INFO  kkm.UnitTests - Response Code : 200
+2951 [main] INFO  kkm.UnitTests - [NEW]
+3013 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+3013 [main] INFO  kkm.UnitTests - Response Code : 200
+3014 [main] INFO  kkm.UnitTests - [NEW]
+3074 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+3074 [main] INFO  kkm.UnitTests - Response Code : 200
+3075 [main] INFO  kkm.UnitTests - [NEW]
+3180 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+3180 [main] INFO  kkm.UnitTests - Response Code : 200
+3181 [main] INFO  kkm.UnitTests - [NEW]
+3281 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+3281 [main] INFO  kkm.UnitTests - Response Code : 200
+3282 [main] INFO  kkm.UnitTests - [DONE]
+3387 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0
+3387 [main] INFO  kkm.UnitTests - Response Code : 200
+3388 [main] INFO  kkm.UnitTests - [DONE]
+3388 [main] INFO  kkm.UnitTests - [DONE]
+33488 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/ddee59da-9866-4f7b-ab17-abe7b84ca5d0/messages/email/EPolikarpova@VSK.RU
+33488 [main] INFO  kkm.UnitTests - Response Code : 200
+33489 [main] INFO  kkm.UnitTests - {"checkId":"ddee59da-9866-4f7b-ab17-abe7b84ca5d0"}
+274630 [main] INFO  kkm.UnitTests - End test
+
+274638 [main] INFO  kkm.UnitTests - Starting test: KKM_PutShopCheckToShFI_RequiredFields()
+374966 [main] INFO  kkm.UnitTests - End test
+
+374971 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_EmailResendStatusCheckDONE()
+475696 [main] INFO  kkm.UnitTests - End test
+
+475717 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getStatusCheck()
+576131 [main] INFO  kkm.UnitTests - End test
+
+576140 [main] INFO  kkm.UnitTests - Starting test: KKM_PutWebAutoCheckToShFI_RequiredAndOptionalFields()
+676609 [main] INFO  kkm.UnitTests - End test
+
+676616 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_makeCheckCashier()
+676617 [main] INFO  kkm.UnitTests - Swagger done
+676823 [main] INFO  kkm.UnitTests - {"correlationId":"0b213709-6e4a-4ba0-b8dd-694f2d365d72","checkId":"f5d950d6-2124-4240-a749-2b6297a23ff3"}
+676995 [main] INFO  kkm.UnitTests - [f5d950d6-2124-4240-a749-2b6297a23ff3]
+677116 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+677116 [main] INFO  kkm.UnitTests - Response Code : 200
+677117 [main] INFO  kkm.UnitTests - [NEW]
+677470 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+677470 [main] INFO  kkm.UnitTests - Response Code : 200
+677472 [main] INFO  kkm.UnitTests - [NEW]
+677536 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+677536 [main] INFO  kkm.UnitTests - Response Code : 200
+677537 [main] INFO  kkm.UnitTests - [NEW]
+677601 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+677602 [main] INFO  kkm.UnitTests - Response Code : 200
+677603 [main] INFO  kkm.UnitTests - [NEW]
+677666 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+677666 [main] INFO  kkm.UnitTests - Response Code : 200
+677666 [main] INFO  kkm.UnitTests - [NEW]
+677728 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+677729 [main] INFO  kkm.UnitTests - Response Code : 200
+677729 [main] INFO  kkm.UnitTests - [NEW]
+677792 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+677793 [main] INFO  kkm.UnitTests - Response Code : 200
+677793 [main] INFO  kkm.UnitTests - [NEW]
+677855 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+677855 [main] INFO  kkm.UnitTests - Response Code : 200
+677856 [main] INFO  kkm.UnitTests - [NEW]
+677919 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+677920 [main] INFO  kkm.UnitTests - Response Code : 200
+677920 [main] INFO  kkm.UnitTests - [NEW]
+677984 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+677984 [main] INFO  kkm.UnitTests - Response Code : 200
+677984 [main] INFO  kkm.UnitTests - [NEW]
+678049 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678049 [main] INFO  kkm.UnitTests - Response Code : 200
+678050 [main] INFO  kkm.UnitTests - [NEW]
+678120 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678121 [main] INFO  kkm.UnitTests - Response Code : 200
+678121 [main] INFO  kkm.UnitTests - [NEW]
+678183 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678184 [main] INFO  kkm.UnitTests - Response Code : 200
+678185 [main] INFO  kkm.UnitTests - [NEW]
+678246 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678246 [main] INFO  kkm.UnitTests - Response Code : 200
+678247 [main] INFO  kkm.UnitTests - [NEW]
+678310 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678311 [main] INFO  kkm.UnitTests - Response Code : 200
+678312 [main] INFO  kkm.UnitTests - [NEW]
+678377 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678377 [main] INFO  kkm.UnitTests - Response Code : 200
+678378 [main] INFO  kkm.UnitTests - [NEW]
+678440 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678441 [main] INFO  kkm.UnitTests - Response Code : 200
+678441 [main] INFO  kkm.UnitTests - [NEW]
+678504 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678505 [main] INFO  kkm.UnitTests - Response Code : 200
+678505 [main] INFO  kkm.UnitTests - [NEW]
+678569 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678570 [main] INFO  kkm.UnitTests - Response Code : 200
+678570 [main] INFO  kkm.UnitTests - [NEW]
+678633 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678633 [main] INFO  kkm.UnitTests - Response Code : 200
+678634 [main] INFO  kkm.UnitTests - [NEW]
+678696 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678696 [main] INFO  kkm.UnitTests - Response Code : 200
+678697 [main] INFO  kkm.UnitTests - [DONE]
+678759 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/f5d950d6-2124-4240-a749-2b6297a23ff3
+678759 [main] INFO  kkm.UnitTests - Response Code : 200
+678760 [main] INFO  kkm.UnitTests - [DONE]
+678760 [main] INFO  kkm.UnitTests - [DONE]
+678760 [main] INFO  kkm.UnitTests - End test
+
+678763 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SIPheckStatus()
+678763 [main] INFO  kkm.UnitTests - Swagger done
+678888 [main] INFO  kkm.UnitTests - {"correlationId":"371db7bb-0ac5-4c7f-9fd5-28bdfc98d746","checkId":"cbd791da-f7a0-46bb-9582-a047b666a61d"}
+678923 [main] INFO  kkm.UnitTests - [cbd791da-f7a0-46bb-9582-a047b666a61d]
+678989 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+678989 [main] INFO  kkm.UnitTests - Response Code : 200
+678990 [main] INFO  kkm.UnitTests - [NEW]
+679330 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+679330 [main] INFO  kkm.UnitTests - Response Code : 200
+679331 [main] INFO  kkm.UnitTests - [NEW]
+679394 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+679395 [main] INFO  kkm.UnitTests - Response Code : 200
+679395 [main] INFO  kkm.UnitTests - [NEW]
+679458 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+679459 [main] INFO  kkm.UnitTests - Response Code : 200
+679460 [main] INFO  kkm.UnitTests - [NEW]
+679521 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+679521 [main] INFO  kkm.UnitTests - Response Code : 200
+679522 [main] INFO  kkm.UnitTests - [NEW]
+679583 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+679584 [main] INFO  kkm.UnitTests - Response Code : 200
+679586 [main] INFO  kkm.UnitTests - [NEW]
+679652 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+679652 [main] INFO  kkm.UnitTests - Response Code : 200
+679653 [main] INFO  kkm.UnitTests - [NEW]
+679717 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+679717 [main] INFO  kkm.UnitTests - Response Code : 200
+679718 [main] INFO  kkm.UnitTests - [NEW]
+679782 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+679782 [main] INFO  kkm.UnitTests - Response Code : 200
+679783 [main] INFO  kkm.UnitTests - [NEW]
+679844 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+679844 [main] INFO  kkm.UnitTests - Response Code : 200
+679845 [main] INFO  kkm.UnitTests - [NEW]
+679907 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+679907 [main] INFO  kkm.UnitTests - Response Code : 200
+679908 [main] INFO  kkm.UnitTests - [NEW]
+679972 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+679973 [main] INFO  kkm.UnitTests - Response Code : 200
+679973 [main] INFO  kkm.UnitTests - [NEW]
+680033 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680033 [main] INFO  kkm.UnitTests - Response Code : 200
+680034 [main] INFO  kkm.UnitTests - [NEW]
+680094 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680094 [main] INFO  kkm.UnitTests - Response Code : 200
+680095 [main] INFO  kkm.UnitTests - [NEW]
+680168 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680168 [main] INFO  kkm.UnitTests - Response Code : 200
+680169 [main] INFO  kkm.UnitTests - [NEW]
+680230 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680230 [main] INFO  kkm.UnitTests - Response Code : 200
+680231 [main] INFO  kkm.UnitTests - [NEW]
+680292 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680293 [main] INFO  kkm.UnitTests - Response Code : 200
+680293 [main] INFO  kkm.UnitTests - [NEW]
+680355 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680355 [main] INFO  kkm.UnitTests - Response Code : 200
+680355 [main] INFO  kkm.UnitTests - [NEW]
+680419 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680419 [main] INFO  kkm.UnitTests - Response Code : 200
+680420 [main] INFO  kkm.UnitTests - [NEW]
+680515 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680515 [main] INFO  kkm.UnitTests - Response Code : 200
+680516 [main] INFO  kkm.UnitTests - [NEW]
+680639 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680639 [main] INFO  kkm.UnitTests - Response Code : 200
+680640 [main] INFO  kkm.UnitTests - [NEW]
+680704 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680705 [main] INFO  kkm.UnitTests - Response Code : 200
+680705 [main] INFO  kkm.UnitTests - [NEW]
+680768 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680768 [main] INFO  kkm.UnitTests - Response Code : 200
+680769 [main] INFO  kkm.UnitTests - [NEW]
+680837 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680837 [main] INFO  kkm.UnitTests - Response Code : 200
+680838 [main] INFO  kkm.UnitTests - [NEW]
+680903 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680903 [main] INFO  kkm.UnitTests - Response Code : 200
+680904 [main] INFO  kkm.UnitTests - [DONE]
+680965 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/cbd791da-f7a0-46bb-9582-a047b666a61d
+680965 [main] INFO  kkm.UnitTests - Response Code : 200
+680966 [main] INFO  kkm.UnitTests - [DONE]
+680966 [main] INFO  kkm.UnitTests - [DONE]
+680967 [main] INFO  kkm.UnitTests - End test
+
+680970 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_EmailResend()
+781213 [main] INFO  kkm.UnitTests - End test
+
+781221 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_PostCorrectionReceipt()
+781221 [main] INFO  kkm.UnitTests - Swagger done
+781325 [main] INFO  kkm.UnitTests - {"correlationId":"dcabe428-dcf7-4b2e-b8b7-4a16ec808e3a","checkId":"b0e8fc63-b2df-4b45-9785-2465178d4df8"}
+781464 [main] INFO  kkm.UnitTests - [b0e8fc63-b2df-4b45-9785-2465178d4df8]
+781573 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+781574 [main] INFO  kkm.UnitTests - Response Code : 200
+781575 [main] INFO  kkm.UnitTests - [NEW]
+781919 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+781919 [main] INFO  kkm.UnitTests - Response Code : 200
+781920 [main] INFO  kkm.UnitTests - [NEW]
+781982 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+781982 [main] INFO  kkm.UnitTests - Response Code : 200
+781983 [main] INFO  kkm.UnitTests - [NEW]
+782044 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782044 [main] INFO  kkm.UnitTests - Response Code : 200
+782045 [main] INFO  kkm.UnitTests - [NEW]
+782106 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782106 [main] INFO  kkm.UnitTests - Response Code : 200
+782107 [main] INFO  kkm.UnitTests - [NEW]
+782176 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782177 [main] INFO  kkm.UnitTests - Response Code : 200
+782177 [main] INFO  kkm.UnitTests - [NEW]
+782237 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782237 [main] INFO  kkm.UnitTests - Response Code : 200
+782238 [main] INFO  kkm.UnitTests - [NEW]
+782299 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782299 [main] INFO  kkm.UnitTests - Response Code : 200
+782300 [main] INFO  kkm.UnitTests - [NEW]
+782362 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782362 [main] INFO  kkm.UnitTests - Response Code : 200
+782363 [main] INFO  kkm.UnitTests - [NEW]
+782423 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782423 [main] INFO  kkm.UnitTests - Response Code : 200
+782424 [main] INFO  kkm.UnitTests - [NEW]
+782483 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782483 [main] INFO  kkm.UnitTests - Response Code : 200
+782484 [main] INFO  kkm.UnitTests - [NEW]
+782543 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782543 [main] INFO  kkm.UnitTests - Response Code : 200
+782544 [main] INFO  kkm.UnitTests - [NEW]
+782605 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782605 [main] INFO  kkm.UnitTests - Response Code : 200
+782606 [main] INFO  kkm.UnitTests - [NEW]
+782668 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782668 [main] INFO  kkm.UnitTests - Response Code : 200
+782669 [main] INFO  kkm.UnitTests - [NEW]
+782729 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782729 [main] INFO  kkm.UnitTests - Response Code : 200
+782730 [main] INFO  kkm.UnitTests - [NEW]
+782790 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782790 [main] INFO  kkm.UnitTests - Response Code : 200
+782791 [main] INFO  kkm.UnitTests - [NEW]
+782850 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782851 [main] INFO  kkm.UnitTests - Response Code : 200
+782851 [main] INFO  kkm.UnitTests - [NEW]
+782912 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782912 [main] INFO  kkm.UnitTests - Response Code : 200
+782912 [main] INFO  kkm.UnitTests - [NEW]
+782974 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+782974 [main] INFO  kkm.UnitTests - Response Code : 200
+782975 [main] INFO  kkm.UnitTests - [NEW]
+783036 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+783036 [main] INFO  kkm.UnitTests - Response Code : 200
+783036 [main] INFO  kkm.UnitTests - [NEW]
+783099 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+783099 [main] INFO  kkm.UnitTests - Response Code : 200
+783099 [main] INFO  kkm.UnitTests - [NEW]
+783168 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+783168 [main] INFO  kkm.UnitTests - Response Code : 200
+783168 [main] INFO  kkm.UnitTests - [NEW]
+783229 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+783229 [main] INFO  kkm.UnitTests - Response Code : 200
+783230 [main] INFO  kkm.UnitTests - [NEW]
+783291 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+783291 [main] INFO  kkm.UnitTests - Response Code : 200
+783292 [main] INFO  kkm.UnitTests - [DONE]
+783354 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8
+783354 [main] INFO  kkm.UnitTests - Response Code : 200
+783355 [main] INFO  kkm.UnitTests - [DONE]
+783355 [main] INFO  kkm.UnitTests - [DONE]
+783384 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/b0e8fc63-b2df-4b45-9785-2465178d4df8/status
+783384 [main] INFO  kkm.UnitTests - Response Code : 200
+783385 [main] INFO  kkm.UnitTests - [DONE]
+783386 [main] INFO  kkm.UnitTests - End test
+
+783389 [main] INFO  kkm.UnitTests - Starting test: KKM_allPutCheckCorrection()
+783516 [main] INFO  kkm.UnitTests - End test
+
+783521 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_CanceleNotFound()
+783554 [main] INFO  kkm.UnitTests - 
+Sending 'PUT' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/fa23215b-6994-43db-88dd-fa3a1dc0dfb6/cancel
+783554 [main] INFO  kkm.UnitTests - Response Code : 400
+783555 [main] INFO  kkm.UnitTests - {"checkId":"fa23215b-6994-43db-88dd-fa3a1dc0dfb6","error":{"code":"RECEIPT_NOTE_FOUND","message":"Receipt with specified ID not found"}}
+783555 [main] INFO  kkm.UnitTests - End test
+
+783556 [main] INFO  kkm.UnitTests - Starting test: KKM_PutCheckCorrection()
+783632 [main] INFO  kkm.UnitTests - End test
+
+783634 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_putCheckCorrectionNegative()
+783712 [main] INFO  kkm.UnitTests - End test
+
+783714 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getStatusCheckNegative()
+783809 [main] INFO  kkm.UnitTests - End test
+
+783811 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageNotFound()
+783848 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/fa23215b-6994-43db-88dd-fa3a1dc0dfb6/messages/email/EPolikarpova@VSK.RU
+783848 [main] INFO  kkm.UnitTests - Response Code : 400
+783850 [main] INFO  kkm.UnitTests - {"checkId":"fa23215b-6994-43db-88dd-fa3a1dc0dfb6","error":{"code":"RECEIPT_NOTE_FOUND","message":"Receipt with specified ID not found"}}
+783850 [main] INFO  kkm.UnitTests - End test
+
+783852 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_PostCorrectionReceipt_negative()
+783852 [main] INFO  kkm.UnitTests - Swagger done
+783923 [main] INFO  kkm.UnitTests - {"error":{"code":"REQUEST_ERROR","message":"Invalid numeric value: Leading zeroes not allowed\n at [Source: org.apache.cxf.transport.http.AbstractHTTPDestination$1@18a1966a; line: 19, column: 17] (through reference chain: ru.vsk.integration.servicemix.esb.kkm.model.PostCorrectionReceiptRequest[\"correction\"])"}}
+783948 [main] INFO  kkm.UnitTests - [{"code":"REQUEST_ERROR","message":"Invalid numeric value: Leading zeroes not allowed\n at [Source: org.apache.cxf.transport.http.AbstractHTTPDestination$1@18a1966a; line: 19, column: 17] (through reference chain: ru.vsk.integration.servicemix.esb.kkm.model.PostCorrectionReceiptRequest[\"correction\"])"}]
+783948 [main] INFO  kkm.UnitTests - End test
+
+783950 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_EmailResendCheckNotFound()
+884326 [main] INFO  kkm.UnitTests - End test
+
+884333 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getStatus()
+884333 [main] INFO  kkm.UnitTests - Swagger done
+884483 [main] INFO  kkm.UnitTests - {"correlationId":"a0de155c-8269-4af5-85a0-9d73f862ab81","checkId":"a241dea8-197e-4ed7-9824-0a6604c0fa57"}
+884672 [main] INFO  kkm.UnitTests - [a241dea8-197e-4ed7-9824-0a6604c0fa57]
+884788 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+884788 [main] INFO  kkm.UnitTests - Response Code : 200
+884789 [main] INFO  kkm.UnitTests - [NEW]
+885148 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885149 [main] INFO  kkm.UnitTests - Response Code : 200
+885149 [main] INFO  kkm.UnitTests - [NEW]
+885191 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885192 [main] INFO  kkm.UnitTests - Response Code : 200
+885192 [main] INFO  kkm.UnitTests - [NEW]
+885244 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885244 [main] INFO  kkm.UnitTests - Response Code : 200
+885245 [main] INFO  kkm.UnitTests - [NEW]
+885302 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885302 [main] INFO  kkm.UnitTests - Response Code : 200
+885302 [main] INFO  kkm.UnitTests - [NEW]
+885352 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885352 [main] INFO  kkm.UnitTests - Response Code : 200
+885353 [main] INFO  kkm.UnitTests - [NEW]
+885402 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885402 [main] INFO  kkm.UnitTests - Response Code : 200
+885403 [main] INFO  kkm.UnitTests - [NEW]
+885449 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885449 [main] INFO  kkm.UnitTests - Response Code : 200
+885449 [main] INFO  kkm.UnitTests - [NEW]
+885497 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885497 [main] INFO  kkm.UnitTests - Response Code : 200
+885497 [main] INFO  kkm.UnitTests - [NEW]
+885545 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885545 [main] INFO  kkm.UnitTests - Response Code : 200
+885546 [main] INFO  kkm.UnitTests - [NEW]
+885592 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885592 [main] INFO  kkm.UnitTests - Response Code : 200
+885592 [main] INFO  kkm.UnitTests - [NEW]
+885642 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885642 [main] INFO  kkm.UnitTests - Response Code : 200
+885642 [main] INFO  kkm.UnitTests - [NEW]
+885700 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885700 [main] INFO  kkm.UnitTests - Response Code : 200
+885700 [main] INFO  kkm.UnitTests - [NEW]
+885782 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885782 [main] INFO  kkm.UnitTests - Response Code : 200
+885783 [main] INFO  kkm.UnitTests - [NEW]
+885825 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885825 [main] INFO  kkm.UnitTests - Response Code : 200
+885826 [main] INFO  kkm.UnitTests - [NEW]
+885911 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+885911 [main] INFO  kkm.UnitTests - Response Code : 200
+885912 [main] INFO  kkm.UnitTests - [NEW]
+886074 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+886074 [main] INFO  kkm.UnitTests - Response Code : 200
+886075 [main] INFO  kkm.UnitTests - [NEW]
+886208 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+886208 [main] INFO  kkm.UnitTests - Response Code : 200
+886209 [main] INFO  kkm.UnitTests - [NEW]
+886360 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+886360 [main] INFO  kkm.UnitTests - Response Code : 200
+886360 [main] INFO  kkm.UnitTests - [NEW]
+886495 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+886495 [main] INFO  kkm.UnitTests - Response Code : 200
+886496 [main] INFO  kkm.UnitTests - [NEW]
+886622 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+886622 [main] INFO  kkm.UnitTests - Response Code : 200
+886623 [main] INFO  kkm.UnitTests - [DONE]
+886655 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/a241dea8-197e-4ed7-9824-0a6604c0fa57/status
+886655 [main] INFO  kkm.UnitTests - Response Code : 200
+886655 [main] INFO  kkm.UnitTests - [DONE]
+886655 [main] INFO  kkm.UnitTests - Result is: [DONE]
+886656 [main] INFO  kkm.UnitTests - End test
+
+886659 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_WAcheckStatus()
+886659 [main] INFO  kkm.UnitTests - Swagger done
+886751 [main] INFO  kkm.UnitTests - {"correlationId":"c3d70a45-fa82-42a4-9644-58216f7f9ece","checkId":"0154bcfa-f6c9-466e-8038-4fafd784ad57"}
+886786 [main] INFO  kkm.UnitTests - [0154bcfa-f6c9-466e-8038-4fafd784ad57]
+886850 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+886850 [main] INFO  kkm.UnitTests - Response Code : 200
+886851 [main] INFO  kkm.UnitTests - [NEW]
+887201 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887201 [main] INFO  kkm.UnitTests - Response Code : 200
+887202 [main] INFO  kkm.UnitTests - [NEW]
+887264 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887264 [main] INFO  kkm.UnitTests - Response Code : 200
+887265 [main] INFO  kkm.UnitTests - [NEW]
+887327 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887327 [main] INFO  kkm.UnitTests - Response Code : 200
+887328 [main] INFO  kkm.UnitTests - [NEW]
+887390 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887390 [main] INFO  kkm.UnitTests - Response Code : 200
+887391 [main] INFO  kkm.UnitTests - [NEW]
+887450 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887450 [main] INFO  kkm.UnitTests - Response Code : 200
+887451 [main] INFO  kkm.UnitTests - [NEW]
+887514 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887514 [main] INFO  kkm.UnitTests - Response Code : 200
+887515 [main] INFO  kkm.UnitTests - [NEW]
+887575 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887575 [main] INFO  kkm.UnitTests - Response Code : 200
+887576 [main] INFO  kkm.UnitTests - [NEW]
+887636 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887636 [main] INFO  kkm.UnitTests - Response Code : 200
+887636 [main] INFO  kkm.UnitTests - [NEW]
+887695 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887695 [main] INFO  kkm.UnitTests - Response Code : 200
+887696 [main] INFO  kkm.UnitTests - [NEW]
+887756 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887756 [main] INFO  kkm.UnitTests - Response Code : 200
+887757 [main] INFO  kkm.UnitTests - [NEW]
+887817 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887817 [main] INFO  kkm.UnitTests - Response Code : 200
+887817 [main] INFO  kkm.UnitTests - [NEW]
+887877 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887877 [main] INFO  kkm.UnitTests - Response Code : 200
+887878 [main] INFO  kkm.UnitTests - [NEW]
+887938 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887939 [main] INFO  kkm.UnitTests - Response Code : 200
+887939 [main] INFO  kkm.UnitTests - [NEW]
+887999 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+887999 [main] INFO  kkm.UnitTests - Response Code : 200
+887999 [main] INFO  kkm.UnitTests - [NEW]
+888062 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888062 [main] INFO  kkm.UnitTests - Response Code : 200
+888063 [main] INFO  kkm.UnitTests - [NEW]
+888123 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888124 [main] INFO  kkm.UnitTests - Response Code : 200
+888124 [main] INFO  kkm.UnitTests - [NEW]
+888184 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888184 [main] INFO  kkm.UnitTests - Response Code : 200
+888185 [main] INFO  kkm.UnitTests - [NEW]
+888246 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888246 [main] INFO  kkm.UnitTests - Response Code : 200
+888246 [main] INFO  kkm.UnitTests - [NEW]
+888307 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888307 [main] INFO  kkm.UnitTests - Response Code : 200
+888308 [main] INFO  kkm.UnitTests - [NEW]
+888368 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888369 [main] INFO  kkm.UnitTests - Response Code : 200
+888369 [main] INFO  kkm.UnitTests - [NEW]
+888431 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888431 [main] INFO  kkm.UnitTests - Response Code : 200
+888432 [main] INFO  kkm.UnitTests - [NEW]
+888493 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888493 [main] INFO  kkm.UnitTests - Response Code : 200
+888494 [main] INFO  kkm.UnitTests - [NEW]
+888554 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888554 [main] INFO  kkm.UnitTests - Response Code : 200
+888555 [main] INFO  kkm.UnitTests - [NEW]
+888615 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888615 [main] INFO  kkm.UnitTests - Response Code : 200
+888616 [main] INFO  kkm.UnitTests - [NEW]
+888677 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888677 [main] INFO  kkm.UnitTests - Response Code : 200
+888677 [main] INFO  kkm.UnitTests - [NEW]
+888738 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888738 [main] INFO  kkm.UnitTests - Response Code : 200
+888738 [main] INFO  kkm.UnitTests - [DONE]
+888804 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/0154bcfa-f6c9-466e-8038-4fafd784ad57
+888804 [main] INFO  kkm.UnitTests - Response Code : 200
+888804 [main] INFO  kkm.UnitTests - [DONE]
+888804 [main] INFO  kkm.UnitTests - [DONE]
+888805 [main] INFO  kkm.UnitTests - End test
+
+888808 [main] INFO  kkm.UnitTests - Starting test: KKM_PutSipCheckToShFI()
+989204 [main] INFO  kkm.UnitTests - End test
+
+989209 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_CanceledAlredy()
+989209 [main] INFO  kkm.UnitTests - Swagger done
+989471 [main] INFO  kkm.UnitTests - {"correlationId":"d5b3d932-ab37-4ef0-8f43-551885bd3a59","checkId":"c69b0e5a-b05d-4287-a861-07065b4a6cf6"}
+989871 [main] INFO  kkm.UnitTests - [c69b0e5a-b05d-4287-a861-07065b4a6cf6]
+989991 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/c69b0e5a-b05d-4287-a861-07065b4a6cf6
+989991 [main] INFO  kkm.UnitTests - Response Code : 200
+989993 [main] INFO  kkm.UnitTests - [NEW]
+990946 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/c69b0e5a-b05d-4287-a861-07065b4a6cf6
+990946 [main] INFO  kkm.UnitTests - Response Code : 200
+991024 [main] INFO  kkm.UnitTests - [NEW]
+991224 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/c69b0e5a-b05d-4287-a861-07065b4a6cf6
+991224 [main] INFO  kkm.UnitTests - Response Code : 200
+991225 [main] INFO  kkm.UnitTests - [DONE]
+991301 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/c69b0e5a-b05d-4287-a861-07065b4a6cf6
+991302 [main] INFO  kkm.UnitTests - Response Code : 200
+991302 [main] INFO  kkm.UnitTests - [DONE]
+991302 [main] INFO  kkm.UnitTests - [DONE]
+991412 [main] INFO  kkm.UnitTests - 
+Sending 'PUT' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/c69b0e5a-b05d-4287-a861-07065b4a6cf6/cancel
+991412 [main] INFO  kkm.UnitTests - Response Code : 200
+991839 [main] INFO  kkm.UnitTests - 
+Sending 'PUT' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/c69b0e5a-b05d-4287-a861-07065b4a6cf6/cancel
+991840 [main] INFO  kkm.UnitTests - Response Code : 400
+991840 [main] INFO  kkm.UnitTests - {"checkId":"c69b0e5a-b05d-4287-a861-07065b4a6cf6","error":{"code":"CHECK_WAS_CANCELLED","message":"Receipt was already cancelled"}}
+991840 [main] INFO  kkm.UnitTests - End test
+
+991843 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageWasCanceled()
+991843 [main] INFO  kkm.UnitTests - Swagger done
+992189 [main] INFO  kkm.UnitTests - {"correlationId":"a060f0ca-4982-448d-a828-3282ddba511b","checkId":"7666962f-762a-4c19-ad22-40f46abcab17"}
+992265 [main] INFO  kkm.UnitTests - [7666962f-762a-4c19-ad22-40f46abcab17]
+992346 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+992346 [main] INFO  kkm.UnitTests - Response Code : 200
+992347 [main] INFO  kkm.UnitTests - [NEW]
+992764 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+992764 [main] INFO  kkm.UnitTests - Response Code : 200
+992765 [main] INFO  kkm.UnitTests - [NEW]
+992894 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+992895 [main] INFO  kkm.UnitTests - Response Code : 200
+992895 [main] INFO  kkm.UnitTests - [NEW]
+993022 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993022 [main] INFO  kkm.UnitTests - Response Code : 200
+993063 [main] INFO  kkm.UnitTests - [NEW]
+993155 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993155 [main] INFO  kkm.UnitTests - Response Code : 200
+993155 [main] INFO  kkm.UnitTests - [NEW]
+993232 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993232 [main] INFO  kkm.UnitTests - Response Code : 200
+993232 [main] INFO  kkm.UnitTests - [NEW]
+993317 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993318 [main] INFO  kkm.UnitTests - Response Code : 200
+993318 [main] INFO  kkm.UnitTests - [NEW]
+993381 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993381 [main] INFO  kkm.UnitTests - Response Code : 200
+993382 [main] INFO  kkm.UnitTests - [NEW]
+993442 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993442 [main] INFO  kkm.UnitTests - Response Code : 200
+993443 [main] INFO  kkm.UnitTests - [NEW]
+993504 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993504 [main] INFO  kkm.UnitTests - Response Code : 200
+993505 [main] INFO  kkm.UnitTests - [NEW]
+993566 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993566 [main] INFO  kkm.UnitTests - Response Code : 200
+993569 [main] INFO  kkm.UnitTests - [NEW]
+993631 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993632 [main] INFO  kkm.UnitTests - Response Code : 200
+993633 [main] INFO  kkm.UnitTests - [NEW]
+993696 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993696 [main] INFO  kkm.UnitTests - Response Code : 200
+993697 [main] INFO  kkm.UnitTests - [NEW]
+993762 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993762 [main] INFO  kkm.UnitTests - Response Code : 200
+993763 [main] INFO  kkm.UnitTests - [NEW]
+993824 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993824 [main] INFO  kkm.UnitTests - Response Code : 200
+993825 [main] INFO  kkm.UnitTests - [NEW]
+993890 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993890 [main] INFO  kkm.UnitTests - Response Code : 200
+993891 [main] INFO  kkm.UnitTests - [NEW]
+993953 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+993953 [main] INFO  kkm.UnitTests - Response Code : 200
+993954 [main] INFO  kkm.UnitTests - [NEW]
+994018 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994018 [main] INFO  kkm.UnitTests - Response Code : 200
+994018 [main] INFO  kkm.UnitTests - [NEW]
+994080 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994080 [main] INFO  kkm.UnitTests - Response Code : 200
+994081 [main] INFO  kkm.UnitTests - [NEW]
+994143 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994143 [main] INFO  kkm.UnitTests - Response Code : 200
+994144 [main] INFO  kkm.UnitTests - [NEW]
+994207 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994207 [main] INFO  kkm.UnitTests - Response Code : 200
+994207 [main] INFO  kkm.UnitTests - [NEW]
+994319 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994320 [main] INFO  kkm.UnitTests - Response Code : 200
+994320 [main] INFO  kkm.UnitTests - [NEW]
+994386 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994386 [main] INFO  kkm.UnitTests - Response Code : 200
+994396 [main] INFO  kkm.UnitTests - [NEW]
+994458 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994458 [main] INFO  kkm.UnitTests - Response Code : 200
+994458 [main] INFO  kkm.UnitTests - [NEW]
+994520 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994520 [main] INFO  kkm.UnitTests - Response Code : 200
+994520 [main] INFO  kkm.UnitTests - [NEW]
+994586 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994586 [main] INFO  kkm.UnitTests - Response Code : 200
+994589 [main] INFO  kkm.UnitTests - [NEW]
+994653 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994653 [main] INFO  kkm.UnitTests - Response Code : 200
+994655 [main] INFO  kkm.UnitTests - [NEW]
+994728 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994728 [main] INFO  kkm.UnitTests - Response Code : 200
+994729 [main] INFO  kkm.UnitTests - [NEW]
+994792 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994793 [main] INFO  kkm.UnitTests - Response Code : 200
+994793 [main] INFO  kkm.UnitTests - [NEW]
+994858 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994858 [main] INFO  kkm.UnitTests - Response Code : 200
+994859 [main] INFO  kkm.UnitTests - [NEW]
+994923 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994923 [main] INFO  kkm.UnitTests - Response Code : 200
+994924 [main] INFO  kkm.UnitTests - [NEW]
+994989 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+994989 [main] INFO  kkm.UnitTests - Response Code : 200
+994989 [main] INFO  kkm.UnitTests - [NEW]
+995053 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+995053 [main] INFO  kkm.UnitTests - Response Code : 200
+995054 [main] INFO  kkm.UnitTests - [NEW]
+995120 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+995120 [main] INFO  kkm.UnitTests - Response Code : 200
+995121 [main] INFO  kkm.UnitTests - [DONE]
+995184 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17
+995184 [main] INFO  kkm.UnitTests - Response Code : 200
+995185 [main] INFO  kkm.UnitTests - [DONE]
+995185 [main] INFO  kkm.UnitTests - [DONE]
+995242 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17/cancel
+995242 [main] INFO  kkm.UnitTests - Response Code : 200
+995242 [main] INFO  kkm.UnitTests - {"checkId":"7666962f-762a-4c19-ad22-40f46abcab17","canceledCheckId":"65850e82-1705-4422-950c-04906dba8524"}
+995627 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/7666962f-762a-4c19-ad22-40f46abcab17/messages/email/EPolikarpova@VSK.RU
+995627 [main] INFO  kkm.UnitTests - Response Code : 400
+995627 [main] INFO  kkm.UnitTests - {"checkId":"7666962f-762a-4c19-ad22-40f46abcab17","error":{"code":"CHECK_WAS_CANCELLED","message":"Receipt was already cancelled"}}
+995628 [main] INFO  kkm.UnitTests - End test
+

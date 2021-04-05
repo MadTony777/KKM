@@ -1,0 +1,126 @@
+291  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone10()
+403  [main] INFO  kkm.UnitTests - Swagger done
+981  [main] INFO  kkm.UnitTests - {"correlationId":"de9bc74e-4be0-41af-96e5-7eb96adc40c0","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1020 [main] INFO  kkm.UnitTests - []
+72133 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+72133 [main] INFO  kkm.UnitTests - Response Code : 405
+72136 [main] INFO  kkm.UnitTests - End test
+
+72149 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone11()
+72149 [main] INFO  kkm.UnitTests - Swagger done
+72211 [main] INFO  kkm.UnitTests - {"correlationId":"b63d66ac-80f4-44ee-8190-1bf19f26ebb8","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+72245 [main] INFO  kkm.UnitTests - []
+142434 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+142434 [main] INFO  kkm.UnitTests - Response Code : 405
+142435 [main] INFO  kkm.UnitTests - End test
+
+142447 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone12()
+142447 [main] INFO  kkm.UnitTests - Swagger done
+142507 [main] INFO  kkm.UnitTests - {"correlationId":"43244705-0d79-4434-aa9e-3bd3f670401f","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+142678 [main] INFO  kkm.UnitTests - []
+212846 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+212847 [main] INFO  kkm.UnitTests - Response Code : 405
+212847 [main] INFO  kkm.UnitTests - End test
+
+212855 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone13()
+212855 [main] INFO  kkm.UnitTests - Swagger done
+212911 [main] INFO  kkm.UnitTests - {"correlationId":"f484ff77-53a6-4054-bcef-1f803b8f90c9","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+212942 [main] INFO  kkm.UnitTests - []
+283095 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+283096 [main] INFO  kkm.UnitTests - Response Code : 405
+283097 [main] INFO  kkm.UnitTests - End test
+
+283106 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone14()
+283106 [main] INFO  kkm.UnitTests - Swagger done
+283165 [main] INFO  kkm.UnitTests - {"correlationId":"3e128b46-7285-4310-9f9e-4b4a534765db","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+283353 [main] INFO  kkm.UnitTests - []
+353495 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+353496 [main] INFO  kkm.UnitTests - Response Code : 405
+353497 [main] INFO  kkm.UnitTests - End test
+
+353506 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone1()
+353507 [main] INFO  kkm.UnitTests - Swagger done
+353568 [main] INFO  kkm.UnitTests - {"correlationId":"59332ea6-30e0-40f9-8606-dcf4d43381f2","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+353816 [main] INFO  kkm.UnitTests - []
+423953 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+423953 [main] INFO  kkm.UnitTests - Response Code : 405
+423954 [main] INFO  kkm.UnitTests - End test
+
+423956 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone2()
+423956 [main] INFO  kkm.UnitTests - Swagger done
+424045 [main] INFO  kkm.UnitTests - {"correlationId":"fe722526-6c9e-4b36-b486-902e2eff6ecd","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+424222 [main] INFO  kkm.UnitTests - []
+494356 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+494356 [main] INFO  kkm.UnitTests - Response Code : 405
+494357 [main] INFO  kkm.UnitTests - End test
+
+494360 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone3()
+494360 [main] INFO  kkm.UnitTests - Swagger done
+494426 [main] INFO  kkm.UnitTests - {"correlationId":"9a5ea93d-9e6e-4274-a705-5932ab09ddfd","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+494646 [main] INFO  kkm.UnitTests - []
+564808 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+564808 [main] INFO  kkm.UnitTests - Response Code : 405
+564810 [main] INFO  kkm.UnitTests - End test
+
+564817 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone4()
+564818 [main] INFO  kkm.UnitTests - Swagger done
+564894 [main] INFO  kkm.UnitTests - {"correlationId":"78563fcb-75d9-4e17-8910-1dbab67c09f0","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+565126 [main] INFO  kkm.UnitTests - []
+635287 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+635287 [main] INFO  kkm.UnitTests - Response Code : 405
+635288 [main] INFO  kkm.UnitTests - End test
+
+635294 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone5()
+635295 [main] INFO  kkm.UnitTests - Swagger done
+635392 [main] INFO  kkm.UnitTests - {"correlationId":"78ad35e5-8f30-42b5-b1d2-af28cf34d28e","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+635560 [main] INFO  kkm.UnitTests - []
+705867 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+705867 [main] INFO  kkm.UnitTests - Response Code : 405
+705868 [main] INFO  kkm.UnitTests - End test
+
+705873 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone6()
+705874 [main] INFO  kkm.UnitTests - Swagger done
+708081 [main] INFO  kkm.UnitTests - {"correlationId":"385c0ee2-4f96-4ba0-9884-8d520842e0f7","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+708312 [main] INFO  kkm.UnitTests - []
+778430 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+778430 [main] INFO  kkm.UnitTests - Response Code : 405
+778430 [main] INFO  kkm.UnitTests - End test
+
+778432 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone7()
+778432 [main] INFO  kkm.UnitTests - Swagger done
+778486 [main] INFO  kkm.UnitTests - {"correlationId":"0af69ae8-41c3-41cd-9be1-1e36a5bf8911","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+778680 [main] INFO  kkm.UnitTests - []
+848934 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+848934 [main] INFO  kkm.UnitTests - Response Code : 405
+848934 [main] INFO  kkm.UnitTests - End test
+
+848937 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone8()
+848937 [main] INFO  kkm.UnitTests - Swagger done
+848990 [main] INFO  kkm.UnitTests - {"correlationId":"0a606388-e9f7-4c27-9165-1631c253b674","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+849156 [main] INFO  kkm.UnitTests - []
+919279 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+919279 [main] INFO  kkm.UnitTests - Response Code : 405
+919279 [main] INFO  kkm.UnitTests - End test
+
+919281 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone9()
+919281 [main] INFO  kkm.UnitTests - Swagger done
+919335 [main] INFO  kkm.UnitTests - {"correlationId":"b5f2acf9-b5c7-4f63-a31e-74e25854ddd2","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+919512 [main] INFO  kkm.UnitTests - []
+989648 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+989648 [main] INFO  kkm.UnitTests - Response Code : 405
+989648 [main] INFO  kkm.UnitTests - End test
+

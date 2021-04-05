@@ -1,0 +1,29 @@
+{
+  "common": {
+    "system": "SHOP",
+    "messageId": "${MESSAGEID}"
+  },
+  "customer": {
+    "name": "Иванов Иван Иванович",
+    "inn": "7710026574",
+    "email": "test@gmail.com",
+    "attributes": [
+      {
+        "name": "Some Additional Attribute",
+        "value": "string"
+      }
+    ]
+  },
+  "positions": [
+    {
+      "name": "Страховая премия № ХХХХХХХХХХХХХ",
+      "price": 1000.25,
+      "quantity": 2,
+      "tax": "VAT20"
+    }
+  ],
+  "payment": {
+    "amount": 2000.50,
+    "type": "INCOME"
+  }
+}

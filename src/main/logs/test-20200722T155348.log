@@ -1,0 +1,240 @@
+212  [main] INFO  kkm.UnitTests - Starting test: KKM_makeCheckNoCashier()
+3440 [main] INFO  kkm.UnitTests - End test
+
+3455 [main] INFO  kkm.UnitTests - Starting test: KKM_DB2()
+3882 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM ProcessStatus Where fiscGateCheckStatusCode = 'DONE'
+3888 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898541
+3890 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898541
+4386 [main] INFO  kkm.UnitTests - update alertPeriod set finishTime = '00:00:00' where FilialCode = '--filialCode--'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '--filialCode--'
+update customer set Phone = '70000000000' where srcID = 'ЖПлато_000898541'
+update customer set email = '' where srcId = 'ЖПлато_000898541'
+update processStatus set fiscGateCheckStatusCode = null where srcID = 'ЖПлато_000898541'
+select * from processStatus where srcID = 'ЖПлато_000898541'
+4386 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, null, nothing, ЖПлато_000898541]
+4388 [main] INFO  kkm.UnitTests - Status is: [AXAPTA, PaymentOrder, null, nothing, ЖПлато_000898541]
+64633 [main] INFO  kkm.UnitTests - select * from ProcessStatus where srcID = 'ЖПлато_000898541'
+64633 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, SENDED, nothing, ЖПлато_000898541]
+124720 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-stage-2020.07.22/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20AND%20%22ЖПлато_000898541%22%20&size=500
+124904 [main] INFO  kkm.UnitTests - Response message : {"took":83,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":4,"relation":"eq"},"max_score":10.920303,"hits":[{"_index":"kkm-commutator-stage-2020.07.22","_type":"_doc","_id":"Gg_wdHMBfrYj4vM9q1ci","_score":10.920303,"_source":{"@timestamp":"2020-07-22T05:13:09.278Z","stream":"stdout","log":{"file":{"path":"/var/lib/docker/containers/dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443/dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443-json.log"},"offset":63480},"input":{"type":"container"},"docker":{"container":{"labels":{"Description":"KKM Commutator Service","Version":"97","com_docker_swarm_service_name":"kkm-commutator_service","com_docker_swarm_node_id":"ygqa2daq7eosrz5hy95q8qotd","com_docker_swarm_task":"","com_docker_stack_namespace":"kkm-commutator","com_docker_swarm_service_id":"vzf1p3l7jfjimzgsk4k4shq6n","com_docker_swarm_task_id":"tvklcn7vfeoqq3fd07v60ht9c","com_docker_swarm_task_name":"kkm-commutator_service.1.tvklcn7vfeoqq3fd07v60ht9c"}}},"agent":{"ephemeral_id":"d557a4cf-a231-4f25-a77d-53dd56bac792","hostname":"25805977eece","id":"b42b3136-a942-47e4-a9fc-eaddc4fbe876","version":"7.3.1","type":"filebeat"},"message":"{\"ts\":\"2020-07-22T05:13:09.278+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"91fabd25467f58e3\",\"spanId\":\"91fabd25467f58e3\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"91fabd25467f58e3\",\"X-B3-TraceId\":\"91fabd25467f58e3\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"AXAPTA\",\"entityCode\":\"PaymentOrder\",\"srcID\":\"ЖПлато_000898541\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}","container":{"image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"},"id":"dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443","name":"kkm-commutator_service.1.tvklcn7vfeoqq3fd07v60ht9c"},"ecs":{"version":"1.0.1"},"host":{"name":"25805977eece"}}},{"_index":"kkm-commutator-stage-2020.07.22","_type":"_doc","_id":"Vj-DdXMBfrYj4vM9I42A","_score":10.920303,"_source":{"@timestamp":"2020-07-22T07:53:09.043Z","stream":"stdout","input":{"type":"container"},"docker":{"container":{"labels":{"Description":"KKM Commutator Service","Version":"97","com_docker_swarm_service_name":"kkm-commutator_service","com_docker_swarm_task":"","com_docker_stack_namespace":"kkm-commutator","com_docker_swarm_service_id":"vzf1p3l7jfjimzgsk4k4shq6n","com_docker_swarm_task_id":"tvklcn7vfeoqq3fd07v60ht9c","com_docker_swarm_task_name":"kkm-commutator_service.1.tvklcn7vfeoqq3fd07v60ht9c","com_docker_swarm_node_id":"ygqa2daq7eosrz5hy95q8qotd"}}},"host":{"name":"25805977eece"},"log":{"offset":7052988,"file":{"path":"/var/lib/docker/containers/dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443/dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443-json.log"}},"message":"{\"ts\":\"2020-07-22T07:53:09.043+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"6c75b633d9eebd04\",\"spanId\":\"6c75b633d9eebd04\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"6c75b633d9eebd04\",\"X-B3-TraceId\":\"6c75b633d9eebd04\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"AXAPTA\",\"entityCode\":\"PaymentOrder\",\"srcID\":\"ЖПлато_000898541\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}","container":{"id":"dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443","name":"kkm-commutator_service.1.tvklcn7vfeoqq3fd07v60ht9c","image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"}},"ecs":{"version":"1.0.1"},"agent":{"ephemeral_id":"d557a4cf-a231-4f25-a77d-53dd56bac792","hostname":"25805977eece","id":"b42b3136-a942-47e4-a9fc-eaddc4fbe876","version":"7.3.1","type":"filebeat"}}},{"_index":"kkm-commutator-stage-2020.07.22","_type":"_doc","_id":"KYdNdnMBfrYj4vM9d-02","_score":10.920303,"_source":{"@timestamp":"2020-07-22T11:34:09.116Z","stream":"stdout","input":{"type":"container"},"docker":{"container":{"labels":{"com_docker_swarm_node_id":"ygqa2daq7eosrz5hy95q8qotd","com_docker_swarm_task_id":"eqt37is64rgqgyp486kpbqida","com_docker_swarm_service_id":"vzf1p3l7jfjimzgsk4k4shq6n","com_docker_swarm_service_name":"kkm-commutator_service","Description":"KKM Commutator Service","Version":"97","com_docker_stack_namespace":"kkm-commutator","com_docker_swarm_task":"","com_docker_swarm_task_name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida"}}},"container":{"id":"8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3","name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida","image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"}},"host":{"name":"25805977eece"},"agent":{"id":"b42b3136-a942-47e4-a9fc-eaddc4fbe876","version":"7.3.1","type":"filebeat","ephemeral_id":"d557a4cf-a231-4f25-a77d-53dd56bac792","hostname":"25805977eece"},"log":{"offset":6815674,"file":{"path":"/var/lib/docker/containers/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3-json.log"}},"ecs":{"version":"1.0.1"},"message":"{\"ts\":\"2020-07-22T11:34:09.116+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"f15cf81aa0729222\",\"spanId\":\"f15cf81aa0729222\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"f15cf81aa0729222\",\"X-B3-TraceId\":\"f15cf81aa0729222\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"AXAPTA\",\"entityCode\":\"PaymentOrder\",\"srcID\":\"ЖПлато_000898541\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}"}},{"_index":"kkm-commutator-stage-2020.07.22","_type":"_doc","_id":"949fdnMBfrYj4vM9y-wZ","_score":10.920303,"_source":{"@timestamp":"2020-07-22T11:54:09.049Z","container":{"id":"8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3","name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida","image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"}},"docker":{"container":{"labels":{"com_docker_swarm_task":"","com_docker_swarm_task_name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida","com_docker_stack_namespace":"kkm-commutator","com_docker_swarm_service_name":"kkm-commutator_service","Description":"KKM Commutator Service","Version":"97","com_docker_swarm_node_id":"ygqa2daq7eosrz5hy95q8qotd","com_docker_swarm_task_id":"eqt37is64rgqgyp486kpbqida","com_docker_swarm_service_id":"vzf1p3l7jfjimzgsk4k4shq6n"}}},"ecs":{"version":"1.0.1"},"host":{"name":"25805977eece"},"log":{"file":{"path":"/var/lib/docker/containers/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3-json.log"},"offset":7801404},"stream":"stdout","message":"{\"ts\":\"2020-07-22T11:54:09.048+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"312cf8bae0b12625\",\"spanId\":\"312cf8bae0b12625\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"312cf8bae0b12625\",\"X-B3-TraceId\":\"312cf8bae0b12625\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"AXAPTA\",\"entityCode\":\"PaymentOrder\",\"srcID\":\"ЖПлато_000898541\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}","input":{"type":"container"},"agent":{"hostname":"25805977eece","id":"b42b3136-a942-47e4-a9fc-eaddc4fbe876","version":"7.3.1","type":"filebeat","ephemeral_id":"d557a4cf-a231-4f25-a77d-53dd56bac792"}}}]}}
+124905 [main] INFO  kkm.UnitTests - End test
+
+124910 [main] INFO  kkm.UnitTests - Starting test: KKM_DB7()
+125037 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-3J7p9pYEDOah', '2135954233', '2019-07-12 00:00:00.000', '7725327863', '0067');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-3J7p9pYEDOah','Фамилия Имя Отчество', '7725327863', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-3J7p9pYEDOah', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-3J7p9pYEDOah', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-3J7p9pYEDOah'
+
+
+update alertPeriod set finishTime = '00.00.00' where FilialCode = '0067'
+
+update alertPeriod set startTime = '00.00.00' where FilialCode = '0067'
+
+update fiscalCheck set filialCode = '0067' where srcId = '9SD0C9DZ-9289-4A09-3J7p9pYEDOah'
+
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-3J7p9pYEDOah'
+245528 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-3J7p9pYEDOah'
+245528 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-3J7p9pYEDOah, null]
+245529 [main] INFO  kkm.UnitTests - null
+245529 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+245529 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+245624 [main] INFO  kkm.UnitTests - End test
+
+245644 [main] INFO  kkm.UnitTests - Starting test: KKM_DB8()
+245783 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-9uIBInsxRSwZ', '0333879012', '2019-07-12 00:00:00.000', '7710026574', 'NOFILIAL');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-9uIBInsxRSwZ','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-9uIBInsxRSwZ', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-9uIBInsxRSwZ', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-9uIBInsxRSwZ'
+
+
+update alertPeriod set finishTime = '00.00.00' where FilialCode = 'NOFILIAL'
+
+update alertPeriod set startTime = '00.00.00' where FilialCode = 'NOFILIAL'
+
+update fiscalCheck set filialCode = 'NOFILIAL' where srcId = '9SD0C9DZ-9289-4A09-9uIBInsxRSwZ'
+
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-9uIBInsxRSwZ'
+366167 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-9uIBInsxRSwZ'
+366168 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, DONE, , , 9SD0C9DZ-9289-4A09-9uIBInsxRSwZ, ed797734-e468-43f0-97b2-1d266da4ea0e]
+366169 [main] INFO  kkm.UnitTests - DONE
+366169 [main] INFO  kkm.UnitTests - fiscGateErrorCode: 
+366169 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: 
+366277 [main] INFO  kkm.UnitTests - End test
+
+366285 [main] INFO  kkm.UnitTests - Starting test: KKM_DB4()
+366426 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-74NjoSHfDds8', '4392119929', '2019-07-12 00:00:00.000', '7725327863', '0067');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-74NjoSHfDds8','Фамилия Имя Отчество', '7725327863', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-74NjoSHfDds8', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-74NjoSHfDds8', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-74NjoSHfDds8'
+
+
+update alertPeriod set finishTime = '23.59.59' where FilialCode = '0067'
+
+update alertPeriod set startTime = '00.00.00' where FilialCode = '0067'
+
+update fiscalCheck set filialCode = '0067' where srcId = '9SD0C9DZ-9289-4A09-74NjoSHfDds8'
+
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-74NjoSHfDds8'
+487232 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-74NjoSHfDds8'
+487232 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-74NjoSHfDds8, null]
+487233 [main] INFO  kkm.UnitTests - null
+487233 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+487233 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+487311 [main] INFO  kkm.UnitTests - End test
+
+487319 [main] INFO  kkm.UnitTests - Starting test: KKM_DB6()
+487442 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-8OO5sVD2YLKk', '0069662583', '2019-07-12 00:00:00.000', '7710026574', '0031');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-8OO5sVD2YLKk','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-8OO5sVD2YLKk', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-8OO5sVD2YLKk', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-8OO5sVD2YLKk'
+
+
+update alertPeriod set finishTime = '00.00.00' where FilialCode = '0031'
+
+update alertPeriod set startTime = '00.00.00' where FilialCode = '0031'
+
+update fiscalCheck set filialCode = '0031' where srcId = '9SD0C9DZ-9289-4A09-8OO5sVD2YLKk'
+
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-8OO5sVD2YLKk'
+608326 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-8OO5sVD2YLKk'
+608327 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-8OO5sVD2YLKk, null]
+608332 [main] INFO  kkm.UnitTests - null
+608333 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+608333 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+608394 [main] INFO  kkm.UnitTests - End test
+
+608397 [main] INFO  kkm.UnitTests - Starting test: KKM_DB1()
+608559 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM ProcessStatus Where fiscGateCheckStatusCode = 'ERROR'
+608559 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898622
+608561 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898622
+608964 [main] INFO  kkm.UnitTests - update dbo.Customer set inn = '1' where srcID = 'ЖПлато_000898622'
+update ProcessStatus set fiscGateCheckStatusCode = null where srcID = 'ЖПлато_000898622'
+select * from ProcessStatus where srcID = 'ЖПлато_000898622'
+608965 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000898622]
+608968 [main] INFO  kkm.UnitTests - Status is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000898622]
+669194 [main] INFO  kkm.UnitTests - select * from ProcessStatus where srcID = 'ЖПлато_000898622'
+669194 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, ERROR, VALIDATION_ERROR, ЖПлато_000898622]
+729201 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-stage-2020.07.22/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20AND%20%22ЖПлато_000898622%22%20&size=500
+729433 [main] INFO  kkm.UnitTests - Response message : {"took":149,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":4,"relation":"eq"},"max_score":11.769971,"hits":[{"_index":"kkm-commutator-stage-2020.07.22","_type":"_doc","_id":"ow7udHMBfrYj4vM90X9-","_score":11.769971,"_source":{"@timestamp":"2020-07-22T05:11:09.198Z","stream":"stdout","message":"{\"ts\":\"2020-07-22T05:11:09.198+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"4c187ff72fe35b8d\",\"spanId\":\"4c187ff72fe35b8d\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"4c187ff72fe35b8d\",\"X-B3-TraceId\":\"4c187ff72fe35b8d\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"AXAPTA\",\"entityCode\":\"PaymentOrder\",\"srcID\":\"ЖПлато_000898622\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}","container":{"id":"dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443","name":"kkm-commutator_service.1.tvklcn7vfeoqq3fd07v60ht9c","image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"}},"docker":{"container":{"labels":{"Version":"97","com_docker_swarm_service_name":"kkm-commutator_service","Description":"KKM Commutator Service","com_docker_swarm_service_id":"vzf1p3l7jfjimzgsk4k4shq6n","com_docker_swarm_task_id":"tvklcn7vfeoqq3fd07v60ht9c","com_docker_swarm_task_name":"kkm-commutator_service.1.tvklcn7vfeoqq3fd07v60ht9c","com_docker_swarm_node_id":"ygqa2daq7eosrz5hy95q8qotd","com_docker_swarm_task":"","com_docker_stack_namespace":"kkm-commutator"}}},"ecs":{"version":"1.0.1"},"host":{"name":"25805977eece"},"agent":{"ephemeral_id":"d557a4cf-a231-4f25-a77d-53dd56bac792","hostname":"25805977eece","id":"b42b3136-a942-47e4-a9fc-eaddc4fbe876","version":"7.3.1","type":"filebeat"},"log":{"offset":49960950,"file":{"path":"/var/lib/docker/containers/dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443/dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443-json.log"}},"input":{"type":"container"}}},{"_index":"kkm-commutator-stage-2020.07.22","_type":"_doc","_id":"HD-BdXMBfrYj4vM9SgvL","_score":11.769971,"_source":{"@timestamp":"2020-07-22T07:51:09.105Z","stream":"stdout","docker":{"container":{"labels":{"Description":"KKM Commutator Service","Version":"97","com_docker_swarm_service_name":"kkm-commutator_service","com_docker_stack_namespace":"kkm-commutator","com_docker_swarm_service_id":"vzf1p3l7jfjimzgsk4k4shq6n","com_docker_swarm_task_id":"tvklcn7vfeoqq3fd07v60ht9c","com_docker_swarm_task_name":"kkm-commutator_service.1.tvklcn7vfeoqq3fd07v60ht9c","com_docker_swarm_node_id":"ygqa2daq7eosrz5hy95q8qotd","com_docker_swarm_task":""}}},"ecs":{"version":"1.0.1"},"message":"{\"ts\":\"2020-07-22T07:51:09.105+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"e66978000b1e450d\",\"spanId\":\"e66978000b1e450d\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"e66978000b1e450d\",\"X-B3-TraceId\":\"e66978000b1e450d\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"AXAPTA\",\"entityCode\":\"PaymentOrder\",\"srcID\":\"ЖПлато_000898622\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}","log":{"file":{"path":"/var/lib/docker/containers/dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443/dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443-json.log"},"offset":6950268},"input":{"type":"container"},"container":{"id":"dd2324c1d9ff4016c6c1a83b8bb94f9d633dae0561e1fd1f2b47a7302fa22443","name":"kkm-commutator_service.1.tvklcn7vfeoqq3fd07v60ht9c","image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"}},"host":{"name":"25805977eece"},"agent":{"ephemeral_id":"d557a4cf-a231-4f25-a77d-53dd56bac792","hostname":"25805977eece","id":"b42b3136-a942-47e4-a9fc-eaddc4fbe876","version":"7.3.1","type":"filebeat"}}},{"_index":"kkm-commutator-stage-2020.07.22","_type":"_doc","_id":"Wo1WdnMBfrYj4vM9nyw1","_score":11.769971,"_source":{"@timestamp":"2020-07-22T11:44:09.051Z","stream":"stdout","message":"{\"ts\":\"2020-07-22T11:44:09.050+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"08e262f830b5ce5b\",\"spanId\":\"08e262f830b5ce5b\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"08e262f830b5ce5b\",\"X-B3-TraceId\":\"08e262f830b5ce5b\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"AXAPTA\",\"entityCode\":\"PaymentOrder\",\"srcID\":\"ЖПлато_000898622\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}","container":{"image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"},"id":"8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3","name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida"},"docker":{"container":{"labels":{"com_docker_stack_namespace":"kkm-commutator","com_docker_swarm_task":"","com_docker_swarm_task_name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida","com_docker_swarm_service_id":"vzf1p3l7jfjimzgsk4k4shq6n","com_docker_swarm_service_name":"kkm-commutator_service","Description":"KKM Commutator Service","Version":"97","com_docker_swarm_node_id":"ygqa2daq7eosrz5hy95q8qotd","com_docker_swarm_task_id":"eqt37is64rgqgyp486kpbqida"}}},"agent":{"ephemeral_id":"d557a4cf-a231-4f25-a77d-53dd56bac792","hostname":"25805977eece","id":"b42b3136-a942-47e4-a9fc-eaddc4fbe876","version":"7.3.1","type":"filebeat"},"log":{"offset":7341380,"file":{"path":"/var/lib/docker/containers/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3-json.log"}},"input":{"type":"container"},"ecs":{"version":"1.0.1"},"host":{"name":"25805977eece"}}},{"_index":"kkm-commutator-stage-2020.07.22","_type":"_doc","_id":"7ZJodnMBfrYj4vM980Mw","_score":11.769971,"_source":{"@timestamp":"2020-07-22T12:04:09.127Z","agent":{"ephemeral_id":"d557a4cf-a231-4f25-a77d-53dd56bac792","hostname":"25805977eece","id":"b42b3136-a942-47e4-a9fc-eaddc4fbe876","version":"7.3.1","type":"filebeat"},"log":{"offset":8270634,"file":{"path":"/var/lib/docker/containers/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3-json.log"}},"host":{"name":"25805977eece"},"input":{"type":"container"},"container":{"name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida","image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"},"id":"8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3"},"docker":{"container":{"labels":{"com_docker_swarm_node_id":"ygqa2daq7eosrz5hy95q8qotd","com_docker_swarm_task_id":"eqt37is64rgqgyp486kpbqida","com_docker_swarm_service_id":"vzf1p3l7jfjimzgsk4k4shq6n","com_docker_swarm_service_name":"kkm-commutator_service","Description":"KKM Commutator Service","Version":"97","com_docker_stack_namespace":"kkm-commutator","com_docker_swarm_task":"","com_docker_swarm_task_name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida"}}},"ecs":{"version":"1.0.1"},"stream":"stdout","message":"{\"ts\":\"2020-07-22T12:04:09.126+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"04c12b3fb59a0b8f\",\"spanId\":\"04c12b3fb59a0b8f\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"04c12b3fb59a0b8f\",\"X-B3-TraceId\":\"04c12b3fb59a0b8f\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"AXAPTA\",\"entityCode\":\"PaymentOrder\",\"srcID\":\"ЖПлато_000898622\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}"}}]}}
+729435 [main] INFO  kkm.UnitTests - End test
+
+729439 [main] INFO  kkm.UnitTests - Starting test: KKM_DB3()
+729628 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-lqtdSnZ5Mn91', '8159199547', '2019-07-12 00:00:00.000', '7710026574', '0031');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-lqtdSnZ5Mn91','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-lqtdSnZ5Mn91', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-lqtdSnZ5Mn91', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-lqtdSnZ5Mn91'
+
+
+update alertPeriod set finishTime = '23.59.59' where FilialCode = '0031'
+
+update alertPeriod set startTime = '00.00.00' where FilialCode = '0031'
+
+update fiscalCheck set filialCode = '0031' where srcId = '9SD0C9DZ-9289-4A09-lqtdSnZ5Mn91'
+
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-lqtdSnZ5Mn91'
+850154 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-lqtdSnZ5Mn91'
+850155 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-lqtdSnZ5Mn91, null]
+850158 [main] INFO  kkm.UnitTests - null
+850158 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+850159 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+850249 [main] INFO  kkm.UnitTests - End test
+
+850256 [main] INFO  kkm.UnitTests - Starting test: KKM_DB5()
+850385 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-XtdL7df97vYG', '4462912051', '2019-07-12 00:00:00.000', '7710026574', 'NOFILIAL');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-XtdL7df97vYG','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-XtdL7df97vYG', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-XtdL7df97vYG', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-XtdL7df97vYG'
+
+
+update alertPeriod set finishTime = '23.59.59' where FilialCode = 'NOFILIAL'
+
+update alertPeriod set startTime = '00.00.00' where FilialCode = 'NOFILIAL'
+
+update fiscalCheck set filialCode = 'NOFILIAL' where srcId = '9SD0C9DZ-9289-4A09-XtdL7df97vYG'
+
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-XtdL7df97vYG'
+970743 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-XtdL7df97vYG'
+970743 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, DONE, , , 9SD0C9DZ-9289-4A09-XtdL7df97vYG, 60eaa5ed-ecfe-4820-959d-b55d6cda0c4f]
+970744 [main] INFO  kkm.UnitTests - DONE
+970745 [main] INFO  kkm.UnitTests - fiscGateErrorCode: 
+970745 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: 
+970933 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-stage-2020.07.22/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20AND%20%229SD0C9DZ-9289-4A09-XtdL7df97vYG%22%20&size=500
+971026 [main] INFO  kkm.UnitTests - Response message : {"took":39,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":27.734793,"hits":[{"_index":"kkm-commutator-stage-2020.07.22","_type":"_doc","_id":"kJNsdnMBfrYj4vM9nBO7","_score":27.734793,"_source":{"@timestamp":"2020-07-22T12:08:09.013Z","message":"{\"ts\":\"2020-07-22T12:08:09.013+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"18478389a9c7f4b6\",\"spanId\":\"18478389a9c7f4b6\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"18478389a9c7f4b6\",\"X-B3-TraceId\":\"18478389a9c7f4b6\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"ADINSURE\",\"entityCode\":\"Payment\",\"srcID\":\"9SD0C9DZ-9289-4A09-XtdL7df97vYG\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}","ecs":{"version":"1.0.1"},"host":{"name":"25805977eece"},"docker":{"container":{"labels":{"com_docker_swarm_node_id":"ygqa2daq7eosrz5hy95q8qotd","com_docker_swarm_task_id":"eqt37is64rgqgyp486kpbqida","com_docker_swarm_service_id":"vzf1p3l7jfjimzgsk4k4shq6n","com_docker_swarm_service_name":"kkm-commutator_service","Description":"KKM Commutator Service","Version":"97","com_docker_stack_namespace":"kkm-commutator","com_docker_swarm_task":"","com_docker_swarm_task_name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida"}}},"container":{"id":"8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3","name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida","image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"}},"agent":{"version":"7.3.1","type":"filebeat","ephemeral_id":"d557a4cf-a231-4f25-a77d-53dd56bac792","hostname":"25805977eece","id":"b42b3136-a942-47e4-a9fc-eaddc4fbe876"},"log":{"file":{"path":"/var/lib/docker/containers/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3-json.log"},"offset":8454370},"stream":"stdout","input":{"type":"container"}}}]}}
+971026 [main] INFO  kkm.UnitTests - Finally{"took":39,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":27.734793,"hits":[{"_index":"kkm-commutator-stage-2020.07.22","_type":"_doc","_id":"kJNsdnMBfrYj4vM9nBO7","_score":27.734793,"_source":{"@timestamp":"2020-07-22T12:08:09.013Z","message":"{\"ts\":\"2020-07-22T12:08:09.013+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"18478389a9c7f4b6\",\"spanId\":\"18478389a9c7f4b6\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"18478389a9c7f4b6\",\"X-B3-TraceId\":\"18478389a9c7f4b6\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"ADINSURE\",\"entityCode\":\"Payment\",\"srcID\":\"9SD0C9DZ-9289-4A09-XtdL7df97vYG\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}","ecs":{"version":"1.0.1"},"host":{"name":"25805977eece"},"docker":{"container":{"labels":{"com_docker_swarm_node_id":"ygqa2daq7eosrz5hy95q8qotd","com_docker_swarm_task_id":"eqt37is64rgqgyp486kpbqida","com_docker_swarm_service_id":"vzf1p3l7jfjimzgsk4k4shq6n","com_docker_swarm_service_name":"kkm-commutator_service","Description":"KKM Commutator Service","Version":"97","com_docker_stack_namespace":"kkm-commutator","com_docker_swarm_task":"","com_docker_swarm_task_name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida"}}},"container":{"id":"8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3","name":"kkm-commutator_service.1.eqt37is64rgqgyp486kpbqida","image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"}},"agent":{"version":"7.3.1","type":"filebeat","ephemeral_id":"d557a4cf-a231-4f25-a77d-53dd56bac792","hostname":"25805977eece","id":"b42b3136-a942-47e4-a9fc-eaddc4fbe876"},"log":{"file":{"path":"/var/lib/docker/containers/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3/8acdbd0e1f6da341879ba61aee84362cfeb386a81e0889176ea90009cea717a3-json.log"},"offset":8454370},"stream":"stdout","input":{"type":"container"}}}]}}
+971161 [main] INFO  kkm.UnitTests - Script is: update alertPeriod set finishTime = '--18:59:59--' where FilialCode = 'NOFILIAL'
+
+971315 [main] INFO  kkm.UnitTests - Script is: update alertPeriod set startTime = '--09:00:00--' where FilialCode = 'NOFILIAL'
+971339 [main] INFO  kkm.UnitTests - End test
+

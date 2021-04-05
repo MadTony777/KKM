@@ -1,0 +1,24 @@
+197  [main] INFO  kkm.UnitTests - Starting test: KKM_makeCheckNoCashier()
+792  [main] INFO  kkm.UnitTests - End test
+
+800  [main] INFO  kkm.UnitTests - Starting test: KKM_SendMessageEmail()
+882  [main] INFO  kkm.UnitTests - End test
+
+884  [main] INFO  kkm.UnitTests - Starting test: KKM_WAcheckStatus()
+966  [main] INFO  kkm.UnitTests - End test
+
+968  [main] INFO  kkm.UnitTests - Starting test: KKM_getStatus()
+1049 [main] INFO  kkm.UnitTests - End test
+
+1051 [main] INFO  kkm.UnitTests - Starting test: KKM_getDocCustomer()
+1130 [main] INFO  kkm.UnitTests - End test
+
+1136 [main] INFO  kkm.UnitTests - Starting test: KKM_makeCheckCashier()
+1210 [main] INFO  kkm.UnitTests - End test
+
+1212 [main] INFO  kkm.UnitTests - Starting test: KKM_DB1()
+1693 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM ProcessStatus Where fiscGateCheckStatusCode = 'ERROR'
+1700 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898622
+1702 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898622
+2216 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000898622]
+2217 [main] INFO  kkm.UnitTests - Status is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000898622]

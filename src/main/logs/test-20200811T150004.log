@@ -1,0 +1,112 @@
+183  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone10()
+290  [main] INFO  kkm.UnitTests - Swagger done
+767  [main] INFO  kkm.UnitTests - {"correlationId":"fd83be21-b600-4be0-9763-b2abb5fb95b4","checkId":"69143e56-e841-4399-a0e2-a8b911c62c12"}
+853  [main] INFO  kkm.UnitTests - [69143e56-e841-4399-a0e2-a8b911c62c12]
+893  [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=fd83be21-b600-4be0-9763-b2abb5fb95b4%22%20
+1500 [main] INFO  kkm.UnitTests - Response message : {"took":513,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+1517 [main] INFO  kkm.UnitTests - End test
+
+1533 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone11()
+1533 [main] INFO  kkm.UnitTests - Swagger done
+1630 [main] INFO  kkm.UnitTests - {"correlationId":"5775532e-95f6-49be-893d-7dcf65475f37","checkId":"e7502e1b-b80b-4fc5-8268-d40b8cc3a356"}
+1673 [main] INFO  kkm.UnitTests - [e7502e1b-b80b-4fc5-8268-d40b8cc3a356]
+1676 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=5775532e-95f6-49be-893d-7dcf65475f37%22%20
+1732 [main] INFO  kkm.UnitTests - Response message : {"took":2,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+1732 [main] INFO  kkm.UnitTests - End test
+
+1736 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone12()
+1736 [main] INFO  kkm.UnitTests - Swagger done
+1836 [main] INFO  kkm.UnitTests - {"correlationId":"3f7abeba-eea8-4a83-8b89-e282ec598fa7","checkId":"5b6cf69a-dd0b-41a0-91dc-6ecc260766a1"}
+1909 [main] INFO  kkm.UnitTests - [5b6cf69a-dd0b-41a0-91dc-6ecc260766a1]
+1910 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=3f7abeba-eea8-4a83-8b89-e282ec598fa7%22%20
+1961 [main] INFO  kkm.UnitTests - Response message : {"took":2,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+1962 [main] INFO  kkm.UnitTests - End test
+
+1967 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone13()
+1968 [main] INFO  kkm.UnitTests - Swagger done
+2070 [main] INFO  kkm.UnitTests - {"correlationId":"369758ce-19e3-46de-89e9-a3583b48036b","checkId":"4c887778-b13d-4ca8-a998-11f374b6691e"}
+2227 [main] INFO  kkm.UnitTests - [4c887778-b13d-4ca8-a998-11f374b6691e]
+2229 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=369758ce-19e3-46de-89e9-a3583b48036b%22%20
+2284 [main] INFO  kkm.UnitTests - Response message : {"took":7,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+2285 [main] INFO  kkm.UnitTests - End test
+
+2289 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone14()
+2289 [main] INFO  kkm.UnitTests - Swagger done
+2389 [main] INFO  kkm.UnitTests - {"correlationId":"6252c7cb-0b55-4a58-80c4-b58c4febeb5f","checkId":"3cec3e35-c665-4a2d-8430-51082128061c"}
+2431 [main] INFO  kkm.UnitTests - [3cec3e35-c665-4a2d-8430-51082128061c]
+2435 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=6252c7cb-0b55-4a58-80c4-b58c4febeb5f%22%20
+2784 [main] INFO  kkm.UnitTests - Response message : {"took":2,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+2785 [main] INFO  kkm.UnitTests - End test
+
+2792 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone1()
+2793 [main] INFO  kkm.UnitTests - Swagger done
+2902 [main] INFO  kkm.UnitTests - {"correlationId":"2c1613da-409d-42c1-be57-4fd48e2ebdca","checkId":"6473982d-a7cb-4b54-9629-5bedd846d0c8"}
+2957 [main] INFO  kkm.UnitTests - [6473982d-a7cb-4b54-9629-5bedd846d0c8]
+2960 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=2c1613da-409d-42c1-be57-4fd48e2ebdca%22%20
+3012 [main] INFO  kkm.UnitTests - Response message : {"took":2,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+3012 [main] INFO  kkm.UnitTests - End test
+
+3014 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone2()
+3015 [main] INFO  kkm.UnitTests - Swagger done
+3114 [main] INFO  kkm.UnitTests - {"correlationId":"10325bee-ac2c-418e-b996-7eb4c34dc115","checkId":"4ad4e884-4f42-47e3-b8c8-5dd9d5a32685"}
+3154 [main] INFO  kkm.UnitTests - [4ad4e884-4f42-47e3-b8c8-5dd9d5a32685]
+3155 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=10325bee-ac2c-418e-b996-7eb4c34dc115%22%20
+3208 [main] INFO  kkm.UnitTests - Response message : {"took":2,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+3209 [main] INFO  kkm.UnitTests - End test
+
+3217 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone3()
+3218 [main] INFO  kkm.UnitTests - Swagger done
+3320 [main] INFO  kkm.UnitTests - {"correlationId":"472b6fb8-5792-47ab-8efb-8d580804b142","checkId":"f58634d0-c3bd-4dd0-b1d0-9dfbbc5b5694"}
+3369 [main] INFO  kkm.UnitTests - [f58634d0-c3bd-4dd0-b1d0-9dfbbc5b5694]
+3373 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=472b6fb8-5792-47ab-8efb-8d580804b142%22%20
+3425 [main] INFO  kkm.UnitTests - Response message : {"took":2,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+3426 [main] INFO  kkm.UnitTests - End test
+
+3433 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone4()
+3434 [main] INFO  kkm.UnitTests - Swagger done
+3541 [main] INFO  kkm.UnitTests - {"correlationId":"0bcb5713-3924-4933-9e3a-8a826b4ff6fd","checkId":"151818ed-4035-4dfe-860f-c4ccb5053977"}
+3580 [main] INFO  kkm.UnitTests - [151818ed-4035-4dfe-860f-c4ccb5053977]
+3583 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=0bcb5713-3924-4933-9e3a-8a826b4ff6fd%22%20
+3634 [main] INFO  kkm.UnitTests - Response message : {"took":1,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+3635 [main] INFO  kkm.UnitTests - End test
+
+3637 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone5()
+3638 [main] INFO  kkm.UnitTests - Swagger done
+3736 [main] INFO  kkm.UnitTests - {"correlationId":"139aa407-885e-40b6-9725-1dc4587f9a61","checkId":"73e65fc4-48a3-45d9-9946-f6af2e3e1d4d"}
+3776 [main] INFO  kkm.UnitTests - [73e65fc4-48a3-45d9-9946-f6af2e3e1d4d]
+3777 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=139aa407-885e-40b6-9725-1dc4587f9a61%22%20
+3835 [main] INFO  kkm.UnitTests - Response message : {"took":2,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+3837 [main] INFO  kkm.UnitTests - End test
+
+3842 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone6()
+3843 [main] INFO  kkm.UnitTests - Swagger done
+3946 [main] INFO  kkm.UnitTests - {"correlationId":"75736950-cc53-4030-bf9b-f6afd6650707","checkId":"7cca2f5f-699f-4deb-a4e9-002cc1eb798d"}
+3990 [main] INFO  kkm.UnitTests - [7cca2f5f-699f-4deb-a4e9-002cc1eb798d]
+3994 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=75736950-cc53-4030-bf9b-f6afd6650707%22%20
+4096 [main] INFO  kkm.UnitTests - Response message : {"took":52,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+4098 [main] INFO  kkm.UnitTests - End test
+
+4101 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone7()
+4102 [main] INFO  kkm.UnitTests - Swagger done
+4378 [main] INFO  kkm.UnitTests - {"correlationId":"951ceaf1-82b7-4ed4-b63b-2430a59c617c","checkId":"0684fcb9-7033-4edb-8ad1-31d6036fce07"}
+4423 [main] INFO  kkm.UnitTests - [0684fcb9-7033-4edb-8ad1-31d6036fce07]
+4425 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=951ceaf1-82b7-4ed4-b63b-2430a59c617c%22%20
+4484 [main] INFO  kkm.UnitTests - Response message : {"took":3,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+4484 [main] INFO  kkm.UnitTests - End test
+
+4488 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone8()
+4489 [main] INFO  kkm.UnitTests - Swagger done
+4589 [main] INFO  kkm.UnitTests - {"correlationId":"f2f29a01-74e8-4b1e-93c1-3b2ed666fab7","checkId":"6a5a1983-00ca-43e2-9afb-7d600e4df705"}
+4629 [main] INFO  kkm.UnitTests - [6a5a1983-00ca-43e2-9afb-7d600e4df705]
+4632 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=f2f29a01-74e8-4b1e-93c1-3b2ed666fab7%22%20
+4687 [main] INFO  kkm.UnitTests - Response message : {"took":4,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+4688 [main] INFO  kkm.UnitTests - End test
+
+4694 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone9()
+4695 [main] INFO  kkm.UnitTests - Swagger done
+4796 [main] INFO  kkm.UnitTests - {"correlationId":"4ae84c63-c8f6-42e4-8348-7df08e5a820c","checkId":"3d00760b-aea4-4467-b8ef-0b5a55005bc0"}
+4839 [main] INFO  kkm.UnitTests - [3d00760b-aea4-4467-b8ef-0b5a55005bc0]
+4841 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22CID=4ae84c63-c8f6-42e4-8348-7df08e5a820c%22%20
+4921 [main] INFO  kkm.UnitTests - Response message : {"took":27,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+4921 [main] INFO  kkm.UnitTests - End test
+

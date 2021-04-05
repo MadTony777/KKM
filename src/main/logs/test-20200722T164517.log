@@ -1,0 +1,38 @@
+197  [main] INFO  kkm.UnitTests - Starting test: KKM_DB7()
+896  [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-6rNCT4zkWKzt', '2462876762', '2019-07-12 00:00:00.000', '7725327863', '0067');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-6rNCT4zkWKzt','Фамилия Имя Отчество', '7725327863', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-6rNCT4zkWKzt', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-6rNCT4zkWKzt', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-6rNCT4zkWKzt'
+
+
+update alertPeriod set finishTime = '00.00.00' where FilialCode = '0067'
+
+update alertPeriod set startTime = '00.00.00' where FilialCode = '0067'
+
+update fiscalCheck set filialCode = '0067' where srcId = '9SD0C9DZ-9289-4A09-6rNCT4zkWKzt'
+
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-6rNCT4zkWKzt'
+121332 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-6rNCT4zkWKzt'
+121338 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-6rNCT4zkWKzt, null]
+121339 [main] INFO  kkm.UnitTests - null
+121340 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+121340 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+121406 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-stage-2020.07.22/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20AND%20%229SD0C9DZ-9289-4A09-6rNCT4zkWKzt%22%20&size=500
+121577 [main] INFO  kkm.UnitTests - Response message : {"took":47,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+121956 [main] INFO  kkm.UnitTests - Script is: update alertPeriod set finishTime = '--18:59:59--' where FilialCode = '0067'
+
+122104 [main] INFO  kkm.UnitTests - Script is: update alertPeriod set startTime = '--09:00:00--' where FilialCode = '0067'
+122150 [main] INFO  kkm.UnitTests - End test
+

@@ -1,0 +1,8 @@
+153  [main] INFO  kkm.UnitTests - srcID is: 4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67
+522  [main] INFO  kkm.UnitTests - Status code is: null
+523  [main] INFO  kkm.UnitTests - Status is: null
+60525 [main] INFO  kkm.UnitTests - select * from KKMCash_Stage.dbo.ProcessStatus where srcID = '4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67'
+60772 [main] INFO  kkm.UnitTests - String info is: ADINSURE Policy DONE 
+60774 [main] INFO  kkm.UnitTests - ADINSURE Policy DONE 
+120897 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-stage-2020.06.26/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20&size=500
+121145 [main] INFO  kkm.UnitTests - Response message : {"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [kkm-commutator-stage-2020.06.26]","resource.type":"index_or_alias","resource.id":"kkm-commutator-stage-2020.06.26","index_uuid":"_na_","index":"kkm-commutator-stage-2020.06.26"}],"type":"index_not_found_exception","reason":"no such index [kkm-commutator-stage-2020.06.26]","resource.type":"index_or_alias","resource.id":"kkm-commutator-stage-2020.06.26","index_uuid":"_na_","index":"kkm-commutator-stage-2020.06.26"},"status":404}

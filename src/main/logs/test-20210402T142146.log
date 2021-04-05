@@ -1,0 +1,3 @@
+255  [main] INFO  kkm.UnitTests - Starting test: KKM_PutShopCheckToShFI_RequiredFields()
+380  [main] INFO  kkm.UnitTests - Request url is: http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1601 [main] INFO  kkm.UnitTests - Response is: {"correlationId":"${CID}","checkId":"d4dddfe0-2e56-4eee-b746-5766102aa3df"}

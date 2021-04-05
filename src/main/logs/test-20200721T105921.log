@@ -1,0 +1,9 @@
+182  [main] INFO  kkm.UnitTests - Starting test: KKM_DB3()
+1444 [main] INFO  kkm.UnitTests - Strings where added with srcID:9SD0C9DZ-9289-4A09-2hWrFKsu35tG
+1754 [main] INFO  kkm.UnitTests - String where insert to ProcessStatus with srcID:9SD0C9DZ-9289-4A09-2hWrFKsu35tG
+122826 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-2hWrFKsu35tG'
+122836 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, DONE, nothing, nothing, 9SD0C9DZ-9289-4A09-2hWrFKsu35tG, facbc08c-56ea-42a7-9042-22fd3745de88]
+122838 [main] INFO  kkm.UnitTests - DONE
+122838 [main] INFO  kkm.UnitTests - fiscGateErrorCode: nothing
+122844 [main] INFO  kkm.UnitTests - End test
+

@@ -1,0 +1,89 @@
+{
+        "common": {
+        "system": "SHOP",
+        "messageId": "${=(long)(Math.random()*100000000)}-${=(long)(Math.random()*10000)}-${=(long)(Math.random()*10000)}-${=(long)(Math.random()*10000)}-${=(long)(Math.random()*100000000)}",
+        "timestamp": "2019-05-31T16:45:45",
+        "product": "OSAGO",
+        "terminal": "112344256",
+        "inn": "7710026574",
+        "taxSystem": "OSN",
+        "cashier": "1111111111111111111111111111111111111111111111111111111111111123477",
+        "cashierInn": "123456789012",
+        "settlementAddress": "111111111111111111111111111111111111111111111111111111111111112341111111111111111111111111111111111111111111111111111111111111233333331111111111123111111111111111111111111111111111111111111111111111111111111111111111111111112341111111111111111",
+        "settlementPlace": "111111111111111111111111111111111111111111111111111111111111112341111111111111111111111111111111111111111111111111111111111111233333331111111111123111111111111111111111111111111111111111111111111111111111111111111111111111112341111111111111111"
+
+        },
+        "customer": {
+        "name": "Иванов Иван Иванович",
+        "inn": "770123627182",
+        "docSerial": "4110",
+        "docNumber": "123456",
+
+        "phone": "",
+        "attributes": [
+        {
+        "name": "Some Additional Attribute",
+        "value": "string"
+        }
+        ]
+        },
+        "positions": [
+        {
+        "name": "Страховая премия № ХХХХХХХХХХХХХ",
+        "price": 1000.25,
+        "quantity": 2,
+        "tax": "VAT20",
+        "sum": 2000.50,
+        "taxSum": 1000.25,
+        "total": 1000.25,
+        "paymentMethod": "PREPAYMENT",
+        "subjectType": "PRODUCT",
+        "attributes": {
+        "nomenclatureCode": "MTIzNDU=",
+        "unitOfMeasurement": "Штука",
+        "additionalAttribute": "MTIzNDU=",
+        "manufacturerCountryCode": "1",
+        "customsDeclarationNumber": "33440288DS",
+        "excise": 15.45
+        },
+        "agent": {
+        "name": "string",
+        "type": "BANK-AGENT",
+        "operation": "string",
+        "phoneNumbers": ["79257777770", "79257777771", "79257777772"],
+        "operator": {
+        "phoneNumbers": ["79257777770", "79257777771", "79257777772"],
+        "name": "ООО Банк-1",
+        "address": "Россия, г. Москва, ул. Островная, д. 10",
+        "inn": "123456735662"
+        }
+        },
+        "supplier": {
+        "inn": "123456789012",
+        "phoneNumbers": ["79257777770", "79257777771", "79257777772"],
+        "name": "ООО Поставщик-1"
+        }
+        }
+        ],
+        "payment": {
+        "amount": 2000.50,
+        "type": "INCOME",
+        "form": "CASH",
+        "agent": {
+        "name": "string",
+        "type": "BANK-AGENT",
+        "operation": "string",
+        "phoneNumbers": ["79257777770", "79257777771", "79257777772"]
+        },
+        "operator": {
+        "phoneNumbers": ["79257777770", "79257777771", "79257777772"],
+        "name": "ООО Банк-1",
+        "address": "Россия, г. Москва, ул. Островная, д. 10",
+        "inn": "7710026574",
+        "additionalAttribute": "string"
+        },
+        "supplier": {
+        "phoneNumbers": ["79257777770", "79257777771", "79257777772"]
+        }
+        }
+        }

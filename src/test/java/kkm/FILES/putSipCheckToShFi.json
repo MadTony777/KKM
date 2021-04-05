@@ -1,0 +1,32 @@
+{
+  "common": {
+    "system": "SIP",
+    "messageId": "${MESSAGEID}",
+    "timestamp": "2019-12-20T10:11:36.125Z",
+    "terminal": "1234567890",
+    "inn": "7710026574",
+    "taxSystem": "OSN",
+    "cashier": "Индивидуальный предприниматель Чернышковский Сергей Владимирович_testTESTtest"
+  },
+  "customer": {
+    "name": "Александр Петрович Попов"
+  },
+  "positions": [
+    {
+      "name": "123456788",
+      "price": 50000.000000000000,
+      "quantity": 1,
+      "tax": "VAT-NON",
+      "sum": 50000.000000000000,
+      "taxSum": 0.0,
+      "total": 50000.000000000000,
+      "paymentMethod": "PAYMENT-FULL",
+      "subjectType": "SERVICE"
+    }
+  ],
+  "payment": {
+    "amount": 50000.000000000000,
+    "form": "TRANSFER",
+    "type": "INCOME"
+  }
+}

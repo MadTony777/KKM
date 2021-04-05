@@ -1,0 +1,6 @@
+update alertPeriod set finishTime = '00:00:00' where FilialCode = '--filialCode--'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '--filialCode--'
+update customer set Phone = '70000000000' where srcID = '--srcID--'
+update customer set email = '' where srcId = '--srcID--'
+update processStatus set fiscGateCheckStatusCode = null where srcID = '--srcID--'
+select * from processStatus where srcID = '--srcID--'

@@ -1,0 +1,48 @@
+177  [main] INFO  kkm.UnitTests - Starting test: KKM_WAcheckStatus()
+875  [main] INFO  kkm.UnitTests - End test
+
+889  [main] INFO  kkm.UnitTests - Starting test: KKM_getDocCustomer()
+1989 [main] INFO  kkm.UnitTests - End test
+
+1996 [main] INFO  kkm.UnitTests - Starting test: KKM_DB1()
+2488 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM ProcessStatus Where fiscGateCheckStatusCode = 'ERROR'
+2497 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000901797
+2499 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000901797
+2990 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000901797]
+2994 [main] INFO  kkm.UnitTests - Status is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000901797]
+63233 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, ERROR, VALIDATION_ERROR, ЖПлато_000901797]
+123328 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-test-2020.07.15/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20AND%20%22ЖПлато_000901797%22%20&size=500
+123640 [main] INFO  kkm.UnitTests - Response message : {"took":96,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":12.035055,"hits":[{"_index":"kkm-commutator-test-2020.07.15","_type":"_doc","_id":"d_KJUXMBfrYj4vM9DTfg","_score":12.035055,"_source":{"@timestamp":"2020-07-15T08:13:18.361Z","stream":"stdout","container":{"id":"0034ee1925a564f871f81cc58c4a9bd35c6d01adb7c45ea53b36a54e1e60aef6","name":"kkm-commutator_service.1.plml0y7nea5os9i0te4n74mlg","image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"}},"docker":{"container":{"labels":{"com_docker_swarm_node_id":"rdhag2o7wwmqoenobm498lkb8","com_docker_swarm_task_id":"plml0y7nea5os9i0te4n74mlg","com_docker_stack_namespace":"kkm-commutator","com_docker_swarm_service_id":"7sy4bxg3vjd3qexelmqu7dul9","com_docker_swarm_service_name":"kkm-commutator_service","Version":"97","com_docker_swarm_task_name":"kkm-commutator_service.1.plml0y7nea5os9i0te4n74mlg","Description":"KKM Commutator Service","com_docker_swarm_task":""}}},"host":{"name":"96fa6ced97b1"},"agent":{"type":"filebeat","ephemeral_id":"0fe59679-2e75-446f-bf5a-d3d540dd3ec5","hostname":"96fa6ced97b1","id":"1b249d74-28a0-4e1d-b8f8-952cfe9d8391","version":"7.3.1"},"message":"{\"ts\":\"2020-07-15T08:13:18.360+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"00a5b78e78a6ae0a\",\"spanId\":\"00a5b78e78a6ae0a\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"00a5b78e78a6ae0a\",\"X-B3-TraceId\":\"00a5b78e78a6ae0a\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"AXAPTA\",\"entityCode\":\"PaymentOrder\",\"srcID\":\"ЖПлато_000901797\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}","log":{"file":{"path":"/var/lib/docker/containers/0034ee1925a564f871f81cc58c4a9bd35c6d01adb7c45ea53b36a54e1e60aef6/0034ee1925a564f871f81cc58c4a9bd35c6d01adb7c45ea53b36a54e1e60aef6-json.log"},"offset":7847882},"input":{"type":"container"},"ecs":{"version":"1.0.1"}}}]}}
+123641 [main] INFO  kkm.UnitTests - End test
+
+123644 [main] INFO  kkm.UnitTests - Starting test: KKM_DB2()
+123785 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM ProcessStatus Where fiscGateCheckStatusCode = 'DONE'
+123785 [main] INFO  kkm.UnitTests - srcID is: 4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67
+123786 [main] INFO  kkm.UnitTests - srcID is: 4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67
+124222 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Policy, null, nothing, 4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67]
+124226 [main] INFO  kkm.UnitTests - Status is: [ADINSURE, Policy, null, nothing, 4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67]
+184453 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Policy, NEW, nothing, 4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67]
+244468 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-test-2020.07.15/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20AND%20%224CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67%22%20&size=500
+244615 [main] INFO  kkm.UnitTests - Response message : {"took":31,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":11.301374,"hits":[{"_index":"kkm-commutator-test-2020.07.15","_type":"_doc","_id":"ffKLUXMBfrYj4vM9BfvX","_score":11.301374,"_source":{"@timestamp":"2020-07-15T08:15:19.409Z","ecs":{"version":"1.0.1"},"agent":{"type":"filebeat","ephemeral_id":"0fe59679-2e75-446f-bf5a-d3d540dd3ec5","hostname":"96fa6ced97b1","id":"1b249d74-28a0-4e1d-b8f8-952cfe9d8391","version":"7.3.1"},"log":{"offset":7928090,"file":{"path":"/var/lib/docker/containers/0034ee1925a564f871f81cc58c4a9bd35c6d01adb7c45ea53b36a54e1e60aef6/0034ee1925a564f871f81cc58c4a9bd35c6d01adb7c45ea53b36a54e1e60aef6-json.log"}},"stream":"stdout","message":"{\"ts\":\"2020-07-15T08:15:19.409+00:00\",\"logger\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"level\":\"INFO\",\"class\":\"ru.vsk.integration.kkmcommutator.KkmCommutatorService\",\"method\":\"getReadyForSendingReceiptKeys\",\"caller_file_name\":\"KkmCommutatorService.java\",\"caller_line_number\":84,\"thread\":\"scheduling-1\",\"traceId\":\"56e907c83a4404e3\",\"spanId\":\"56e907c83a4404e3\",\"spanExportable\":\"true\",\"X-Span-Export\":\"true\",\"X-B3-SpanId\":\"56e907c83a4404e3\",\"X-B3-TraceId\":\"56e907c83a4404e3\",\"X-VSK-ReceiptKeys\":[{\"systemCode\":\"ADINSURE\",\"entityCode\":\"Policy\",\"srcID\":\"4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67\"}],\"msg\":\"ReadyForSendingReceiptKeys selected \"}","input":{"type":"container"},"container":{"image":{"name":"nexus.vsk.ru:8183/vsk/kkm-commutator:97@sha256:d7fe200be876de577493ecaf034656903ed1743d311447433a9e080df2bf87fe"},"id":"0034ee1925a564f871f81cc58c4a9bd35c6d01adb7c45ea53b36a54e1e60aef6","name":"kkm-commutator_service.1.plml0y7nea5os9i0te4n74mlg"},"docker":{"container":{"labels":{"com_docker_swarm_task_id":"plml0y7nea5os9i0te4n74mlg","com_docker_stack_namespace":"kkm-commutator","com_docker_swarm_service_id":"7sy4bxg3vjd3qexelmqu7dul9","com_docker_swarm_service_name":"kkm-commutator_service","com_docker_swarm_node_id":"rdhag2o7wwmqoenobm498lkb8","com_docker_swarm_task_name":"kkm-commutator_service.1.plml0y7nea5os9i0te4n74mlg","Description":"KKM Commutator Service","com_docker_swarm_task":"","Version":"97"}}},"host":{"name":"96fa6ced97b1"}}}]}}
+244616 [main] INFO  kkm.UnitTests - End test
+
+244619 [main] INFO  kkm.UnitTests - Starting test: KKM_DB3()
+245223 [main] INFO  kkm.UnitTests - Strings where added with srcID:9SD0C9DZ-9289-4A09-O71Myo9jvwrC
+245445 [main] INFO  kkm.UnitTests - String where insert to ProcessStatus with srcID:9SD0C9DZ-9289-4A09-O71Myo9jvwrC
+245902 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, nothing, 9SD0C9DZ-9289-4A09-O71Myo9jvwrC]
+245905 [main] INFO  kkm.UnitTests - Status is: [ADINSURE, Payment, null, nothing, 9SD0C9DZ-9289-4A09-O71Myo9jvwrC]
+321915 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, NEW, , , 9SD0C9DZ-9289-4A09-O71Myo9jvwrC, 56427ced-290b-4644-acf8-69e036d8e99e]
+321917 [main] INFO  kkm.UnitTests - NEW
+321918 [main] INFO  kkm.UnitTests - End test
+
+321925 [main] INFO  kkm.UnitTests - Starting test: KKM_DB4()
+322594 [main] INFO  kkm.UnitTests - Strings where added with srcID:9SD0C9DZ-9289-4A09-dxNzudGNTnLc
+322766 [main] INFO  kkm.UnitTests - String where insert to ProcessStatus with srcID:9SD0C9DZ-9289-4A09-dxNzudGNTnLc
+323199 [main] INFO  kkm.UnitTests - End test
+
+323203 [main] INFO  kkm.UnitTests - Starting test: KKM_SIPheckStatus()
+1421108 [main] INFO  kkm.UnitTests - End test
+
+1421112 [main] INFO  kkm.UnitTests - Starting test: KKM_PostCorrectionReceipt_negative()
+1421722 [main] INFO  kkm.UnitTests - End test
+

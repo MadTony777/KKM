@@ -1,0 +1,749 @@
+313  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageEmail()
+434  [main] INFO  kkm.UnitTests - Swagger done
+2515 [main] INFO  kkm.UnitTests - {"correlationId":"bbbf7a11-28e3-41e3-81ae-cc3005cfb2b8","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+3329 [main] INFO  kkm.UnitTests - []
+3435 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+3435 [main] INFO  kkm.UnitTests - Response Code : 405
+3441 [main] INFO  kkm.UnitTests - End test
+
+3452 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGatewayWithStubs_DONE()
+3719 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM ProcessStatus Where fiscGateCheckStatusCode = 'DONE'
+3721 [main] INFO  kkm.UnitTests - srcID is: 847C907BA418513D37F6000CE30C407DBB7C70C2
+3724 [main] INFO  kkm.UnitTests - srcID is: 847C907BA418513D37F6000CE30C407DBB7C70C2
+4288 [main] INFO  kkm.UnitTests - update alertPeriod set finishTime = '00:00:00' where FilialCode = '--filialCode--'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '--filialCode--'
+update customer set Phone = '70000000000' where srcID = '847C907BA418513D37F6000CE30C407DBB7C70C2'
+update customer set email = '' where srcId = '847C907BA418513D37F6000CE30C407DBB7C70C2'
+update processStatus set fiscGateCheckStatusCode = null where srcID = '847C907BA418513D37F6000CE30C407DBB7C70C2'
+select * from processStatus where srcID = '847C907BA418513D37F6000CE30C407DBB7C70C2'
+4289 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, nothing, 847C907BA418513D37F6000CE30C407DBB7C70C2]
+4290 [main] INFO  kkm.UnitTests - Status is: [ADINSURE, Payment, null, nothing, 847C907BA418513D37F6000CE30C407DBB7C70C2]
+64577 [main] INFO  kkm.UnitTests - select * from ProcessStatus where srcID = '847C907BA418513D37F6000CE30C407DBB7C70C2'
+64577 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, nothing, 847C907BA418513D37F6000CE30C407DBB7C70C2]
+124681 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-test-2020.10.30/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20AND%20%22847C907BA418513D37F6000CE30C407DBB7C70C2%22%20&size=500
+124762 [main] INFO  kkm.UnitTests - Response message : {"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [kkm-commutator-test-2020.10.30]","resource.type":"index_or_alias","resource.id":"kkm-commutator-test-2020.10.30","index_uuid":"_na_","index":"kkm-commutator-test-2020.10.30"}],"type":"index_not_found_exception","reason":"no such index [kkm-commutator-test-2020.10.30]","resource.type":"index_or_alias","resource.id":"kkm-commutator-test-2020.10.30","index_uuid":"_na_","index":"kkm-commutator-test-2020.10.30"},"status":404}
+124771 [main] INFO  kkm.UnitTests - End test
+
+124780 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_Error()
+124979 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM ProcessStatus Where fiscGateCheckStatusCode = 'ERROR'
+124980 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000902838
+124984 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000902838
+125456 [main] INFO  kkm.UnitTests - update dbo.Customer set inn = '1' where srcID = 'ЖПлато_000902838'
+update ProcessStatus set fiscGateCheckStatusCode = null where srcID = 'ЖПлато_000902838'
+select * from ProcessStatus where srcID = 'ЖПлато_000902838'
+125457 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000902838]
+125460 [main] INFO  kkm.UnitTests - Status is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000902838]
+185761 [main] INFO  kkm.UnitTests - select * from ProcessStatus where srcID = 'ЖПлато_000902838'
+185762 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000902838]
+245770 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-test-2020.10.30/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20AND%20%22ЖПлато_000902838%22%20&size=500
+245870 [main] INFO  kkm.UnitTests - Response message : {"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [kkm-commutator-test-2020.10.30]","resource.type":"index_or_alias","resource.id":"kkm-commutator-test-2020.10.30","index_uuid":"_na_","index":"kkm-commutator-test-2020.10.30"}],"type":"index_not_found_exception","reason":"no such index [kkm-commutator-test-2020.10.30]","resource.type":"index_or_alias","resource.id":"kkm-commutator-test-2020.10.30","index_uuid":"_na_","index":"kkm-commutator-test-2020.10.30"},"status":404}
+245871 [main] INFO  kkm.UnitTests - End test
+
+245875 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone10()
+245876 [main] INFO  kkm.UnitTests - Swagger done
+245986 [main] INFO  kkm.UnitTests - {"correlationId":"5ae1de07-5e6e-4a9a-956a-3c11f379c6d7","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+246156 [main] INFO  kkm.UnitTests - []
+316161 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%225ae1de07-5e6e-4a9a-956a-3c11f379c6d7%22%20
+316349 [main] INFO  kkm.UnitTests - Response message : {"took":117,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":105.873474,"hits":[{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"G7YceHUBxFYn7BJFs0L3","_score":105.873474,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:05:38,868","@timestamp":"2020-10-30T06:05:38.868Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":506778,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='5ae1de07-5e6e-4a9a-956a-3c11f379c6d7', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-37 CID=5ae1de07-5e6e-4a9a-956a-3c11f379c6d7","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-195755","input":{"type":"log"}}},{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"1bYceHUBxFYn7BJFs0H1","_score":105.873474,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:05:38,906","@timestamp":"2020-10-30T06:05:38.906Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":515195,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='5ae1de07-5e6e-4a9a-956a-3c11f379c6d7', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-42 CID=5ae1de07-5e6e-4a9a-956a-3c11f379c6d7","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-123884","input":{"type":"log"}}}]}}
+316432 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+316432 [main] INFO  kkm.UnitTests - Response Code : 405
+316433 [main] INFO  kkm.UnitTests - End test
+
+316439 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone11()
+316440 [main] INFO  kkm.UnitTests - Swagger done
+316580 [main] INFO  kkm.UnitTests - {"correlationId":"87a12c42-2609-4db2-85a2-c70ebcc5e2ad","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+316788 [main] INFO  kkm.UnitTests - []
+386793 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%2287a12c42-2609-4db2-85a2-c70ebcc5e2ad%22%20
+386851 [main] INFO  kkm.UnitTests - Response message : {"took":5,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":103.67053,"hits":[{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"Y7YdeHUBxFYn7BJFxbT9","_score":103.67053,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:06:49,533","@timestamp":"2020-10-30T06:06:49.533Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":532241,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='87a12c42-2609-4db2-85a2-c70ebcc5e2ad', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-52 CID=87a12c42-2609-4db2-85a2-c70ebcc5e2ad","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-123884","input":{"type":"log"}}},{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"0LYdeHUBxFYn7BJFxrYM","_score":103.67053,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:06:49,462","@timestamp":"2020-10-30T06:06:49.462Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":523824,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='87a12c42-2609-4db2-85a2-c70ebcc5e2ad', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-47 CID=87a12c42-2609-4db2-85a2-c70ebcc5e2ad","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-195755","input":{"type":"log"}}}]}}
+386940 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+386940 [main] INFO  kkm.UnitTests - Response Code : 405
+386941 [main] INFO  kkm.UnitTests - End test
+
+386947 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone12()
+386948 [main] INFO  kkm.UnitTests - Swagger done
+387344 [main] INFO  kkm.UnitTests - {"correlationId":"579765fc-2c50-4f34-9462-a3e9f0b8f541","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+387558 [main] INFO  kkm.UnitTests - []
+457563 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%22579765fc-2c50-4f34-9462-a3e9f0b8f541%22%20
+457710 [main] INFO  kkm.UnitTests - Response message : {"took":95,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":104.03555,"hits":[{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"obceeHUBxFYn7BJF-ndL","_score":104.03555,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:08:00,224","@timestamp":"2020-10-30T06:08:00.224Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":540658,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='579765fc-2c50-4f34-9462-a3e9f0b8f541', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-57 CID=579765fc-2c50-4f34-9462-a3e9f0b8f541","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-130827","input":{"type":"log"}}},{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"wLceeHUBxFYn7BJF-ndO","_score":104.03555,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:08:00,263","@timestamp":"2020-10-30T06:08:00.263Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":549075,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='579765fc-2c50-4f34-9462-a3e9f0b8f541', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-62 CID=579765fc-2c50-4f34-9462-a3e9f0b8f541","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-123884","input":{"type":"log"}}}]}}
+457792 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+457792 [main] INFO  kkm.UnitTests - Response Code : 405
+457793 [main] INFO  kkm.UnitTests - End test
+
+457798 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone13()
+457799 [main] INFO  kkm.UnitTests - Swagger done
+457933 [main] INFO  kkm.UnitTests - {"correlationId":"70e53222-dbd3-44b7-8f9e-9dfe0aaaa30b","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+458158 [main] INFO  kkm.UnitTests - []
+528163 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%2270e53222-dbd3-44b7-8f9e-9dfe0aaaa30b%22%20
+528309 [main] INFO  kkm.UnitTests - Response message : {"took":67,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":102.909874,"hits":[{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"p7gfeHUBxFYn7BJF-GHo","_score":102.909874,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:09:10,852","@timestamp":"2020-10-30T06:09:10.852Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":565909,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='70e53222-dbd3-44b7-8f9e-9dfe0aaaa30b', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-72 CID=70e53222-dbd3-44b7-8f9e-9dfe0aaaa30b","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-123884","input":{"type":"log"}}},{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"HLgfeHUBxFYn7BJF-GLt","_score":102.909874,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:09:10,778","@timestamp":"2020-10-30T06:09:10.778Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":557492,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='70e53222-dbd3-44b7-8f9e-9dfe0aaaa30b', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-67 CID=70e53222-dbd3-44b7-8f9e-9dfe0aaaa30b","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-130827","input":{"type":"log"}}}]}}
+528435 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+528436 [main] INFO  kkm.UnitTests - Response Code : 405
+528436 [main] INFO  kkm.UnitTests - End test
+
+528441 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone14()
+528442 [main] INFO  kkm.UnitTests - Swagger done
+528574 [main] INFO  kkm.UnitTests - {"correlationId":"057adff6-de65-4b94-b305-321026107c12","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+528761 [main] INFO  kkm.UnitTests - []
+598766 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%22057adff6-de65-4b94-b305-321026107c12%22%20
+598881 [main] INFO  kkm.UnitTests - Response message : {"took":64,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+598882 [main] INFO  kkm.UnitTests - End test
+
+598887 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_NOFILIAL()
+599115 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-hEqJSEOSYGvu', '1302208699', '2019-07-12 00:00:00.000', '7710026574', 'NOFILIAL');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-hEqJSEOSYGvu','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-hEqJSEOSYGvu', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-hEqJSEOSYGvu', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-hEqJSEOSYGvu'
+
+update alertPeriod set finishTime = '00:00:00' where FilialCode = 'NOFILIAL'
+update alertPeriod set startTime = '00:00:00' where FilialCode = 'NOFILIAL'
+update fiscalCheck set filialCode = 'NOFILIAL' where srcId = '9SD0C9DZ-9289-4A09-hEqJSEOSYGvu'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-hEqJSEOSYGvu'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-hEqJSEOSYGvu'
+709967 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-hEqJSEOSYGvu'
+709968 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-hEqJSEOSYGvu, null]
+709969 [main] INFO  kkm.UnitTests - Status: null
+709969 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+709969 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+729973 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-test-2020.10.30/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20&size=5
+730030 [main] INFO  kkm.UnitTests - Response message : {"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [kkm-commutator-test-2020.10.30]","resource.type":"index_or_alias","resource.id":"kkm-commutator-test-2020.10.30","index_uuid":"_na_","index":"kkm-commutator-test-2020.10.30"}],"type":"index_not_found_exception","reason":"no such index [kkm-commutator-test-2020.10.30]","resource.type":"index_or_alias","resource.id":"kkm-commutator-test-2020.10.30","index_uuid":"_na_","index":"kkm-commutator-test-2020.10.30"},"status":404}
+730237 [main] INFO  kkm.UnitTests - Script is: update alertPeriod set finishTime = '--18:59:59--' where FilialCode = 'NOFILIAL'
+update alertPeriod set startTime = '--09:00:00--' where FilialCode = 'NOFILIAL'
+730267 [main] INFO  kkm.UnitTests - End test
+
+730271 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_UTC12_DONE()
+730445 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-cOeICuO2F5v7', '5301002974', '2019-07-12 00:00:00.000', '7710026574', '0031');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-cOeICuO2F5v7','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-cOeICuO2F5v7', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-cOeICuO2F5v7', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-cOeICuO2F5v7'
+
+update alertPeriod set finishTime = '00:00:00' where FilialCode = '0031'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '0031'
+update fiscalCheck set filialCode = '0031' where srcId = '9SD0C9DZ-9289-4A09-cOeICuO2F5v7'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-cOeICuO2F5v7'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-cOeICuO2F5v7'
+841098 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-cOeICuO2F5v7'
+841099 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-cOeICuO2F5v7, null]
+841102 [main] INFO  kkm.UnitTests - Status: null
+841102 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+841102 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+861106 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-test-2020.10.30/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20&size=5
+861207 [main] INFO  kkm.UnitTests - Response message : {"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [kkm-commutator-test-2020.10.30]","resource.type":"index_or_alias","resource.id":"kkm-commutator-test-2020.10.30","index_uuid":"_na_","index":"kkm-commutator-test-2020.10.30"}],"type":"index_not_found_exception","reason":"no such index [kkm-commutator-test-2020.10.30]","resource.type":"index_or_alias","resource.id":"kkm-commutator-test-2020.10.30","index_uuid":"_na_","index":"kkm-commutator-test-2020.10.30"},"status":404}
+861418 [main] INFO  kkm.UnitTests - Script is: update alertPeriod set finishTime = '--18:59:59--' where FilialCode = '0031'
+update alertPeriod set startTime = '--09:00:00--' where FilialCode = '0031'
+861444 [main] INFO  kkm.UnitTests - End test
+
+861447 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_makeCheckNoCashier()
+861448 [main] INFO  kkm.UnitTests - Swagger done
+861612 [main] INFO  kkm.UnitTests - {"correlationId":"da1cb0e9-5ae1-4f57-9abc-00122d23bb26","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+861806 [main] INFO  kkm.UnitTests - []
+861892 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+861892 [main] INFO  kkm.UnitTests - Response Code : 405
+861893 [main] INFO  kkm.UnitTests - End test
+
+861898 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_UTC2_FAIL()
+862080 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-6npiIgURJGRy', '9651619188', '2019-07-12 00:00:00.000', '7725327863', '0067');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-6npiIgURJGRy','Фамилия Имя Отчество', '7725327863', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-6npiIgURJGRy', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-6npiIgURJGRy', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-6npiIgURJGRy'
+
+update alertPeriod set finishTime = '00:00:00' where FilialCode = '0067'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '0067'
+update fiscalCheck set filialCode = '0067' where srcId = '9SD0C9DZ-9289-4A09-6npiIgURJGRy'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-6npiIgURJGRy'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-6npiIgURJGRy'
+972748 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-6npiIgURJGRy'
+972748 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-6npiIgURJGRy, null]
+972751 [main] INFO  kkm.UnitTests - Status: null
+972752 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+972752 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+992756 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/kkm-commutator-test-2020.10.30/_search?q=%20message:%20%22ReadyForSendingReceiptKeys%22%20&size=5
+992825 [main] INFO  kkm.UnitTests - Response message : {"error":{"root_cause":[{"type":"index_not_found_exception","reason":"no such index [kkm-commutator-test-2020.10.30]","resource.type":"index_or_alias","resource.id":"kkm-commutator-test-2020.10.30","index_uuid":"_na_","index":"kkm-commutator-test-2020.10.30"}],"type":"index_not_found_exception","reason":"no such index [kkm-commutator-test-2020.10.30]","resource.type":"index_or_alias","resource.id":"kkm-commutator-test-2020.10.30","index_uuid":"_na_","index":"kkm-commutator-test-2020.10.30"},"status":404}
+993016 [main] INFO  kkm.UnitTests - Script is: update alertPeriod set finishTime = '--18:59:59--' where FilialCode = '0067'
+update alertPeriod set startTime = '--09:00:00--' where FilialCode = '0067'
+993041 [main] INFO  kkm.UnitTests - End test
+
+993045 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_makeCheckCashier()
+993045 [main] INFO  kkm.UnitTests - Swagger done
+993145 [main] INFO  kkm.UnitTests - {"correlationId":"7159c1d5-c09e-435b-860a-53239dcf61f5","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+993356 [main] INFO  kkm.UnitTests - []
+993447 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+993447 [main] INFO  kkm.UnitTests - Response Code : 405
+993448 [main] INFO  kkm.UnitTests - End test
+
+993452 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SIPheckStatus()
+993453 [main] INFO  kkm.UnitTests - Swagger done
+993632 [main] INFO  kkm.UnitTests - {"correlationId":"371db7bb-0ac5-4c7f-9fd5-28bdfc98d746","checkId":"557a9ca5-7857-4b0a-8f28-525c31a1fab1"}
+993711 [main] INFO  kkm.UnitTests - [557a9ca5-7857-4b0a-8f28-525c31a1fab1]
+993794 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+993795 [main] INFO  kkm.UnitTests - Response Code : 200
+993798 [main] INFO  kkm.UnitTests - [NEW]
+994294 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+994294 [main] INFO  kkm.UnitTests - Response Code : 200
+994295 [main] INFO  kkm.UnitTests - [NEW]
+994363 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+994363 [main] INFO  kkm.UnitTests - Response Code : 200
+994364 [main] INFO  kkm.UnitTests - [NEW]
+994430 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+994430 [main] INFO  kkm.UnitTests - Response Code : 200
+994436 [main] INFO  kkm.UnitTests - [NEW]
+994499 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+994499 [main] INFO  kkm.UnitTests - Response Code : 200
+994503 [main] INFO  kkm.UnitTests - [NEW]
+994565 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+994565 [main] INFO  kkm.UnitTests - Response Code : 200
+994566 [main] INFO  kkm.UnitTests - [NEW]
+994631 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+994631 [main] INFO  kkm.UnitTests - Response Code : 200
+994632 [main] INFO  kkm.UnitTests - [NEW]
+994696 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+994696 [main] INFO  kkm.UnitTests - Response Code : 200
+994697 [main] INFO  kkm.UnitTests - [NEW]
+994754 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+994754 [main] INFO  kkm.UnitTests - Response Code : 200
+994755 [main] INFO  kkm.UnitTests - [NEW]
+994815 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+994815 [main] INFO  kkm.UnitTests - Response Code : 200
+994816 [main] INFO  kkm.UnitTests - [NEW]
+994891 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+994891 [main] INFO  kkm.UnitTests - Response Code : 200
+994892 [main] INFO  kkm.UnitTests - [NEW]
+994954 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+994954 [main] INFO  kkm.UnitTests - Response Code : 200
+994956 [main] INFO  kkm.UnitTests - [NEW]
+995021 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995021 [main] INFO  kkm.UnitTests - Response Code : 200
+995022 [main] INFO  kkm.UnitTests - [NEW]
+995091 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995092 [main] INFO  kkm.UnitTests - Response Code : 200
+995093 [main] INFO  kkm.UnitTests - [NEW]
+995157 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995157 [main] INFO  kkm.UnitTests - Response Code : 200
+995163 [main] INFO  kkm.UnitTests - [NEW]
+995233 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995233 [main] INFO  kkm.UnitTests - Response Code : 200
+995242 [main] INFO  kkm.UnitTests - [NEW]
+995345 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995345 [main] INFO  kkm.UnitTests - Response Code : 200
+995346 [main] INFO  kkm.UnitTests - [NEW]
+995406 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995406 [main] INFO  kkm.UnitTests - Response Code : 200
+995407 [main] INFO  kkm.UnitTests - [NEW]
+995466 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995466 [main] INFO  kkm.UnitTests - Response Code : 200
+995470 [main] INFO  kkm.UnitTests - [NEW]
+995540 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995540 [main] INFO  kkm.UnitTests - Response Code : 200
+995541 [main] INFO  kkm.UnitTests - [NEW]
+995601 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995601 [main] INFO  kkm.UnitTests - Response Code : 200
+995603 [main] INFO  kkm.UnitTests - [NEW]
+995667 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995667 [main] INFO  kkm.UnitTests - Response Code : 200
+995672 [main] INFO  kkm.UnitTests - [NEW]
+995729 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995729 [main] INFO  kkm.UnitTests - Response Code : 200
+995730 [main] INFO  kkm.UnitTests - [NEW]
+995787 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995788 [main] INFO  kkm.UnitTests - Response Code : 200
+995788 [main] INFO  kkm.UnitTests - [NEW]
+995847 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+995847 [main] INFO  kkm.UnitTests - Response Code : 200
+995847 [main] INFO  kkm.UnitTests - [NEW]
+996207 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+996207 [main] INFO  kkm.UnitTests - Response Code : 200
+996208 [main] INFO  kkm.UnitTests - [NEW]
+996273 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+996273 [main] INFO  kkm.UnitTests - Response Code : 200
+996275 [main] INFO  kkm.UnitTests - [NEW]
+996333 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+996333 [main] INFO  kkm.UnitTests - Response Code : 200
+996334 [main] INFO  kkm.UnitTests - [NEW]
+996393 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+996393 [main] INFO  kkm.UnitTests - Response Code : 200
+996394 [main] INFO  kkm.UnitTests - [NEW]
+996457 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+996457 [main] INFO  kkm.UnitTests - Response Code : 200
+996458 [main] INFO  kkm.UnitTests - [NEW]
+996528 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+996528 [main] INFO  kkm.UnitTests - Response Code : 200
+996529 [main] INFO  kkm.UnitTests - [NEW]
+996776 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+996776 [main] INFO  kkm.UnitTests - Response Code : 200
+996776 [main] INFO  kkm.UnitTests - [DONE]
+996847 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/557a9ca5-7857-4b0a-8f28-525c31a1fab1
+996847 [main] INFO  kkm.UnitTests - Response Code : 200
+996847 [main] INFO  kkm.UnitTests - [DONE]
+996847 [main] INFO  kkm.UnitTests - [DONE]
+996847 [main] INFO  kkm.UnitTests - End test
+
+996848 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_PostCorrectionReceipt()
+996848 [main] INFO  kkm.UnitTests - Swagger done
+998263 [main] INFO  kkm.UnitTests - {"correlationId":"dcabe428-dcf7-4b2e-b8b7-4a16ec808e3a","checkId":"6794345b-6280-4142-98b4-73215c73b795"}
+998973 [main] INFO  kkm.UnitTests - [6794345b-6280-4142-98b4-73215c73b795]
+999092 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+999092 [main] INFO  kkm.UnitTests - Response Code : 200
+999092 [main] INFO  kkm.UnitTests - [NEW]
+999560 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+999560 [main] INFO  kkm.UnitTests - Response Code : 200
+999561 [main] INFO  kkm.UnitTests - [NEW]
+999687 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+999687 [main] INFO  kkm.UnitTests - Response Code : 200
+999688 [main] INFO  kkm.UnitTests - [NEW]
+999748 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+999748 [main] INFO  kkm.UnitTests - Response Code : 200
+999749 [main] INFO  kkm.UnitTests - [NEW]
+999810 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+999811 [main] INFO  kkm.UnitTests - Response Code : 200
+999812 [main] INFO  kkm.UnitTests - [NEW]
+999872 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+999873 [main] INFO  kkm.UnitTests - Response Code : 200
+999874 [main] INFO  kkm.UnitTests - [NEW]
+999931 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+999931 [main] INFO  kkm.UnitTests - Response Code : 200
+999932 [main] INFO  kkm.UnitTests - [NEW]
+999993 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+999993 [main] INFO  kkm.UnitTests - Response Code : 200
+999994 [main] INFO  kkm.UnitTests - [NEW]
+1000054 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000054 [main] INFO  kkm.UnitTests - Response Code : 200
+1000055 [main] INFO  kkm.UnitTests - [NEW]
+1000116 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000116 [main] INFO  kkm.UnitTests - Response Code : 200
+1000117 [main] INFO  kkm.UnitTests - [NEW]
+1000179 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000179 [main] INFO  kkm.UnitTests - Response Code : 200
+1000180 [main] INFO  kkm.UnitTests - [NEW]
+1000239 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000239 [main] INFO  kkm.UnitTests - Response Code : 200
+1000240 [main] INFO  kkm.UnitTests - [NEW]
+1000299 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000299 [main] INFO  kkm.UnitTests - Response Code : 200
+1000320 [main] INFO  kkm.UnitTests - [NEW]
+1000378 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000378 [main] INFO  kkm.UnitTests - Response Code : 200
+1000381 [main] INFO  kkm.UnitTests - [NEW]
+1000439 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000439 [main] INFO  kkm.UnitTests - Response Code : 200
+1000441 [main] INFO  kkm.UnitTests - [NEW]
+1000499 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000499 [main] INFO  kkm.UnitTests - Response Code : 200
+1000500 [main] INFO  kkm.UnitTests - [NEW]
+1000562 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000562 [main] INFO  kkm.UnitTests - Response Code : 200
+1000563 [main] INFO  kkm.UnitTests - [NEW]
+1000649 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000649 [main] INFO  kkm.UnitTests - Response Code : 200
+1000655 [main] INFO  kkm.UnitTests - [NEW]
+1000715 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000715 [main] INFO  kkm.UnitTests - Response Code : 200
+1000716 [main] INFO  kkm.UnitTests - [DONE]
+1000781 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795
+1000781 [main] INFO  kkm.UnitTests - Response Code : 200
+1000786 [main] INFO  kkm.UnitTests - [DONE]
+1000786 [main] INFO  kkm.UnitTests - [DONE]
+1000894 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6794345b-6280-4142-98b4-73215c73b795/status
+1000894 [main] INFO  kkm.UnitTests - Response Code : 200
+1000894 [main] INFO  kkm.UnitTests - [DONE]
+1000895 [main] INFO  kkm.UnitTests - End test
+
+1000899 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_CanceleNotFound()
+1001003 [main] INFO  kkm.UnitTests - 
+Sending 'PUT' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fa23215b-6994-43db-88dd-fa3a1dc0dfb6/cancel
+1001003 [main] INFO  kkm.UnitTests - Response Code : 400
+1001004 [main] INFO  kkm.UnitTests - {"checkId":"fa23215b-6994-43db-88dd-fa3a1dc0dfb6","error":{"code":"RECEIPT_NOTE_FOUND","message":"Receipt with specified ID not found"}}
+1001005 [main] INFO  kkm.UnitTests - End test
+
+1001008 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGateway_UTC12_DONE()
+1001202 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-33QEMYLzvWLo', '2460294714', '2019-07-12 00:00:00.000', '7710026574', '0031');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-33QEMYLzvWLo','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-33QEMYLzvWLo', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-33QEMYLzvWLo', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-33QEMYLzvWLo'
+
+update alertPeriod set finishTime = '23:59:59' where FilialCode = '0031'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '0031'
+update fiscalCheck set filialCode = '0031' where srcId = '9SD0C9DZ-9289-4A09-33QEMYLzvWLo'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-33QEMYLzvWLo'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-33QEMYLzvWLo'
+1111888 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-33QEMYLzvWLo'
+1111888 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-33QEMYLzvWLo, null]
+1111891 [main] INFO  kkm.UnitTests - Status: null
+1111891 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+1111892 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+1112015 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/null
+1112015 [main] INFO  kkm.UnitTests - Response Code : 400
+1112016 [main] INFO  kkm.UnitTests - End test
+
+1112020 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGateway_NOFILIAL()
+1112198 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-aUGsEbSGCw3w', '8731834679', '2019-07-12 00:00:00.000', '7710026574', 'NOFILIAL');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-aUGsEbSGCw3w','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-aUGsEbSGCw3w', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-aUGsEbSGCw3w', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-aUGsEbSGCw3w'
+
+update alertPeriod set finishTime = '23:59:59' where FilialCode = 'NOFILIAL'
+update alertPeriod set startTime = '00:00:00' where FilialCode = 'NOFILIAL'
+update fiscalCheck set filialCode = 'NOFILIAL' where srcId = '9SD0C9DZ-9289-4A09-aUGsEbSGCw3w'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-aUGsEbSGCw3w'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-aUGsEbSGCw3w'
+1223085 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-aUGsEbSGCw3w'
+1223085 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-aUGsEbSGCw3w, null]
+1223088 [main] INFO  kkm.UnitTests - Status: null
+1223088 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+1223088 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+1223427 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/null
+1223427 [main] INFO  kkm.UnitTests - Response Code : 400
+1223428 [main] INFO  kkm.UnitTests - End test
+
+1223432 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageNotFound()
+1223524 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fa23215b-6994-43db-88dd-fa3a1dc0dfb6/messages/email/EPolikarpova@VSK.RU
+1223525 [main] INFO  kkm.UnitTests - Response Code : 400
+1223525 [main] INFO  kkm.UnitTests - {"checkId":"fa23215b-6994-43db-88dd-fa3a1dc0dfb6","error":{"code":"RECEIPT_NOTE_FOUND","message":"Receipt with specified ID not found"}}
+1223526 [main] INFO  kkm.UnitTests - End test
+
+1223528 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_PostCorrectionReceipt_negative()
+1223529 [main] INFO  kkm.UnitTests - Swagger done
+1223635 [main] INFO  kkm.UnitTests - {"error":{"code":"REQUEST_ERROR","message":"Invalid numeric value: Leading zeroes not allowed\n at [Source: org.apache.cxf.transport.http.AbstractHTTPDestination$1@2280bd7e; line: 19, column: 17] (through reference chain: ru.vsk.integration.servicemix.esb.kkm.model.PostCorrectionReceiptRequest[\"correction\"])"}}
+1223662 [main] INFO  kkm.UnitTests - [{"code":"REQUEST_ERROR","message":"Invalid numeric value: Leading zeroes not allowed\n at [Source: org.apache.cxf.transport.http.AbstractHTTPDestination$1@2280bd7e; line: 19, column: 17] (through reference chain: ru.vsk.integration.servicemix.esb.kkm.model.PostCorrectionReceiptRequest[\"correction\"])"}]
+1223662 [main] INFO  kkm.UnitTests - End test
+
+1223664 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getStatus()
+1223665 [main] INFO  kkm.UnitTests - Swagger done
+1223768 [main] INFO  kkm.UnitTests - {"correlationId":"28202038-4867-43da-82a1-96aef17ae5b5","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1223944 [main] INFO  kkm.UnitTests - []
+1223968 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts//status
+1223968 [main] INFO  kkm.UnitTests - Response Code : 404
+1223969 [main] INFO  kkm.UnitTests - End test
+
+1223973 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGateway_UTC2_FAIL()
+1224146 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-X0NW0xz6NiCZ', '9934069371', '2019-07-12 00:00:00.000', '7725327863', '0067');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-X0NW0xz6NiCZ','Фамилия Имя Отчество', '7725327863', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-X0NW0xz6NiCZ', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-X0NW0xz6NiCZ', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-X0NW0xz6NiCZ'
+
+update alertPeriod set finishTime = '23:59:59' where FilialCode = '0067'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '0067'
+update fiscalCheck set filialCode = '0067' where srcId = '9SD0C9DZ-9289-4A09-X0NW0xz6NiCZ'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-X0NW0xz6NiCZ'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-X0NW0xz6NiCZ'
+1334806 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-X0NW0xz6NiCZ'
+1334807 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-X0NW0xz6NiCZ, null]
+1334810 [main] INFO  kkm.UnitTests - Status: null
+1334810 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+1334810 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+1334909 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/null
+1334909 [main] INFO  kkm.UnitTests - Response Code : 400
+1334910 [main] INFO  kkm.UnitTests - End test
+
+1334914 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_WAcheckStatus()
+1334915 [main] INFO  kkm.UnitTests - Swagger done
+1335064 [main] INFO  kkm.UnitTests - {"correlationId":"f93a124e-9231-42e3-85ab-2d895363f1f2","checkId":"6b2ef3eb-b355-49e6-ba8e-19435c165fcb"}
+1335416 [main] INFO  kkm.UnitTests - [6b2ef3eb-b355-49e6-ba8e-19435c165fcb]
+1335930 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6b2ef3eb-b355-49e6-ba8e-19435c165fcb
+1335930 [main] INFO  kkm.UnitTests - Response Code : 200
+1335931 [main] INFO  kkm.UnitTests - [NEW]
+1336416 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6b2ef3eb-b355-49e6-ba8e-19435c165fcb
+1336416 [main] INFO  kkm.UnitTests - Response Code : 200
+1336442 [main] INFO  kkm.UnitTests - [NEW]
+1336537 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6b2ef3eb-b355-49e6-ba8e-19435c165fcb
+1336537 [main] INFO  kkm.UnitTests - Response Code : 200
+1336538 [main] INFO  kkm.UnitTests - [NEW]
+1336638 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6b2ef3eb-b355-49e6-ba8e-19435c165fcb
+1336638 [main] INFO  kkm.UnitTests - Response Code : 200
+1336639 [main] INFO  kkm.UnitTests - [NEW]
+1337004 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6b2ef3eb-b355-49e6-ba8e-19435c165fcb
+1337005 [main] INFO  kkm.UnitTests - Response Code : 200
+1337005 [main] INFO  kkm.UnitTests - [NEW]
+1337113 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6b2ef3eb-b355-49e6-ba8e-19435c165fcb
+1337113 [main] INFO  kkm.UnitTests - Response Code : 200
+1337116 [main] INFO  kkm.UnitTests - [NEW]
+1337216 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6b2ef3eb-b355-49e6-ba8e-19435c165fcb
+1337216 [main] INFO  kkm.UnitTests - Response Code : 200
+1337264 [main] INFO  kkm.UnitTests - [NEW]
+1337352 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6b2ef3eb-b355-49e6-ba8e-19435c165fcb
+1337352 [main] INFO  kkm.UnitTests - Response Code : 200
+1337437 [main] INFO  kkm.UnitTests - [NEW]
+1337563 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6b2ef3eb-b355-49e6-ba8e-19435c165fcb
+1337563 [main] INFO  kkm.UnitTests - Response Code : 200
+1337564 [main] INFO  kkm.UnitTests - [DONE]
+1337665 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/6b2ef3eb-b355-49e6-ba8e-19435c165fcb
+1337665 [main] INFO  kkm.UnitTests - Response Code : 200
+1337666 [main] INFO  kkm.UnitTests - [DONE]
+1337666 [main] INFO  kkm.UnitTests - [DONE]
+1337666 [main] INFO  kkm.UnitTests - End test
+
+1337669 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_makeAndCancelCheckCashier()
+1337669 [main] INFO  kkm.UnitTests - Swagger done
+1337854 [main] INFO  kkm.UnitTests - {"correlationId":"fff0cd55-57ba-4adc-8620-679f62e06cee","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1337994 [main] INFO  kkm.UnitTests - []
+1338036 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1338036 [main] INFO  kkm.UnitTests - Response Code : 405
+1338037 [main] INFO  kkm.UnitTests - End test
+
+1338039 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_CanceledAlredy()
+1338040 [main] INFO  kkm.UnitTests - Swagger done
+1338267 [main] INFO  kkm.UnitTests - {"correlationId":"59b90f85-ad31-4b62-80ac-b19f4f54ad74","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1338359 [main] INFO  kkm.UnitTests - []
+1338423 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1338423 [main] INFO  kkm.UnitTests - Response Code : 405
+1338427 [main] INFO  kkm.UnitTests - End test
+
+1338431 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getDocCustomer()
+1338431 [main] INFO  kkm.UnitTests - Swagger done
+1338563 [main] INFO  kkm.UnitTests - {"correlationId":"63d07bae-c184-4cea-a418-d36ab145f0fe","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1338601 [main] INFO  kkm.UnitTests - []
+1338624 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1338624 [main] INFO  kkm.UnitTests - Response Code : 405
+1338629 [main] INFO  kkm.UnitTests - Result is: 
+1338630 [main] INFO  kkm.UnitTests - End test
+
+1338634 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageWasCanceled()
+1338634 [main] INFO  kkm.UnitTests - Swagger done
+1339004 [main] INFO  kkm.UnitTests - {"correlationId":"d5c9b0f0-394f-49d4-80e2-78b83a8e23df","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1339040 [main] INFO  kkm.UnitTests - []
+1339149 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1339149 [main] INFO  kkm.UnitTests - Response Code : 405
+1339150 [main] INFO  kkm.UnitTests - End test
+
+1339154 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone1()
+1339154 [main] INFO  kkm.UnitTests - Swagger done
+1339252 [main] INFO  kkm.UnitTests - {"correlationId":"71a70aea-707e-494a-8028-5001867b96c8","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1339285 [main] INFO  kkm.UnitTests - []
+1409289 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%2271a70aea-707e-494a-8028-5001867b96c8%22%20
+1409556 [main] INFO  kkm.UnitTests - Response message : {"took":147,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":95.40683,"hits":[{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"yMAteHUBxFYn7BJFopPx","_score":95.40683,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:23:52,124","@timestamp":"2020-10-30T06:23:52.124Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1185792,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='71a70aea-707e-494a-8028-5001867b96c8', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-532 CID=71a70aea-707e-494a-8028-5001867b96c8","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-205913","input":{"type":"log"}}},{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"6sAteHUBxFYn7BJFopLq","_score":95.40683,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:23:52,160","@timestamp":"2020-10-30T06:23:52.160Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1194223,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='71a70aea-707e-494a-8028-5001867b96c8', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-537 CID=71a70aea-707e-494a-8028-5001867b96c8","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-195755","input":{"type":"log"}}}]}}
+1410669 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1410670 [main] INFO  kkm.UnitTests - Response Code : 405
+1410670 [main] INFO  kkm.UnitTests - End test
+
+1410675 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone2()
+1410675 [main] INFO  kkm.UnitTests - Swagger done
+1410862 [main] INFO  kkm.UnitTests - {"correlationId":"f3c9da10-8489-45c8-851e-c6e2f1eb2c97","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1411092 [main] INFO  kkm.UnitTests - []
+1481096 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%22f3c9da10-8489-45c8-851e-c6e2f1eb2c97%22%20
+1481162 [main] INFO  kkm.UnitTests - Response message : {"took":15,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":95.30166,"hits":[{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"2cEueHUBxFYn7BJFeljl","_score":95.30166,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:25:03,792","@timestamp":"2020-10-30T06:25:03.792Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1211085,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='f3c9da10-8489-45c8-851e-c6e2f1eb2c97', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-547 CID=f3c9da10-8489-45c8-851e-c6e2f1eb2c97","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-205913","input":{"type":"log"}}},{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"-cEueHUBxFYn7BJFeljo","_score":95.30166,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:25:03,650","@timestamp":"2020-10-30T06:25:03.650Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1202654,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='f3c9da10-8489-45c8-851e-c6e2f1eb2c97', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-542 CID=f3c9da10-8489-45c8-851e-c6e2f1eb2c97","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-195755","input":{"type":"log"}}}]}}
+1481256 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1481256 [main] INFO  kkm.UnitTests - Response Code : 405
+1481257 [main] INFO  kkm.UnitTests - End test
+
+1481261 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone3()
+1481262 [main] INFO  kkm.UnitTests - Swagger done
+1481395 [main] INFO  kkm.UnitTests - {"correlationId":"4014e4cd-e10c-4a4d-8a17-4275b20f521c","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1481620 [main] INFO  kkm.UnitTests - []
+1551623 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%224014e4cd-e10c-4a4d-8a17-4275b20f521c%22%20
+1551832 [main] INFO  kkm.UnitTests - Response message : {"took":156,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":95.26779,"hits":[{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"y8EveHUBxFYn7BJFlN3m","_score":95.26779,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:26:14,340","@timestamp":"2020-10-30T06:26:14.340Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1228159,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='4014e4cd-e10c-4a4d-8a17-4275b20f521c', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-557 CID=4014e4cd-e10c-4a4d-8a17-4275b20f521c","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-195755","input":{"type":"log"}}},{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"jcEveHUBxFYn7BJFlN7r","_score":95.26779,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:26:14,234","@timestamp":"2020-10-30T06:26:14.234Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1219728,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='4014e4cd-e10c-4a4d-8a17-4275b20f521c', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-552 CID=4014e4cd-e10c-4a4d-8a17-4275b20f521c","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-205937","input":{"type":"log"}}}]}}
+1551923 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1551923 [main] INFO  kkm.UnitTests - Response Code : 405
+1551924 [main] INFO  kkm.UnitTests - End test
+
+1551928 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone4()
+1551928 [main] INFO  kkm.UnitTests - Swagger done
+1552163 [main] INFO  kkm.UnitTests - {"correlationId":"b5fa433d-a52a-463a-8c76-9d7e81a309db","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1552394 [main] INFO  kkm.UnitTests - []
+1622399 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%22b5fa433d-a52a-463a-8c76-9d7e81a309db%22%20
+1622498 [main] INFO  kkm.UnitTests - Response message : {"took":47,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+1622500 [main] INFO  kkm.UnitTests - End test
+
+1622504 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone5()
+1622504 [main] INFO  kkm.UnitTests - Swagger done
+1622645 [main] INFO  kkm.UnitTests - {"correlationId":"e196013d-a999-4e54-94fe-ac5625397678","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1622832 [main] INFO  kkm.UnitTests - []
+1692836 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%22e196013d-a999-4e54-94fe-ac5625397678%22%20
+1692994 [main] INFO  kkm.UnitTests - Response message : {"took":106,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":95.11609,"hits":[{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"Q8YxeHUBxFYn7BJFrVS8","_score":95.11609,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:28:35,569","@timestamp":"2020-10-30T06:28:35.569Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1261883,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='e196013d-a999-4e54-94fe-ac5625397678', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-577 CID=e196013d-a999-4e54-94fe-ac5625397678","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-205913","input":{"type":"log"}}},{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"PMYxeHUBxFYn7BJFrlUM","_score":95.11609,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:28:35,477","@timestamp":"2020-10-30T06:28:35.477Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1253452,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='e196013d-a999-4e54-94fe-ac5625397678', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-572 CID=e196013d-a999-4e54-94fe-ac5625397678","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-205937","input":{"type":"log"}}}]}}
+1693084 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1693084 [main] INFO  kkm.UnitTests - Response Code : 405
+1693085 [main] INFO  kkm.UnitTests - End test
+
+1693089 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone6()
+1693089 [main] INFO  kkm.UnitTests - Swagger done
+1693183 [main] INFO  kkm.UnitTests - {"correlationId":"6bc61814-69ca-4715-b34d-dceeb79e6d59","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1693365 [main] INFO  kkm.UnitTests - []
+1763366 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%226bc61814-69ca-4715-b34d-dceeb79e6d59%22%20
+1763497 [main] INFO  kkm.UnitTests - Response message : {"took":78,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":95.02852,"hits":[{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"hMszeHUBxFYn7BJFIPP6","_score":95.02852,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:29:46,054","@timestamp":"2020-10-30T06:29:46.054Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1270314,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='6bc61814-69ca-4715-b34d-dceeb79e6d59', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-582 CID=6bc61814-69ca-4715-b34d-dceeb79e6d59","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-195755","input":{"type":"log"}}},{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"hsszeHUBxFYn7BJFIPP6","_score":95.02852,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:29:46,088","@timestamp":"2020-10-30T06:29:46.088Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1278745,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='6bc61814-69ca-4715-b34d-dceeb79e6d59', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-587 CID=6bc61814-69ca-4715-b34d-dceeb79e6d59","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-205914","input":{"type":"log"}}}]}}
+1763590 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1763590 [main] INFO  kkm.UnitTests - Response Code : 405
+1763590 [main] INFO  kkm.UnitTests - End test
+
+1763592 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone7()
+1763592 [main] INFO  kkm.UnitTests - Swagger done
+1763688 [main] INFO  kkm.UnitTests - {"correlationId":"f4d63d0c-e027-4eef-9840-e2ffec46216f","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1763887 [main] INFO  kkm.UnitTests - []
+1833889 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%22f4d63d0c-e027-4eef-9840-e2ffec46216f%22%20
+1834060 [main] INFO  kkm.UnitTests - Response message : {"took":120,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":94.803696,"hits":[{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"W88zeHUBxFYn7BJF-Xt7","_score":94.803696,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:30:56,557","@timestamp":"2020-10-30T06:30:56.557Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1287176,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='f4d63d0c-e027-4eef-9840-e2ffec46216f', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-592 CID=f4d63d0c-e027-4eef-9840-e2ffec46216f","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-195755","input":{"type":"log"}}},{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"ZM8zeHUBxFYn7BJF-Xt7","_score":94.803696,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:30:56,597","@timestamp":"2020-10-30T06:30:56.597Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1295607,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='f4d63d0c-e027-4eef-9840-e2ffec46216f', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-597 CID=f4d63d0c-e027-4eef-9840-e2ffec46216f","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-205914","input":{"type":"log"}}}]}}
+1834148 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1834148 [main] INFO  kkm.UnitTests - Response Code : 405
+1834149 [main] INFO  kkm.UnitTests - End test
+
+1834152 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone8()
+1834153 [main] INFO  kkm.UnitTests - Swagger done
+1835651 [main] INFO  kkm.UnitTests - {"correlationId":"f1f9bb9e-8c8a-41c2-b686-40be27a89890","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1835825 [main] INFO  kkm.UnitTests - []
+1905829 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%22f1f9bb9e-8c8a-41c2-b686-40be27a89890%22%20
+1906074 [main] INFO  kkm.UnitTests - Response message : {"took":190,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":2,"relation":"eq"},"max_score":94.87735,"hits":[{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"ndM0eHUBxFYn7BJF9sI6","_score":94.87735,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:32:08,518","@timestamp":"2020-10-30T06:32:08.518Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1304038,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='f1f9bb9e-8c8a-41c2-b686-40be27a89890', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-602 CID=f1f9bb9e-8c8a-41c2-b686-40be27a89890","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-205913","input":{"type":"log"}}},{"_index":"esb-test-2020.10.30","_type":"_doc","_id":"ptM0eHUBxFYn7BJF9sI6","_score":94.87735,"_source":{"bundleid":"45361","@version":"1","environment":"test","beat":{"hostname":"esb-test01","version":"6.8.10","name":"esb-test01"},"package":"servicemix.esb.kkm","timestamp":"2020-10-30T09:32:08,556","@timestamp":"2020-10-30T06:32:08.556Z","tags":["beats_input_codec_plain_applied"],"log":{"file":{"path":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log"}},"level":"trace","offset":1312469,"prospector":{"type":"log"},"host":{"name":"esb-test01"},"application":"esb","message":"KkmService: REST request  Operation 'PostReceipt' was call with body: ReceiptRequest{common=Common{system='SHOP', messageId='f1f9bb9e-8c8a-41c2-b686-40be27a89890', timestamp=Fri May 31 19:45:45 MSK 2019, product='OSAGO', terminal='112344256', inn='7710026574', taxSystem='OSN', cashier='null', cashierInn='null', settlementAddress='null', settlementPlace='null'}, customer=Customer[name=?????? ???? ????????,inn=7710026574,docSerial=4110,docNumber=123456,email=test@gmail.com,phone=+79257777777,attributes=[CustomerAttribute[name=Some Additional Attribute,value=string]]], positions=[Position{name='????????? ?????? ? ?????????????', price=1000.25, quantity=2, tax='VAT20', sum=2000.50, taxSum=1000.25, total=1000.25, paymentMethod='PREPAYMENT', subjectType='PRODUCT', attributes=PositionAttributes{nomenclatureCode='MTIzNDU=', unitOfMeasurement='?????', additionalAttribute='MTIzNDU=', manufacturerCountryCode='1', customsDeclarationNumber='33440288DS', excise=15.45}, agent=PositionAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772], operator=PositionAgentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='null'}}, supplier=PositionSupplier{inn='7710026574', phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ?????????-1'}}], payment=Payment{amount=2000.50, type='INCOME', form='CASH', agent=PaymentAgent{name='string', type='BANK-AGENT', operation='string', phoneNumbers=[79257777770, 79257777771, 79257777772]}, operator=PaymentOperator{phoneNumbers=[79257777770, 79257777771, 79257777772], name='??? ????-1', address='??????, ?. ??????, ??. ?????????, ?. 10', inn='7710026574', additionalAttribute='string'}, supplier=PaymentSupplier{phoneNumbers=[79257777770, 79257777771, 79257777772]}}} | exid=ID-esb-test01-39751-1603869228711-63-607 CID=f1f9bb9e-8c8a-41c2-b686-40be27a89890","source":"/opt/apache-servicemix-6.1.4/instances/esb001/data/log/esb001.log","thread":"qtp1713796579-205914","input":{"type":"log"}}}]}}
+1906165 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+1906166 [main] INFO  kkm.UnitTests - Response Code : 405
+1906166 [main] INFO  kkm.UnitTests - End test
+
+1906170 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone9()
+1906170 [main] INFO  kkm.UnitTests - Swagger done
+1906268 [main] INFO  kkm.UnitTests - {"correlationId":"15441bef-361e-4ac5-ba09-5f2fbaf9aa93","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+1906534 [main] INFO  kkm.UnitTests - []
+1976538 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.10.30/_search?q=%20message:%20%22KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body%22%20AND%20%2215441bef-361e-4ac5-ba09-5f2fbaf9aa93%22%20
+1976709 [main] INFO  kkm.UnitTests - Response message : {"took":119,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}}
+1976710 [main] INFO  kkm.UnitTests - End test
+

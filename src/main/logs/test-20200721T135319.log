@@ -1,0 +1,8 @@
+167  [main] INFO  kkm.UnitTests - Starting test: KKM_DB4()
+1243 [main] INFO  kkm.UnitTests - Strings where added with srcID:9SD0C9DZ-9289-4A09-3KJBbxkis4le
+1476 [main] INFO  kkm.UnitTests - String where insert to ProcessStatus with srcID:9SD0C9DZ-9289-4A09-3KJBbxkis4le
+122928 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-3KJBbxkis4le'
+122940 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, DONE, nothing, nothing, 9SD0C9DZ-9289-4A09-3KJBbxkis4le, cc5a1bdf-41e3-4781-a503-84a768d5dde8]
+122942 [main] INFO  kkm.UnitTests - DONE
+122948 [main] INFO  kkm.UnitTests - End test
+

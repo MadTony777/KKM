@@ -1,0 +1,23 @@
+192  [main] INFO  kkm.UnitTests - Starting test: KKM_DB6()
+769  [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-hq4SrSOND6n6', '6680579066', '2019-07-12 00:00:00.000', '7710026574', '0031');
+951  [main] INFO  kkm.UnitTests - Script is: Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-hq4SrSOND6n6','Фамилия Имя Отчество', '7710026574', '71000000000' );
+1120 [main] INFO  kkm.UnitTests - Script is: Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-hq4SrSOND6n6', '1522756', 'INCOME');
+1273 [main] INFO  kkm.UnitTests - Script is: Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-hq4SrSOND6n6', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+1300 [main] INFO  kkm.UnitTests - Strings where added with srcID:9SD0C9DZ-9289-4A09-hq4SrSOND6n6
+1433 [main] INFO  kkm.UnitTests - Script is: insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-hq4SrSOND6n6'
+1542 [main] INFO  kkm.UnitTests - String where insert to ProcessStatus with srcID:9SD0C9DZ-9289-4A09-hq4SrSOND6n6
+1693 [main] INFO  kkm.UnitTests - Script is: update alertPeriod set finishTime = '00.00.00' where FilialCode = '0031'
+
+1850 [main] INFO  kkm.UnitTests - Script is: update alertPeriod set startTime = '00.00.00' where FilialCode = '0031'
+2001 [main] INFO  kkm.UnitTests - Script is: update fiscalCheck set filialCode = '0031' where srcId = '9SD0C9DZ-9289-4A09-hq4SrSOND6n6'
+2255 [main] INFO  kkm.UnitTests - Script is: update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-hq4SrSOND6n6'
+122717 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-hq4SrSOND6n6'
+122730 [main] INFO  kkm.UnitTests - End test
+

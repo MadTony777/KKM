@@ -1,0 +1,10 @@
+1823 [main] INFO  kkm.UnitTests - Strings where added with srcID:9SD0C9DZ-9289-4A09-hJmLlN7YP3CF
+2064 [main] INFO  kkm.UnitTests - String where insert to ProcessStatus with srcID:9SD0C9DZ-9289-4A09-hJmLlN7YP3CF
+2582 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, nothing, 9SD0C9DZ-9289-4A09-hJmLlN7YP3CF]
+2583 [main] INFO  kkm.UnitTests - Status is: [ADINSURE, Payment, null, nothing, 9SD0C9DZ-9289-4A09-hJmLlN7YP3CF]
+63581 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, FAIL, BAD_REQUEST, Bad request: {
+  "errors": [
+    "Передача данных автомата недоступна для указанной группы"
+  ]
+}, 9SD0C9DZ-9289-4A09-hJmLlN7YP3CF, ae1c55db-e4dd-4ef6-9bfd-69e2de7bc3e1]
+63583 [main] INFO  kkm.UnitTests - FAIL

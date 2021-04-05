@@ -1,0 +1,3 @@
+1204 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM KKMCash_Stage.dbo.ProcessStatus Where SystemCode = 'ADINSURE' and fiscGateCheckStatusCode = 'ERROR'
+1211 [main] INFO  kkm.UnitTests - srcID is: 8764D41C33049226B2C52569E8962A27F45B5E62
+1213 [main] INFO  kkm.UnitTests - srcID is: 8764D41C33049226B2C52569E8962A27F45B5E62

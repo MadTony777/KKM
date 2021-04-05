@@ -1,0 +1,36 @@
+198  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone10()
+299  [main] INFO  kkm.UnitTests - Swagger done
+735  [main] INFO  kkm.UnitTests - {"correlationId":"5d22f6c5-e15b-4f27-b342-7c130060c51b","checkId":"d985e5d5-cd20-4e15-8865-6e6122bd1dee"}
+802  [main] INFO  kkm.UnitTests - [d985e5d5-cd20-4e15-8865-6e6122bd1dee]
+40873 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22"KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body"%20AND%20"5d22f6c5-e15b-4f27-b342-7c130060c51b%22%20
+40874 [main] ERROR kkm.UnitTests - !!!!!!!!!!!!!!!!!!!!Something goes wrong!!!!!!!!!!!!!!!!!!!!
+40879 [main] INFO  kkm.UnitTests - End test
+
+40886 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone11()
+40886 [main] INFO  kkm.UnitTests - Swagger done
+40989 [main] INFO  kkm.UnitTests - {"correlationId":"503d1bea-e4b7-494c-8603-84a7fdd288e3","checkId":"01e34ae9-535e-4e9b-a672-175bd72a2746"}
+41032 [main] INFO  kkm.UnitTests - [01e34ae9-535e-4e9b-a672-175bd72a2746]
+81037 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22"KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body"%20AND%20"503d1bea-e4b7-494c-8603-84a7fdd288e3%22%20
+81038 [main] ERROR kkm.UnitTests - !!!!!!!!!!!!!!!!!!!!Something goes wrong!!!!!!!!!!!!!!!!!!!!
+81039 [main] INFO  kkm.UnitTests - End test
+
+81049 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone12()
+81050 [main] INFO  kkm.UnitTests - Swagger done
+81156 [main] INFO  kkm.UnitTests - {"correlationId":"e2a2b487-904b-4cc3-91df-aa76078ee75b","checkId":"a52b686e-ee98-4e02-8bda-391b9ecf4ff7"}
+81195 [main] INFO  kkm.UnitTests - [a52b686e-ee98-4e02-8bda-391b9ecf4ff7]
+121200 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22"KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body"%20AND%20"e2a2b487-904b-4cc3-91df-aa76078ee75b%22%20
+121201 [main] ERROR kkm.UnitTests - !!!!!!!!!!!!!!!!!!!!Something goes wrong!!!!!!!!!!!!!!!!!!!!
+121202 [main] INFO  kkm.UnitTests - End test
+
+121208 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone13()
+121209 [main] INFO  kkm.UnitTests - Swagger done
+121314 [main] INFO  kkm.UnitTests - {"correlationId":"3de18a45-935c-47f7-ba00-3924581a692a","checkId":"e9e953aa-86eb-44a4-8931-10ee65954d7c"}
+121364 [main] INFO  kkm.UnitTests - [e9e953aa-86eb-44a4-8931-10ee65954d7c]
+161368 [main] INFO  kkm.UnitTests - URL is : http://elog.vsk.ru:9200/esb-test-2020.08.11/_search?q=%20message:%20%22"KkmService:%20REST%20request%20Operation%20!%27PostReceipt!%27%20was%20call%20with%20body"%20AND%20"3de18a45-935c-47f7-ba00-3924581a692a%22%20
+161369 [main] ERROR kkm.UnitTests - !!!!!!!!!!!!!!!!!!!!Something goes wrong!!!!!!!!!!!!!!!!!!!!
+161370 [main] INFO  kkm.UnitTests - End test
+
+161377 [main] INFO  kkm.UnitTests - Starting test: KKM_Phone14()
+161377 [main] INFO  kkm.UnitTests - Swagger done
+161476 [main] INFO  kkm.UnitTests - {"correlationId":"23286ff6-f216-477f-921f-2ad4527c3c99","checkId":"591f6bd2-7e7e-406d-9d15-c85ee251b197"}
+161532 [main] INFO  kkm.UnitTests - [591f6bd2-7e7e-406d-9d15-c85ee251b197]

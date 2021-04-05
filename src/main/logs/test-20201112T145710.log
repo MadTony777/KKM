@@ -1,0 +1,108 @@
+359  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageEmail()
+492  [main] INFO  kkm.UnitTests - End test
+
+502  [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGatewayWithStubs_DONE()
+502  [main] INFO  kkm.UnitTests - End test
+
+507  [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_Error()
+507  [main] INFO  kkm.UnitTests - End test
+
+509  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone10()
+510  [main] INFO  kkm.UnitTests - End test
+
+511  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone11()
+512  [main] INFO  kkm.UnitTests - End test
+
+514  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone12()
+514  [main] INFO  kkm.UnitTests - End test
+
+516  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone13()
+516  [main] INFO  kkm.UnitTests - End test
+
+519  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone14()
+519  [main] INFO  kkm.UnitTests - End test
+
+522  [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_NOFILIAL()
+533  [main] INFO  kkm.UnitTests - End test
+
+535  [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_UTC12_DONE()
+535  [main] INFO  kkm.UnitTests - End test
+
+537  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_makeCheckNoCashier()
+538  [main] INFO  kkm.UnitTests - End test
+
+540  [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_UTC2_FAIL()
+540  [main] INFO  kkm.UnitTests - End test
+
+542  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_makeCheckCashier()
+542  [main] INFO  kkm.UnitTests - End test
+
+544  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SIPheckStatus()
+544  [main] INFO  kkm.UnitTests - End test
+
+545  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_PostCorrectionReceipt()
+546  [main] INFO  kkm.UnitTests - End test
+
+547  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_CanceleNotFound()
+548  [main] INFO  kkm.UnitTests - End test
+
+549  [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGateway_UTC12_DONE()
+550  [main] INFO  kkm.UnitTests - End test
+
+552  [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGateway_NOFILIAL()
+553  [main] INFO  kkm.UnitTests - End test
+
+555  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageNotFound()
+555  [main] INFO  kkm.UnitTests - End test
+
+557  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_PostCorrectionReceipt_negative()
+558  [main] INFO  kkm.UnitTests - End test
+
+560  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getStatus()
+560  [main] INFO  kkm.UnitTests - End test
+
+562  [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGateway_UTC2_FAIL()
+563  [main] INFO  kkm.UnitTests - End test
+
+571  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_WAcheckStatus()
+571  [main] INFO  kkm.UnitTests - End test
+
+573  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_makeAndCancelCheckCashier()
+573  [main] INFO  kkm.UnitTests - End test
+
+574  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_CanceledAlredy()
+575  [main] INFO  kkm.UnitTests - End test
+
+579  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getDocCustomer()
+579  [main] INFO  kkm.UnitTests - End test
+
+580  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageWasCanceled()
+581  [main] INFO  kkm.UnitTests - End test
+
+584  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone1()
+584  [main] INFO  kkm.UnitTests - End test
+
+585  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone2()
+586  [main] INFO  kkm.UnitTests - End test
+
+587  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone3()
+587  [main] INFO  kkm.UnitTests - End test
+
+590  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone4()
+590  [main] INFO  kkm.UnitTests - End test
+
+591  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone5()
+592  [main] INFO  kkm.UnitTests - End test
+
+593  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone6()
+593  [main] INFO  kkm.UnitTests - End test
+
+595  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone7()
+595  [main] INFO  kkm.UnitTests - End test
+
+596  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone8()
+597  [main] INFO  kkm.UnitTests - End test
+
+598  [main] INFO  kkm.UnitTests - Starting test: KKM_Phone9()
+598  [main] INFO  kkm.UnitTests - End test
+

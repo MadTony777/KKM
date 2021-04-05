@@ -1,0 +1,17 @@
+220  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageWasCanceled()
+8268 [main] INFO  kkm.UnitTests - Request done
+51555 [main] INFO  kkm.UnitTests - {"correlationId":"e7199f65-9f78-47fb-9637-189631fef17f","checkId":"edec4a35-8ec9-46e1-8a38-8b83a4abcae0"}
+51800 [main] INFO  kkm.UnitTests - [edec4a35-8ec9-46e1-8a38-8b83a4abcae0]
+67525 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/edec4a35-8ec9-46e1-8a38-8b83a4abcae0
+67526 [main] INFO  kkm.UnitTests - Response Code : 200
+67554 [main] INFO  kkm.UnitTests - [DONE]
+69655 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/edec4a35-8ec9-46e1-8a38-8b83a4abcae0
+69656 [main] INFO  kkm.UnitTests - Response Code : 200
+69673 [main] INFO  kkm.UnitTests - [DONE]
+69675 [main] INFO  kkm.UnitTests - [DONE]
+76238 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/edec4a35-8ec9-46e1-8a38-8b83a4abcae0/cancel
+76239 [main] INFO  kkm.UnitTests - Response Code : 200
+76241 [main] INFO  kkm.UnitTests - {"checkId":"edec4a35-8ec9-46e1-8a38-8b83a4abcae0","canceledCheckId":"baaf3afd-2f06-451d-997a-96fb6f2edca2"}

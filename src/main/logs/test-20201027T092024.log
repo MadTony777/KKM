@@ -1,0 +1,9 @@
+170  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_makeAndCancelCheckCashier()
+285  [main] INFO  kkm.UnitTests - Swagger done
+1747 [main] INFO  kkm.UnitTests - {"correlationId":"00e993a1-2c17-4e60-9220-73931e9476e7","checkId":"","error":{"code":"VALIDATION_ERROR","message":"[#/positions/0/agent/operator: required key [inn] not found]"}}
+2744 [main] INFO  kkm.UnitTests - []
+2822 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/
+2823 [main] INFO  kkm.UnitTests - Response Code : 405
+2834 [main] INFO  kkm.UnitTests - End test
+

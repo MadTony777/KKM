@@ -1,0 +1,5 @@
+932  [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM KKMCash_Stage.dbo.ProcessStatus Where fiscGateCheckStatusCode = 'DONE'
+942  [main] INFO  kkm.UnitTests - srcID is: 4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67
+944  [main] INFO  kkm.UnitTests - srcID is: 4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67
+1599 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Policy, null, nothing, 4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67]
+1602 [main] INFO  kkm.UnitTests - Status is: [ADINSURE, Policy, null, nothing, 4CD024D9ECA44EC2E3DA20C60DE0F2F2BD729C67]

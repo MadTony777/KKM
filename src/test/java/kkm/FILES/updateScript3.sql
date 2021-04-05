@@ -1,0 +1,6 @@
+update customer set inn = '7725327863' where srcID = '--srcID--'
+update alertPeriod set finishTime = '--hh:mm:ss--' where FilialCode = '--filialCode--'
+update alertPeriod set startTime = '--hh:mm:ss--' where FilialCode = '--filialCode--'
+update fiscalCheck set filialCode = '--filialCode--' where srcId = '--srcID--'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '--srcID--'
+select * from processStatus where srcID = '--srcID--'

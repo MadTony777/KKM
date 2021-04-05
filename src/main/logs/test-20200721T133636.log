@@ -1,0 +1,8 @@
+222  [main] INFO  kkm.UnitTests - Starting test: KKM_DB4()
+25467 [main] INFO  kkm.UnitTests - Strings where added with srcID:9SD0C9DZ-9289-4A09-KdMYHit1OYjm
+34532 [main] INFO  kkm.UnitTests - String where insert to ProcessStatus with srcID:9SD0C9DZ-9289-4A09-KdMYHit1OYjm
+497260 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-KdMYHit1OYjm'
+526436 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, CALLSERVICEERROR, 0, Connection refused, 9SD0C9DZ-9289-4A09-KdMYHit1OYjm, null]
+531593 [main] INFO  kkm.UnitTests - CALLSERVICEERROR
+537063 [main] INFO  kkm.UnitTests - End test
+

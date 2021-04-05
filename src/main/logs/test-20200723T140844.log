@@ -1,0 +1,42 @@
+195  [main] INFO  kkm.UnitTests - Starting test: KKM_SendMessageEmail()
+61126 [main] INFO  kkm.UnitTests - End test
+
+61150 [main] INFO  kkm.UnitTests - Starting test: KKM_SendMessageWasCanceled()
+121559 [main] INFO  kkm.UnitTests - End test
+
+121565 [main] INFO  kkm.UnitTests - Starting test: KKM_CanceleNotFound()
+121685 [main] INFO  kkm.UnitTests - End test
+
+121689 [main] INFO  kkm.UnitTests - Starting test: KKM_makeAndCancelCheckCashier()
+181916 [main] INFO  kkm.UnitTests - End test
+
+181925 [main] INFO  kkm.UnitTests - Starting test: KKM_SIPheckStatus()
+242152 [main] INFO  kkm.UnitTests - End test
+
+242159 [main] INFO  kkm.UnitTests - Starting test: KKM_SendMessageNotFound()
+242259 [main] INFO  kkm.UnitTests - End test
+
+242264 [main] INFO  kkm.UnitTests - Starting test: KKM_PostCorrectionReceipt_negative()
+242444 [main] INFO  kkm.UnitTests - End test
+
+242447 [main] INFO  kkm.UnitTests - Starting test: KKM_PostCorrectionReceipt()
+303554 [main] INFO  kkm.UnitTests - End test
+
+303560 [main] INFO  kkm.UnitTests - Starting test: KKM_makeCheckNoCashier()
+363888 [main] INFO  kkm.UnitTests - End test
+
+363893 [main] INFO  kkm.UnitTests - Starting test: KKM_WAcheckStatus()
+364191 [main] INFO  kkm.UnitTests - End test
+
+364197 [main] INFO  kkm.UnitTests - Starting test: KKM_getStatus()
+366121 [main] INFO  kkm.UnitTests - End test
+
+366129 [main] INFO  kkm.UnitTests - Starting test: KKM_CanceledAlredy()
+426340 [main] INFO  kkm.UnitTests - End test
+
+426345 [main] INFO  kkm.UnitTests - Starting test: KKM_getDocCustomer()
+426660 [main] INFO  kkm.UnitTests - End test
+
+426667 [main] INFO  kkm.UnitTests - Starting test: KKM_makeCheckCashier()
+486863 [main] INFO  kkm.UnitTests - End test
+

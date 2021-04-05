@@ -1,0 +1,7 @@
+168  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageNotFound()
+381  [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fa23215b-6994-43db-88dd-fa3a1dc0dfb6/messages/email/Zagorodskih@VSK.RU
+382  [main] INFO  kkm.UnitTests - Response Code : 400
+384  [main] INFO  kkm.UnitTests - {"checkId":"fa23215b-6994-43db-88dd-fa3a1dc0dfb6","error":{"code":"RECEIPT_NOTE_FOUND","message":"Receipt with specified ID not found"}}
+406  [main] INFO  kkm.UnitTests - End test
+

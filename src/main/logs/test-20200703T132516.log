@@ -1,0 +1,5 @@
+941  [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM KKMCash_Test.dbo.ProcessStatus Where fiscGateCheckStatusCode = 'ERROR'
+948  [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898541
+950  [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898541
+1633 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, null, 400, ЖПлато_000898541]
+1636 [main] INFO  kkm.UnitTests - Status is: [AXAPTA, PaymentOrder, null, 400, ЖПлато_000898541]

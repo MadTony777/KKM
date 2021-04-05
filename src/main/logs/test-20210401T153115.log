@@ -1,0 +1,221 @@
+169  [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGatewayWithStubs_DONE()
+694  [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM ProcessStatus Where fiscGateCheckStatusCode = 'DONE'
+697  [main] INFO  kkm.UnitTests - srcID is: 0AEA7197173256B405F0B43A26E2FFE9092D8BD2
+703  [main] INFO  kkm.UnitTests - srcID is: 0AEA7197173256B405F0B43A26E2FFE9092D8BD2
+14380 [main] INFO  kkm.UnitTests - update alertPeriod set finishTime = '00:00:00' where FilialCode = '--filialCode--'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '--filialCode--'
+update customer set Phone = '70000000000' where srcID = '0AEA7197173256B405F0B43A26E2FFE9092D8BD2'
+update customer set email = '' where srcId = '0AEA7197173256B405F0B43A26E2FFE9092D8BD2'
+update processStatus set fiscGateCheckStatusCode = null where srcID = '0AEA7197173256B405F0B43A26E2FFE9092D8BD2'
+select * from processStatus where srcID = '0AEA7197173256B405F0B43A26E2FFE9092D8BD2'
+14381 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, nothing, 0AEA7197173256B405F0B43A26E2FFE9092D8BD2]
+14386 [main] INFO  kkm.UnitTests - Status is: [ADINSURE, Payment, null, nothing, 0AEA7197173256B405F0B43A26E2FFE9092D8BD2]
+74742 [main] INFO  kkm.UnitTests - select * from ProcessStatus where srcID = '0AEA7197173256B405F0B43A26E2FFE9092D8BD2'
+74743 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, nothing, 0AEA7197173256B405F0B43A26E2FFE9092D8BD2]
+135897 [main] INFO  kkm.UnitTests - End test
+
+135911 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_Error()
+136068 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM ProcessStatus Where fiscGateCheckStatusCode = 'ERROR'
+136068 [main] INFO  kkm.UnitTests - srcID is: F5EFEA875D0A77D6DA04EFB20E0F55160EDA0666
+136073 [main] INFO  kkm.UnitTests - srcID is: F5EFEA875D0A77D6DA04EFB20E0F55160EDA0666
+136801 [main] INFO  kkm.UnitTests - update dbo.Customer set inn = '1' where srcID = 'F5EFEA875D0A77D6DA04EFB20E0F55160EDA0666'
+update ProcessStatus set fiscGateCheckStatusCode = null where srcID = 'F5EFEA875D0A77D6DA04EFB20E0F55160EDA0666'
+select * from ProcessStatus where srcID = 'F5EFEA875D0A77D6DA04EFB20E0F55160EDA0666'
+136802 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, VALIDATION_ERROR, F5EFEA875D0A77D6DA04EFB20E0F55160EDA0666]
+136806 [main] INFO  kkm.UnitTests - Status is: [ADINSURE, Payment, null, VALIDATION_ERROR, F5EFEA875D0A77D6DA04EFB20E0F55160EDA0666]
+197161 [main] INFO  kkm.UnitTests - select * from ProcessStatus where srcID = 'F5EFEA875D0A77D6DA04EFB20E0F55160EDA0666'
+197161 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, VALIDATION_ERROR, F5EFEA875D0A77D6DA04EFB20E0F55160EDA0666]
+257264 [main] INFO  kkm.UnitTests - End test
+
+257274 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_NOFILIAL()
+257456 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-pyom4MVPnU2J', '2372775369', '2019-07-12 00:00:00.000', '7710026574', 'NOFILIAL');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-pyom4MVPnU2J','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-pyom4MVPnU2J', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-pyom4MVPnU2J', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-pyom4MVPnU2J'
+
+update alertPeriod set finishTime = '00:00:00' where FilialCode = 'NOFILIAL'
+update alertPeriod set startTime = '00:00:00' where FilialCode = 'NOFILIAL'
+update fiscalCheck set filialCode = 'NOFILIAL' where srcId = '9SD0C9DZ-9289-4A09-pyom4MVPnU2J'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-pyom4MVPnU2J'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-pyom4MVPnU2J'
+439874 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-pyom4MVPnU2J'
+439874 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-pyom4MVPnU2J, null]
+439877 [main] INFO  kkm.UnitTests - Status: null
+439878 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+439878 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+459878 [main] INFO  kkm.UnitTests - Request url is: http://elog.vsk.ru:9200/kkm-commutator-stage-2021.04.01/_search?q= message: "ReadyForSendingReceiptKeys"&size=5 
+460018 [main] INFO  kkm.UnitTests - End test
+
+460022 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_UTC12_DONE()
+460172 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-XNPtvYIbwAuT', '3982854910', '2019-07-12 00:00:00.000', '7710026574', '0031');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-XNPtvYIbwAuT','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-XNPtvYIbwAuT', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-XNPtvYIbwAuT', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-XNPtvYIbwAuT'
+
+update alertPeriod set finishTime = '00:00:00' where FilialCode = '0031'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '0031'
+update fiscalCheck set filialCode = '0031' where srcId = '9SD0C9DZ-9289-4A09-XNPtvYIbwAuT'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-XNPtvYIbwAuT'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-XNPtvYIbwAuT'
+571467 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-XNPtvYIbwAuT'
+571467 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-XNPtvYIbwAuT, null]
+571470 [main] INFO  kkm.UnitTests - Status: null
+571471 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+571471 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+591471 [main] INFO  kkm.UnitTests - Request url is: http://elog.vsk.ru:9200/kkm-commutator-stage-2021.04.01/_search?q= message: "ReadyForSendingReceiptKeys"&size=5 
+591620 [main] INFO  kkm.UnitTests - End test
+
+591628 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_NoSentToGateway_UTC2_FAIL()
+591794 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-2eTslEarQxJR', '6248687360', '2019-07-12 00:00:00.000', '7725327863', '0067');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-2eTslEarQxJR','Фамилия Имя Отчество', '7725327863', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-2eTslEarQxJR', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-2eTslEarQxJR', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-2eTslEarQxJR'
+
+update alertPeriod set finishTime = '00:00:00' where FilialCode = '0067'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '0067'
+update fiscalCheck set filialCode = '0067' where srcId = '9SD0C9DZ-9289-4A09-2eTslEarQxJR'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-2eTslEarQxJR'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-2eTslEarQxJR'
+702873 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-2eTslEarQxJR'
+702874 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-2eTslEarQxJR, null]
+702877 [main] INFO  kkm.UnitTests - Status: null
+702877 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+702877 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+722877 [main] INFO  kkm.UnitTests - Request url is: http://elog.vsk.ru:9200/kkm-commutator-stage-2021.04.01/_search?q= message: "ReadyForSendingReceiptKeys"&size=5 
+722978 [main] INFO  kkm.UnitTests - End test
+
+722987 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGateway_UTC12_DONE()
+723167 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-ssomySwjwH3x', '1254748933', '2019-07-12 00:00:00.000', '7710026574', '0031');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-ssomySwjwH3x','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-ssomySwjwH3x', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-ssomySwjwH3x', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-ssomySwjwH3x'
+
+update alertPeriod set finishTime = '23:59:59' where FilialCode = '0031'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '0031'
+update fiscalCheck set filialCode = '0031' where srcId = '9SD0C9DZ-9289-4A09-ssomySwjwH3x'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-ssomySwjwH3x'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-ssomySwjwH3x'
+834062 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-ssomySwjwH3x'
+834063 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-ssomySwjwH3x, null]
+834066 [main] INFO  kkm.UnitTests - Status: null
+834066 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+834067 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+834183 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/null
+834183 [main] INFO  kkm.UnitTests - Response Code : 400
+834184 [main] INFO  kkm.UnitTests - End test
+
+834197 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGateway_NOFILIAL()
+834361 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-VOTvG4dTMmgz', '0226867135', '2019-07-12 00:00:00.000', '7710026574', 'NOFILIAL');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-VOTvG4dTMmgz','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-VOTvG4dTMmgz', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-VOTvG4dTMmgz', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-VOTvG4dTMmgz'
+
+update alertPeriod set finishTime = '23:59:59' where FilialCode = 'NOFILIAL'
+update alertPeriod set startTime = '00:00:00' where FilialCode = 'NOFILIAL'
+update fiscalCheck set filialCode = 'NOFILIAL' where srcId = '9SD0C9DZ-9289-4A09-VOTvG4dTMmgz'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-VOTvG4dTMmgz'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-VOTvG4dTMmgz'
+945313 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-VOTvG4dTMmgz'
+945313 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-VOTvG4dTMmgz, null]
+945314 [main] INFO  kkm.UnitTests - Status: null
+945314 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+945314 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+945542 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/null
+945543 [main] INFO  kkm.UnitTests - Response Code : 400
+945544 [main] INFO  kkm.UnitTests - End test
+
+945550 [main] INFO  kkm.UnitTests - Starting test: KKM_DB_SentToGateway_UTC2_FAIL()
+945697 [main] INFO  kkm.UnitTests - Script is: Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-JrBC5iXpha52', '3583547759', '2019-07-12 00:00:00.000', '7725327863', '0067');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-JrBC5iXpha52','Фамилия Имя Отчество', '7725327863', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-JrBC5iXpha52', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-JrBC5iXpha52', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-JrBC5iXpha52'
+
+update alertPeriod set finishTime = '23:59:59' where FilialCode = '0067'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '0067'
+update fiscalCheck set filialCode = '0067' where srcId = '9SD0C9DZ-9289-4A09-JrBC5iXpha52'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-JrBC5iXpha52'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-JrBC5iXpha52'
+1056871 [main] INFO  kkm.UnitTests - select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-JrBC5iXpha52'
+1056872 [main] INFO  kkm.UnitTests - Table String info is: [ADINSURE, Payment, null, null, null, 9SD0C9DZ-9289-4A09-JrBC5iXpha52, null]
+1056875 [main] INFO  kkm.UnitTests - Status: null
+1056875 [main] INFO  kkm.UnitTests - fiscGateErrorCode: null
+1056875 [main] INFO  kkm.UnitTests - fiscGateErrorMessage: null
+1056939 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-stage:8501/cxf/rest/api/v1/kkm/receipts/null
+1056939 [main] INFO  kkm.UnitTests - Response Code : 400
+1056940 [main] INFO  kkm.UnitTests - End test
+

@@ -1,0 +1,64 @@
+207  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendEmailWrongStatus()
+317  [main] INFO  kkm.UnitTests - Swagger done
+753  [main] INFO  kkm.UnitTests - {"correlationId":"afc8a440-1b58-4096-af73-8a113cde5288","checkId":"fe0866d7-1a1f-459e-b296-38fbfc167c09"}
+925  [main] INFO  kkm.UnitTests - [fe0866d7-1a1f-459e-b296-38fbfc167c09]
+1214 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09
+1215 [main] INFO  kkm.UnitTests - Response Code : 200
+1216 [main] INFO  kkm.UnitTests - [NEW]
+1216 [main] INFO  kkm.UnitTests - [NEW]
+1731 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09
+1731 [main] INFO  kkm.UnitTests - Response Code : 200
+1731 [main] INFO  kkm.UnitTests - [NEW]
+1731 [main] INFO  kkm.UnitTests - [NEW]
+1936 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09
+1936 [main] INFO  kkm.UnitTests - Response Code : 200
+1936 [main] INFO  kkm.UnitTests - [NEW]
+1936 [main] INFO  kkm.UnitTests - [NEW]
+2071 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09
+2072 [main] INFO  kkm.UnitTests - Response Code : 200
+2073 [main] INFO  kkm.UnitTests - [NEW]
+2073 [main] INFO  kkm.UnitTests - [NEW]
+2277 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09
+2277 [main] INFO  kkm.UnitTests - Response Code : 200
+2278 [main] INFO  kkm.UnitTests - [NEW]
+2278 [main] INFO  kkm.UnitTests - [NEW]
+2363 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09
+2364 [main] INFO  kkm.UnitTests - Response Code : 200
+2365 [main] INFO  kkm.UnitTests - [NEW]
+2365 [main] INFO  kkm.UnitTests - [NEW]
+2555 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09
+2555 [main] INFO  kkm.UnitTests - Response Code : 200
+2556 [main] INFO  kkm.UnitTests - [NEW]
+2557 [main] INFO  kkm.UnitTests - [NEW]
+2665 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09
+2665 [main] INFO  kkm.UnitTests - Response Code : 200
+2666 [main] INFO  kkm.UnitTests - [NEW]
+2666 [main] INFO  kkm.UnitTests - [NEW]
+2900 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09
+2900 [main] INFO  kkm.UnitTests - Response Code : 200
+2900 [main] INFO  kkm.UnitTests - [NEW]
+2900 [main] INFO  kkm.UnitTests - [NEW]
+2993 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09
+2994 [main] INFO  kkm.UnitTests - Response Code : 200
+2995 [main] INFO  kkm.UnitTests - [DONE]
+2995 [main] INFO  kkm.UnitTests - [DONE]
+3077 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09/cancel
+3077 [main] INFO  kkm.UnitTests - Response Code : 200
+3078 [main] INFO  kkm.UnitTests - {"checkId":"fe0866d7-1a1f-459e-b296-38fbfc167c09","canceledCheckId":"14cc5a46-c0e6-4297-b6cb-c5b7a3e07a8d"}
+6130 [main] INFO  kkm.UnitTests - 
+Sending 'GET' request to URL : http://esb-test01:8181/cxf/rest/api/v1/kkm/receipts/fe0866d7-1a1f-459e-b296-38fbfc167c09/messages/email/Zagorodskih@VSK.RU
+6130 [main] INFO  kkm.UnitTests - Response Code : 400
+6131 [main] INFO  kkm.UnitTests - {"checkId":"fe0866d7-1a1f-459e-b296-38fbfc167c09","error":{"code":"CHECK_WAS_CANCELLED","message":"Receipt was already cancelled"}}
+6156 [main] INFO  kkm.UnitTests - End test
+

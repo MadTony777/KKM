@@ -1,0 +1,64 @@
+157  [main] INFO  kkm.UnitTests - Starting test: KKM_DB6()
+758  [main] INFO  kkm.UnitTests - Script is: --Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+--values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ', '7126780569', '2019-07-12 00:00:00.000', '7710026574', '0031');
+--
+--Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+--values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ','Фамилия Имя Отчество', '7710026574', '71000000000' );
+--
+--Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+--values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ', '1522756', 'INCOME');
+--
+--Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+--values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+--
+--insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+--select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+--from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+--where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ'
+--
+--
+--update alertPeriod set finishTime = '00:00:00' where FilialCode = '0031'
+--
+--update alertPeriod set startTime = '00:00:00' where FilialCode = '0031'
+--
+--update fiscalCheck set filialCode = '0031' where srcId = '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ'
+--
+--update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ'
+--
+
+
+
+
+Insert into FiscalCheck(SystemCode,EntityCode,srcID,CorrelationID,Date,OrganizationInn, FilialCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ', '7126780569', '2019-07-12 00:00:00.000', '7710026574', '0031');
+
+Insert into Customer(SystemCode,EntityCode,srcID, FullName,INN, Phone)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ','Фамилия Имя Отчество', '7710026574', '71000000000' );
+
+Insert into Payment(SystemCode,EntityCode,srcID,Amount,PaymentTypeCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ', '1522756', 'INCOME');
+
+Insert into Position(SystemCode,EntityCode,srcID,"Number",Name,Price,Quantity,TaxCode)
+values( 'ADINSURE', 'Payment', '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ', '123456', 'Страховая премия № 100000000', '1234', '1234', 'VAT20');
+
+insert into ProcessStatus(SystemCode, EntityCode, srcID, fiscGateCorrelationID)
+select top 1 f.SystemCode, f.EntityCode, f.srcID, CorrelationID
+from FiscalCheck as f left join ProcessStatus as p on p.SystemCode = f.SystemCode and p.EntityCode = f.EntityCode and p.srcID = f.srcID
+where p.EntityCode is null and f.srcID = '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ'
+
+update alertPeriod set finishTime = '00:00:00' where FilialCode = '0031'
+update alertPeriod set startTime = '00:00:00' where FilialCode = '0031'
+update fiscalCheck set filialCode = '0031' where srcId = '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ'
+update processStatus set fiscGateCheckStatusCode = null where srcId = '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ'
+select * from processStatus where srcID = '9SD0C9DZ-9289-4A09-Rh2sywITyJwQ'
+91713 [main] INFO  kkm.UnitTests - End test
+
+91731 [main] INFO  kkm.UnitTests - Starting test: KKM_DB1()
+91888 [main] INFO  kkm.UnitTests - Script is: SELECT TOP 1 * FROM ProcessStatus Where fiscGateCheckStatusCode = 'ERROR'
+91913 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898622
+91915 [main] INFO  kkm.UnitTests - srcID is: ЖПлато_000898622
+92308 [main] INFO  kkm.UnitTests - update dbo.Customer set inn = '1' where srcID = 'ЖПлато_000898622'
+update ProcessStatus set fiscGateCheckStatusCode = null where srcID = 'ЖПлато_000898622'
+select * from ProcessStatus where srcID = 'ЖПлато_000898622'
+92309 [main] INFO  kkm.UnitTests - Table String info is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000898622]
+92313 [main] INFO  kkm.UnitTests - Status is: [AXAPTA, PaymentOrder, null, VALIDATION_ERROR, ЖПлато_000898622]

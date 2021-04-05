@@ -1,0 +1,58 @@
+184  [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageEmail()
+290  [main] INFO  kkm.UnitTests - Swagger done
+1741 [main] INFO  kkm.UnitTests - End test
+
+1773 [main] INFO  kkm.UnitTests - Starting test: KKM_PutShopCheckToShFI_RequiredFields()
+3523 [main] INFO  kkm.UnitTests - End test
+
+3533 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_EmailResendStatusCheckDONE()
+4631 [main] INFO  kkm.UnitTests - End test
+
+4637 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getStatusCheck()
+5731 [main] INFO  kkm.UnitTests - End test
+
+5743 [main] INFO  kkm.UnitTests - Starting test: KKM_PutWebAutoCheckToShFI_RequiredAndOptionalFields()
+6848 [main] INFO  kkm.UnitTests - End test
+
+6853 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_makeCheckCashier()
+6854 [main] INFO  kkm.UnitTests - Swagger done
+7917 [main] INFO  kkm.UnitTests - End test
+
+7923 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SIPheckStatus()
+7924 [main] INFO  kkm.UnitTests - Swagger done
+8992 [main] INFO  kkm.UnitTests - End test
+
+8998 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_EmailResend()
+10086 [main] INFO  kkm.UnitTests - End test
+
+10092 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_PostCorrectionReceipt()
+10093 [main] INFO  kkm.UnitTests - Swagger done
+11170 [main] INFO  kkm.UnitTests - End test
+
+11176 [main] INFO  kkm.UnitTests - Starting test: KKM_allPutCheckCorrection()
+12281 [main] INFO  kkm.UnitTests - End test
+
+12286 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_CanceleNotFound()
+13360 [main] INFO  kkm.UnitTests - End test
+
+13366 [main] INFO  kkm.UnitTests - Starting test: KKM_PutCheckCorrection()
+14446 [main] INFO  kkm.UnitTests - End test
+
+14452 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_putCheckCorrectionNegative()
+15539 [main] INFO  kkm.UnitTests - End test
+
+15547 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getStatusCheckNegative()
+16643 [main] INFO  kkm.UnitTests - End test
+
+16649 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_SendMessageNotFound()
+17727 [main] INFO  kkm.UnitTests - End test
+
+17734 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_PostCorrectionReceipt_negative()
+17734 [main] INFO  kkm.UnitTests - Swagger done
+18801 [main] INFO  kkm.UnitTests - End test
+
+18805 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_EmailResendCheckNotFound()
+19881 [main] INFO  kkm.UnitTests - End test
+
+19887 [main] INFO  kkm.UnitTests - Starting test: KKM_Services_getStatus()
+19887 [main] INFO  kkm.UnitTests - Swagger done
